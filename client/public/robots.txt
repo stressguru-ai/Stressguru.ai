@@ -1,0 +1,20 @@
+# Public discovery and existing training permissions are preserved.
+# These rules apply to every named group; robots.txt is not authentication.
+User-agent: *
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: PerplexityBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+Allow: /
+Disallow: /api
+Disallow: /admin
+Disallow: /account
+Disallow: /preview
+
+Sitemap: https://stressguru.ai/sitemap.xml

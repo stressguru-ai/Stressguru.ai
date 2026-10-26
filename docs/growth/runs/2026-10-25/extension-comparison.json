@@ -1,0 +1,22 @@
+{
+  "observedAt": "2026-10-25T14:09:13.959612+00:00",
+  "scope": "Read-only public HTTP comparison, not an AWS configuration inspection",
+  "rows": [
+    {
+      "path": "/anxiety-support/sunday-scaries",
+      "curlExitCode": 28,
+      "statusLine": "HTTP/1.1 200 OK",
+      "title": "Stop Stress Today. Prevent the Same Pattern Tomorrow | StressGuru",
+      "canonical": "https://stressguru.ai/",
+      "error": "curl: (28) Operation timed out after 20001 milliseconds with 163840 out of 373338 bytes received"
+    },
+    {
+      "path": "/anxiety-support/sunday-scaries.html",
+      "curlExitCode": 28,
+      "statusLine": "HTTP/1.1 200 OK",
+      "title": "Sunday scaries: Calm late-week anxiety quickly",
+      "canonical": "https://stressguru.ai/anxiety-support/sunday-scaries",
+      "error": "curl: (28) Operation timed out after 20000 milliseconds with 77503 out of 381890 bytes received"
+    }
+  ]
+}

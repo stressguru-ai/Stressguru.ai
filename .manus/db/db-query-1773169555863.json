@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS `stressLeads` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`name` varchar(256) NOT NULL,\n\t`email` varchar(320) NOT NULL,\n\t`score` int NOT NULL,\n\t`stressLevel` int NOT NULL,\n\t`tierTitle` varchar(64) NOT NULL,\n\t`tierId` int NOT NULL,\n\t`primaryGuru` varchar(64) NOT NULL,\n\t`secondaryGuru` varchar(64),\n\t`domainAverages` json,\n\t`answers` json,\n\t`bodyMapAreas` json,\n\t`emailSent` int NOT NULL DEFAULT 0,\n\t`createdAt` timestamp NOT NULL DEFAULT (now()),\n\tCONSTRAINT `stressLeads_id` PRIMARY KEY(`id`)\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3yQAsmZ7HGLtUN5.root --database QZ9wtosM8hUVfX9KHaDdfm --execute CREATE TABLE IF NOT EXISTS `stressLeads` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`name` varchar(256) NOT NULL,\n\t`email` varchar(320) NOT NULL,\n\t`score` int NOT NULL,\n\t`stressLevel` int NOT NULL,\n\t`tierTitle` varchar(64) NOT NULL,\n\t`tierId` int NOT NULL,\n\t`primaryGuru` varchar(64) NOT NULL,\n\t`secondaryGuru` varchar(64),\n\t`domainAverages` json,\n\t`answers` json,\n\t`bodyMapAreas` json,\n\t`emailSent` int NOT NULL DEFAULT 0,\n\t`createdAt` timestamp NOT NULL DEFAULT (now()),\n\tCONSTRAINT `stressLeads_id` PRIMARY KEY(`id`)\n);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 235
+}

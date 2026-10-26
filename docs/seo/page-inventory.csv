@@ -1,0 +1,153 @@
+delivery_sequence,url,cluster,primary_query,intent,funnel_stage,primary_cta,phase,status
+1,/stress-relief,pillar-hub,stress relief,understand,top,app,1,pending
+2,/burnout-prevention,pillar-hub,burnout prevention,understand,top,app,1,pending
+3,/anxiety-support,pillar-hub,everyday anxiety support,understand,top,app,1,pending
+4,/sleep-better,pillar-hub,sleep better when stressed,understand,top,app-and-book,1,pending
+5,/motivation-and-energy,pillar-hub,motivation and low energy support,understand,top,app,1,pending
+6,/relationship-stress,pillar-hub,relationship stress support,understand,top,app,1,pending
+7,/calm-and-mindfulness,pillar-hub,calm and mindfulness exercises,understand,top,app,1,pending
+8,/meaning-and-spiritual-wellness,pillar-hub,meaning and spiritual wellness,understand,top,app,1,pending
+9,/stress-relief/stressed-all-the-time,problem-guide,why am I stressed all the time,understand,mid,app,1,pending
+10,/stress-relief/feeling-overwhelmed,problem-guide,what to do when feeling overwhelmed,act-now,mid,app,1,pending
+11,/stress-relief/cant-switch-off-after-work,problem-guide,how to switch off after work,act-now,mid,app,1,pending
+12,/burnout-prevention/early-warning-signs,problem-guide,early warning signs of burnout,understand,mid,app,1,pending
+13,/burnout-prevention/high-functioning-burnout,problem-guide,high functioning burnout,understand,mid,app,1,pending
+14,/burnout-prevention/working-women,problem-guide,burnout in working women,understand,mid,app,1,pending
+15,/anxiety-support/stop-overthinking,problem-guide,how to stop overthinking,act-now,mid,app,1,pending
+16,/anxiety-support/racing-thoughts-at-night,problem-guide,racing thoughts at night,act-now,mid,app-and-book,1,pending
+17,/sleep-better/cant-sleep-because-of-stress,problem-guide,can't sleep because of stress,act-now,mid,app-and-book,1,pending
+18,/sleep-better/waking-at-3am,problem-guide,waking at 3am with racing thoughts,act-now,mid,app-and-book,1,pending
+19,/wearables/apple-watch-stress-app,wearables,Apple Watch stress app,compare,mid,app,1,pending
+20,/sleep-better/sleep-again-for-overthinkers,book-companion,sleep workbook for overthinkers,understand,mid,book,1,pending
+21,/stress-relief/stress-and-irritability,problem-guide,stress and irritability,understand,mid,app,2,pending
+22,/stress-relief/stress-and-brain-fog,problem-guide,stress and brain fog,understand,mid,app,2,pending
+23,/stress-relief/stress-and-muscle-tension,problem-guide,stress and muscle tension,understand,mid,app,2,pending
+24,/stress-relief/stress-before-big-meeting,problem-guide,stress before a big meeting,act-now,mid,app,2,pending
+25,/stress-relief/recover-after-hard-day,problem-guide,how to recover after a stressful day,act-now,mid,app,2,pending
+26,/burnout-prevention/silent-burnout,problem-guide,silent burnout,understand,mid,app,2,pending
+27,/burnout-prevention/emotional-exhaustion,problem-guide,emotional exhaustion,understand,mid,app,2,pending
+28,/burnout-prevention/burnout-vs-stress,problem-guide,burnout vs stress,compare,mid,app,2,pending
+29,/burnout-prevention/burnout-and-sleep,problem-guide,burnout and sleep,understand,mid,app-and-book,2,pending
+30,/burnout-prevention/recover-after-overwhelming-week,problem-guide,recover after an overwhelming week,act-now,mid,app,2,pending
+31,/anxiety-support/worry-spiral,problem-guide,what to do during a worry spiral,act-now,mid,app,2,pending
+32,/anxiety-support/morning-worry,problem-guide,morning worry and stress,act-now,mid,app,2,pending
+33,/anxiety-support/sunday-scaries,problem-guide,Sunday scaries,understand,mid,app,3,pending
+34,/anxiety-support/presentation-nerves,problem-guide,how to calm presentation nerves,act-now,mid,app,3,pending
+35,/anxiety-support/overthinking-conversations,problem-guide,overthinking conversations,understand,mid,app,3,pending
+36,/anxiety-support/grounding-when-panicky,problem-guide,grounding when you feel panicky,act-now,mid,app,3,pending
+37,/sleep-better/tired-but-wired,problem-guide,tired but wired at bedtime,act-now,mid,app-and-book,3,pending
+38,/sleep-better/sleep-and-stress-cycle,problem-guide,sleep and stress cycle,understand,mid,app-and-book,3,pending
+39,/sleep-better/wind-down-routine,problem-guide,wind-down routine for better sleep,act-now,mid,app-and-book,3,pending
+40,/sleep-better/sleep-after-night-shift,problem-guide,how to sleep after night shift,act-now,mid,app-and-book,3,pending
+41,/sleep-better/partner-snoring-stress,problem-guide,partner snoring stress,understand,mid,app-and-book,3,pending
+42,/sleep-better/melatonin-vs-sleep-habits,problem-guide,melatonin vs sleep habits,compare,mid,app-and-book,3,pending
+43,/motivation-and-energy/no-motivation-to-do-anything,problem-guide,no motivation to do anything,understand,mid,app,3,pending
+44,/motivation-and-energy/afternoon-energy-crash,problem-guide,afternoon energy crash,act-now,mid,app,3,pending
+45,/motivation-and-energy/getting-started-when-overwhelmed,problem-guide,getting started when overwhelmed,act-now,mid,app,4,pending
+46,/motivation-and-energy/motivation-after-failure,problem-guide,motivation after failure,understand,mid,app,4,pending
+47,/motivation-and-energy/discipline-vs-motivation,problem-guide,discipline vs motivation,compare,mid,app,4,pending
+48,/motivation-and-energy/low-energy-and-stress,problem-guide,low energy and stress,understand,mid,app,4,pending
+49,/relationship-stress/stress-ruining-relationship,problem-guide,stress ruining my relationship,understand,mid,app,4,pending
+50,/relationship-stress/arguing-more-than-usual,problem-guide,arguing more than usual with partner,understand,mid,app,4,pending
+51,/relationship-stress/emotional-withdrawal,problem-guide,emotional withdrawal in relationships,understand,mid,app,4,pending
+52,/relationship-stress/setting-boundaries-at-work,problem-guide,setting boundaries at work,act-now,mid,app,4,pending
+53,/relationship-stress/parenting-stress,problem-guide,parenting stress,understand,mid,app,4,pending
+54,/relationship-stress/loneliness-and-stress,problem-guide,loneliness and stress,understand,mid,app,4,pending
+55,/calm-and-mindfulness/how-to-calm-down-quickly,exercise,how to calm down quickly,act-now,mid,app,4,pending
+56,/calm-and-mindfulness/box-breathing,exercise,box breathing technique,act-now,mid,app,4,pending
+57,/calm-and-mindfulness/body-scan-for-stress,exercise,body scan for stress relief,act-now,mid,app,5,pending
+58,/calm-and-mindfulness/grounding-5-4-3-2-1,exercise,5-4-3-2-1 grounding technique,act-now,mid,app,5,pending
+59,/calm-and-mindfulness/progressive-muscle-relaxation,exercise,progressive muscle relaxation,act-now,mid,app,5,pending
+60,/calm-and-mindfulness/mindfulness-for-beginners,exercise,mindfulness for beginners,understand,mid,app,5,pending
+61,/calm-and-mindfulness/overstimulation-recovery,problem-guide,overstimulation recovery,act-now,mid,app,5,pending
+62,/calm-and-mindfulness/digital-detox-for-stress,problem-guide,digital detox for stress,act-now,mid,app,5,pending
+63,/meaning-and-spiritual-wellness/finding-purpose-after-burnout,problem-guide,finding purpose after burnout,understand,mid,app,5,pending
+64,/meaning-and-spiritual-wellness/existential-stress,problem-guide,existential stress,understand,mid,app,5,pending
+65,/meaning-and-spiritual-wellness/gratitude-practice,exercise,gratitude practice for stress,act-now,mid,app,5,pending
+66,/meaning-and-spiritual-wellness/journaling-for-stress,exercise,journaling for stress relief,act-now,mid,app,5,pending
+67,/meaning-and-spiritual-wellness/values-and-stress,problem-guide,values and stress alignment,understand,mid,app,5,pending
+68,/meaning-and-spiritual-wellness/nature-and-stress-relief,problem-guide,nature and stress relief,understand,mid,app,5,pending
+69,/exercises/2-minute-stress-reset,exercise,2 minute stress reset,act-now,mid,app,6,pending
+70,/exercises/morning-calm-routine,exercise,morning calm routine,act-now,mid,app,6,pending
+71,/exercises/desk-stretch-for-tension,exercise,desk stretch for tension,act-now,mid,app,6,pending
+72,/exercises/evening-wind-down,exercise,evening wind down routine,act-now,mid,app-and-book,6,pending
+73,/exercises/nervous-system-reset,exercise,nervous system reset exercise,act-now,mid,app,6,pending
+74,/exercises/cold-water-face-technique,exercise,cold water face technique for anxiety,act-now,mid,app,6,pending
+75,/exercises/physiological-sigh,exercise,physiological sigh technique,act-now,mid,app,6,pending
+76,/exercises/walking-meditation,exercise,walking meditation for stress,act-now,mid,app,6,pending
+77,/exercises/self-compassion-break,exercise,self compassion break,act-now,mid,app,6,pending
+78,/exercises/worry-time-technique,exercise,worry time technique,act-now,mid,app,6,pending
+79,/exercises/sleep-body-scan,exercise,body scan for sleep,act-now,mid,app-and-book,6,pending
+80,/exercises/cognitive-defusion,exercise,cognitive defusion technique,act-now,mid,app,6,pending
+81,/wearables/apple-watch-hrv-explained,wearables,Apple Watch HRV explained,understand,mid,app,7,pending
+82,/wearables/apple-watch-sleep-tracking,wearables,Apple Watch sleep tracking,understand,mid,app-and-book,7,pending
+83,/wearables/apple-watch-heart-rate-stress,wearables,Apple Watch heart rate and stress,understand,mid,app,7,pending
+84,/wearables/stressguru-vs-apple-health,wearables,StressGuru vs Apple Health app,compare,mid,app,7,pending
+85,/wearables/wearable-stress-limits,wearables,wearable stress detection limits,understand,mid,trust,7,pending
+86,/wearables/apple-watch-privacy,wearables,Apple Watch health data privacy,understand,mid,trust,7,pending
+87,/learn/what-is-stress,learn,what is stress,understand,top,app,7,pending
+88,/learn/what-is-burnout,learn,what is burnout,understand,top,app,7,pending
+89,/learn/nervous-system-regulation,learn,nervous system regulation explained,understand,mid,app,7,pending
+90,/learn/cortisol-and-stress,learn,cortisol and stress,understand,mid,app,7,pending
+91,/learn/fight-or-flight-response,learn,fight or flight response,understand,top,app,7,pending
+92,/learn/stress-vs-anxiety,learn,stress vs anxiety difference,compare,top,app,7,pending
+93,/learn/chronic-stress-effects,learn,chronic stress effects on body,understand,mid,app,8,pending
+94,/learn/stress-and-immune-system,learn,stress and immune system,understand,mid,app,8,pending
+95,/learn/stress-and-weight,learn,stress and weight gain,understand,mid,app,8,pending
+96,/learn/stress-and-digestion,learn,stress and digestion problems,understand,mid,app,8,pending
+97,/learn/stress-and-headaches,learn,stress headaches,understand,mid,app,8,pending
+98,/learn/stress-and-skin,learn,stress and skin problems,understand,mid,app,8,pending
+99,/learn/what-is-hrv,learn,what is heart rate variability,understand,mid,app,8,pending
+100,/learn/allostatic-load,learn,allostatic load explained,understand,mid,app,8,pending
+101,/learn/window-of-tolerance,learn,window of tolerance,understand,mid,app,8,pending
+102,/learn/polyvagal-theory-simple,learn,polyvagal theory simple explanation,understand,mid,app,8,pending
+103,/learn/cbt-for-stress,learn,CBT for stress,understand,mid,app,8,pending
+104,/learn/mindfulness-based-stress-reduction,learn,mindfulness based stress reduction,understand,mid,app,8,pending
+105,/compare/best-stress-relief-apps,compare,best stress relief apps 2026,compare,mid,app,9,pending
+106,/compare/stressguru-vs-calm,compare,StressGuru vs Calm,compare,mid,app,9,pending
+107,/compare/stressguru-vs-headspace,compare,StressGuru vs Headspace,compare,mid,app,9,pending
+108,/compare/stressguru-vs-betterhelp,compare,StressGuru vs BetterHelp,compare,mid,app,9,pending
+109,/compare/stressguru-vs-woebot,compare,StressGuru vs Woebot,compare,mid,app,9,pending
+110,/compare/ai-wellness-apps-vs-therapy,compare,AI wellness apps vs therapy,compare,mid,app,9,pending
+111,/compare/free-vs-paid-stress-apps,compare,free vs paid stress apps,compare,mid,app,9,pending
+112,/compare/stress-apps-for-apple-watch,compare,stress apps for Apple Watch,compare,mid,app,9,pending
+113,/for/college-students,audience,stress relief for college students,understand,mid,app,9,pending
+114,/for/working-moms,audience,stress relief for working moms,understand,mid,app,9,pending
+115,/for/remote-workers,audience,stress management for remote workers,understand,mid,app,9,pending
+116,/for/healthcare-workers,audience,stress relief for healthcare workers,understand,mid,app,9,pending
+117,/for/teachers,audience,stress management for teachers,understand,mid,app,10,pending
+118,/for/entrepreneurs,audience,stress management for entrepreneurs,understand,mid,app,10,pending
+119,/for/new-parents,audience,stress relief for new parents,understand,mid,app,10,pending
+120,/for/caregivers,audience,caregiver stress and burnout,understand,mid,app,10,pending
+121,/for/shift-workers,audience,stress management for shift workers,understand,mid,app,10,pending
+122,/for/people-with-adhd,audience,stress management with ADHD,understand,mid,app,10,pending
+123,/for/introverts,audience,stress relief for introverts,understand,mid,app,10,pending
+124,/for/high-achievers,audience,stress management for high achievers,understand,mid,app,10,pending
+125,/stress-relief/stress-at-work,problem-guide,stress at work,understand,mid,app,10,pending
+126,/stress-relief/financial-stress,problem-guide,financial stress relief,understand,mid,app,10,pending
+127,/stress-relief/moving-house-stress,problem-guide,moving house stress,understand,mid,app,10,pending
+128,/stress-relief/holiday-stress,problem-guide,holiday stress management,understand,mid,app,10,pending
+129,/anxiety-support/health-anxiety,problem-guide,health anxiety,understand,mid,app,11,pending
+130,/anxiety-support/social-anxiety-at-work,problem-guide,social anxiety at work,understand,mid,app,11,pending
+131,/anxiety-support/anxiety-and-procrastination,problem-guide,anxiety and procrastination,understand,mid,app,11,pending
+132,/anxiety-support/phone-anxiety,problem-guide,phone call anxiety,understand,mid,app,11,pending
+133,/sleep-better/sleep-anxiety,problem-guide,sleep anxiety,understand,mid,app-and-book,11,pending
+134,/sleep-better/revenge-bedtime-procrastination,problem-guide,revenge bedtime procrastination,understand,mid,app-and-book,11,pending
+135,/sleep-better/jet-lag-and-stress,problem-guide,jet lag and stress,act-now,mid,app-and-book,11,pending
+136,/sleep-better/sleep-hygiene-checklist,exercise,sleep hygiene checklist,act-now,mid,app-and-book,11,pending
+137,/learn/stress-hormones-explained,learn,stress hormones explained,understand,mid,app,11,pending
+138,/learn/vagus-nerve-and-stress,learn,vagus nerve and stress,understand,mid,app,11,pending
+139,/learn/stress-and-memory,learn,stress and memory problems,understand,mid,app,11,pending
+140,/learn/stress-and-aging,learn,stress and aging,understand,mid,app,11,pending
+141,/learn/myths-about-stress,learn,myths about stress,understand,top,app,11,pending
+142,/learn/myths-about-burnout,learn,myths about burnout,understand,top,app,11,pending
+143,/learn/myths-about-meditation,learn,myths about meditation,understand,top,app,11,pending
+144,/learn/stress-and-creativity,learn,stress and creativity,understand,mid,app,11,pending
+145,/learn/eustress-good-stress,learn,eustress good stress,understand,top,app,11,pending
+146,/learn/stress-and-relationships,learn,how stress affects relationships,understand,mid,app,11,pending
+147,/learn/seasonal-stress-patterns,learn,seasonal stress patterns,understand,mid,app,11,pending
+148,/learn/stress-and-gut-health,learn,stress and gut health,understand,mid,app,11,pending
+149,/learn/stress-and-sleep-science,learn,stress and sleep science,understand,mid,app-and-book,11,pending
+150,/learn/what-is-resilience,learn,what is resilience,understand,top,app,11,pending
+151,/learn/stress-and-3am-waking,learn,can stress cause 3am waking,understand,mid,app-and-book,11,pending
+152,/learn/apple-watch-does-not-diagnose-stress,learn,does Apple Watch diagnose stress,understand,mid,trust,11,pending

@@ -1,0 +1,70 @@
+{
+  "query": "SELECT id, title, authorName, authorImage FROM blogs LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3yQAsmZ7HGLtUN5.root --database QZ9wtosM8hUVfX9KHaDdfm --execute SELECT id, title, authorName, authorImage FROM blogs LIMIT 10;",
+  "rows": [
+    {
+      "id": "1",
+      "title": "The High-Achiever's Paradox: Why Success Feels Like Drowning (And How to Finally Breathe)",
+      "authorName": "Stress Guru",
+      "authorImage": "/images/gurus/stress_guru.png"
+    },
+    {
+      "id": "2",
+      "title": "The 3 AM Wake-Up Call: Why You Can't Stay Asleep (And How to Fix It)",
+      "authorName": "Sleep Guru",
+      "authorImage": "/images/gurus/sleep_guru.png"
+    },
+    {
+      "id": "3",
+      "title": "The Invisible Weight: Breaking Free from the Grip of High-Functioning Anxiety",
+      "authorName": "Anxiety Guru",
+      "authorImage": "/images/gurus/anxiety_guru.png"
+    },
+    {
+      "id": "4",
+      "title": "The Motivation Myth: Why Willpower Fails (And What Actually Works)",
+      "authorName": "Motivation Guru",
+      "authorImage": "/images/gurus/motivation_guru.png"
+    },
+    {
+      "id": "5",
+      "title": "Love in the Time of Stress: How to Reconnect When You're Running on Empty",
+      "authorName": "Relationship Guru",
+      "authorImage": "/images/gurus/relationship_guru.png"
+    },
+    {
+      "id": "6",
+      "title": "Chasing Rainbows: Why Happiness is Elusive (And How to Find Joy in the Ordinary)",
+      "authorName": "Happiness Guru",
+      "authorImage": "/images/gurus/happiness_guru.png"
+    },
+    {
+      "id": "7",
+      "title": "The Eye of the Storm: Finding Stillness in a Chaotic World",
+      "authorName": "Calm Guru",
+      "authorImage": "/images/gurus/calm_guru.jpg"
+    },
+    {
+      "id": "8",
+      "title": "The Search for Meaning: Connecting to Something Bigger Than Yourself",
+      "authorName": "Spiritual Guru",
+      "authorImage": "/images/gurus/spiritual_guru.png"
+    },
+    {
+      "id": "30001",
+      "title": "Lost in Thought, Missing the Moment: Reclaiming Presence with Your Loved Ones",
+      "authorName": "Calm Guru",
+      "authorImage": "/images/gurus/calm_guru.jpg"
+    },
+    {
+      "id": "60001",
+      "title": "Trapped in the Endless Cycle? How to Disconnect from Work and Reclaim Your Life",
+      "authorName": "Stress Guru",
+      "authorImage": "/images/gurus/stress_guru.png"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttitle\tauthorName\tauthorImage\n1\tThe High-Achiever's Paradox: Why Success Feels Like Drowning (And How to Finally Breathe)\tStress Guru\t/images/gurus/stress_guru.png\n2\tThe 3 AM Wake-Up Call: Why You Can't Stay Asleep (And How to Fix It)\tSleep Guru\t/images/gurus/sleep_guru.png\n3\tThe Invisible Weight: Breaking Free from the Grip of High-Functioning Anxiety\tAnxiety Guru\t/images/gurus/anxiety_guru.png\n4\tThe Motivation Myth: Why Willpower Fails (And What Actually Works)\tMotivation Guru\t/images/gurus/motivation_guru.png\n5\tLove in the Time of Stress: How to Reconnect When You're Running on Empty\tRelationship Guru\t/images/gurus/relationship_guru.png\n6\tChasing Rainbows: Why Happiness is Elusive (And How to Find Joy in the Ordinary)\tHappiness Guru\t/images/gurus/happiness_guru.png\n7\tThe Eye of the Storm: Finding Stillness in a Chaotic World\tCalm Guru\t/images/gurus/calm_guru.jpg\n8\tThe Search for Meaning: Connecting to Something Bigger Than Yourself\tSpiritual Guru\t/images/gurus/spiritual_guru.png\n30001\tLost in Thought, Missing the Moment: Reclaiming Presence with Your Loved Ones\tCalm Guru\t/images/gurus/calm_guru.jpg\n60001\tTrapped in the Endless Cycle? How to Disconnect from Work and Reclaim Your Life\tStress Guru\t/images/gurus/stress_guru.png\n",
+  "stderr": "",
+  "execution_time_ms": 1247
+}

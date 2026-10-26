@@ -1,0 +1,130 @@
+{
+  "query": "SELECT id, title, slug, authorName, category, status FROM blogs ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3yQAsmZ7HGLtUN5.root --database QZ9wtosM8hUVfX9KHaDdfm --execute SELECT id, title, slug, authorName, category, status FROM blogs ORDER BY id;",
+  "rows": [
+    {
+      "id": "1",
+      "title": "The High-Achiever's Paradox: Why Success Feels Like Drowning (And How to Finally Breathe)",
+      "slug": "stress-management-guide",
+      "authorName": "Stress Guru",
+      "category": "Stress Management",
+      "status": "published"
+    },
+    {
+      "id": "2",
+      "title": "The 3 AM Wake-Up Call: Why You Can't Stay Asleep (And How to Fix It)",
+      "slug": "sleep-restoration-guide",
+      "authorName": "Sleep Guru",
+      "category": "Sleep & Recovery",
+      "status": "published"
+    },
+    {
+      "id": "3",
+      "title": "The Invisible Weight: Breaking Free from the Grip of High-Functioning Anxiety",
+      "slug": "anxiety-relief-guide",
+      "authorName": "Anxiety Guru",
+      "category": "Anxiety & Mental Health",
+      "status": "published"
+    },
+    {
+      "id": "4",
+      "title": "The Motivation Myth: Why Willpower Fails (And What Actually Works)",
+      "slug": "motivation-habits-guide",
+      "authorName": "Motivation Guru",
+      "category": "Motivation & Habits",
+      "status": "published"
+    },
+    {
+      "id": "5",
+      "title": "Love in the Time of Stress: How to Reconnect When You're Running on Empty",
+      "slug": "relationship-healing-guide",
+      "authorName": "Relationship Guru",
+      "category": "Relationships",
+      "status": "published"
+    },
+    {
+      "id": "6",
+      "title": "Chasing Rainbows: Why Happiness is Elusive (And How to Find Joy in the Ordinary)",
+      "slug": "happiness-joy-guide",
+      "authorName": "Happiness Guru",
+      "category": "Happiness & Well-being",
+      "status": "published"
+    },
+    {
+      "id": "7",
+      "title": "The Eye of the Storm: Finding Stillness in a Chaotic World",
+      "slug": "calm-mindfulness-guide",
+      "authorName": "Calm Guru",
+      "category": "Mindfulness",
+      "status": "published"
+    },
+    {
+      "id": "8",
+      "title": "The Search for Meaning: Connecting to Something Bigger Than Yourself",
+      "slug": "spiritual-growth-guide",
+      "authorName": "Spiritual Guru",
+      "category": "Spirituality & Purpose",
+      "status": "published"
+    },
+    {
+      "id": "30001",
+      "title": "Lost in Thought, Missing the Moment: Reclaiming Presence with Your Loved Ones",
+      "slug": "lost-in-thought-missing-the-moment-reclaiming-presence-with-your-loved-ones",
+      "authorName": "Calm Guru",
+      "category": "Stress Management",
+      "status": "published"
+    },
+    {
+      "id": "60001",
+      "title": "Trapped in the Endless Cycle? How to Disconnect from Work and Reclaim Your Life",
+      "slug": "trapped-in-the-endless-cycle-how-to-disconnect-from-work-and-reclaim-your-life-ml8h4mcj",
+      "authorName": "Stress Guru",
+      "category": "Stress Management",
+      "status": "published"
+    },
+    {
+      "id": "60003",
+      "title": "When Your Mind Won't Quit: Taming Racing Thoughts for Restful Sleep",
+      "slug": "when-your-mind-won-t-quit-taming-racing-thoughts-for-restful-sleep-ml8h7dam",
+      "authorName": "Sleep Guru",
+      "category": "Sleep & Recovery",
+      "status": "published"
+    },
+    {
+      "id": "90001",
+      "title": "Lost in the Labyrinth of Life? How to Gently Begin Your Spiritual Practice",
+      "slug": "lost-in-the-labyrinth-of-life-how-to-gently-begin-your-spiritual-practice-ml8rvvyn",
+      "authorName": "Spiritual Guru",
+      "category": "Spiritual Growth",
+      "status": "published"
+    },
+    {
+      "id": "90002",
+      "title": "Trapped in Tomorrow: How to Break Free from Procrastination's Grip and Reclaim Your Power",
+      "slug": "trapped-in-tomorrow-how-to-break-free-from-procrastination-s-grip-and-reclaim-your-power-ml8sysi1",
+      "authorName": "Motivation Guru",
+      "category": "Stress Management",
+      "status": "published"
+    },
+    {
+      "id": "120001",
+      "title": "When the World Stops: Navigating Sudden Panic Attacks in Public and at Work",
+      "slug": "when-the-world-stops-navigating-sudden-panic-attacks-in-public-and-at-work-mla7wrpf",
+      "authorName": "Anxiety Guru",
+      "category": "Anxiety Relief",
+      "status": "published"
+    },
+    {
+      "id": "150001",
+      "title": "Trapped in the 'What If' Loop? How to Break Free from Constant Worry",
+      "slug": "trapped-in-the-what-if-loop-how-to-break-free-from-constant-worry-mladbbkh",
+      "authorName": "Anxiety Guru",
+      "category": "Anxiety Relief",
+      "status": "draft"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttitle\tslug\tauthorName\tcategory\tstatus\n1\tThe High-Achiever's Paradox: Why Success Feels Like Drowning (And How to Finally Breathe)\tstress-management-guide\tStress Guru\tStress Management\tpublished\n2\tThe 3 AM Wake-Up Call: Why You Can't Stay Asleep (And How to Fix It)\tsleep-restoration-guide\tSleep Guru\tSleep & Recovery\tpublished\n3\tThe Invisible Weight: Breaking Free from the Grip of High-Functioning Anxiety\tanxiety-relief-guide\tAnxiety Guru\tAnxiety & Mental Health\tpublished\n4\tThe Motivation Myth: Why Willpower Fails (And What Actually Works)\tmotivation-habits-guide\tMotivation Guru\tMotivation & Habits\tpublished\n5\tLove in the Time of Stress: How to Reconnect When You're Running on Empty\trelationship-healing-guide\tRelationship Guru\tRelationships\tpublished\n6\tChasing Rainbows: Why Happiness is Elusive (And How to Find Joy in the Ordinary)\thappiness-joy-guide\tHappiness Guru\tHappiness & Well-being\tpublished\n7\tThe Eye of the Storm: Finding Stillness in a Chaotic World\tcalm-mindfulness-guide\tCalm Guru\tMindfulness\tpublished\n8\tThe Search for Meaning: Connecting to Something Bigger Than Yourself\tspiritual-growth-guide\tSpiritual Guru\tSpirituality & Purpose\tpublished\n30001\tLost in Thought, Missing the Moment: Reclaiming Presence with Your Loved Ones\tlost-in-thought-missing-the-moment-reclaiming-presence-with-your-loved-ones\tCalm Guru\tStress Management\tpublished\n60001\tTrapped in the Endless Cycle? How to Disconnect from Work and Reclaim Your Life\ttrapped-in-the-endless-cycle-how-to-disconnect-from-work-and-reclaim-your-life-ml8h4mcj\tStress Guru\tStress Management\tpublished\n60003\tWhen Your Mind Won't Quit: Taming Racing Thoughts for Restful Sleep\twhen-your-mind-won-t-quit-taming-racing-thoughts-for-restful-sleep-ml8h7dam\tSleep Guru\tSleep & Recovery\tpublished\n90001\tLost in the Labyrinth of Life? How to Gently Begin Your Spiritual Practice\tlost-in-the-labyrinth-of-life-how-to-gently-begin-your-spiritual-practice-ml8rvvyn\tSpiritual Guru\tSpiritual Growth\tpublished\n90002\tTrapped in Tomorrow: How to Break Free from Procrastination's Grip and Reclaim Your Power\ttrapped-in-tomorrow-how-to-break-free-from-procrastination-s-grip-and-reclaim-your-power-ml8sysi1\tMotivation Guru\tStress Management\tpublished\n120001\tWhen the World Stops: Navigating Sudden Panic Attacks in Public and at Work\twhen-the-world-stops-navigating-sudden-panic-attacks-in-public-and-at-work-mla7wrpf\tAnxiety Guru\tAnxiety Relief\tpublished\n150001\tTrapped in the 'What If' Loop? How to Break Free from Constant Worry\ttrapped-in-the-what-if-loop-how-to-break-free-from-constant-worry-mladbbkh\tAnxiety Guru\tAnxiety Relief\tdraft\n",
+  "stderr": "",
+  "execution_time_ms": 500
+}

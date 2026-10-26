@@ -1,0 +1,136 @@
+{
+  "observedAt": "2026-10-25T14:08:18.955Z",
+  "scope": "Targeted recheck of failed requests and public resources; original crawl evidence retained",
+  "rows": [
+    {
+      "path": "/meaning-and-spiritual-wellness/nature-and-stress-relief",
+      "status": null,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "path": "/exercises/sleep-body-scan",
+      "status": null,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "path": "/exercises/cognitive-defusion",
+      "status": null,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "path": "/wearables/apple-watch-hrv-explained",
+      "status": null,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "path": "/wearables/apple-watch-sleep-tracking",
+      "status": null,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "path": "/wearables/apple-watch-heart-rate-stress",
+      "status": null,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "path": "/wearables/stressguru-vs-apple-health",
+      "status": null,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "path": "/wearables/wearable-stress-limits",
+      "status": null,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "path": "/wearables/apple-watch-privacy",
+      "status": null,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "path": "/learn/what-is-stress",
+      "status": null,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "path": "/learn/what-is-burnout",
+      "status": null,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "path": "/learn/cortisol-and-stress",
+      "status": null,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "wildcardGroup": true,
+      "hasAdminExclusion": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "contentType": "application/xml",
+      "listedUrls": 228
+    },
+    {
+      "path": "/llms-full.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8"
+    },
+    {
+      "path": "/images/RWUZzJBIfZqvGUel.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "/definitely-not-a-real-page-growth-audit",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "inspection": {
+        "url": "https://stressguru.ai/definitely-not-a-real-page-growth-audit",
+        "finalUrl": "https://stressguru.ai/definitely-not-a-real-page-growth-audit",
+        "status": 200,
+        "contentType": "text/html",
+        "title": "Stop Stress Today. Prevent the Same Pattern Tomorrow | StressGuru",
+        "description": "Stop everyday stress from taking the rest of your day. StressGuru helps professional women pause now and plan how to prevent the same pressure from repeating.",
+        "canonical": "https://stressguru.ai/",
+        "h1s": [
+          "Stop Stress Today."
+        ],
+        "textCharacters": 609,
+        "textHash": "f96426ef65d48f1bd9b77311c42f56d278008afb20b1e3819ba2336399c5a9f1",
+        "answerFirst": true,
+        "noscriptContent": true,
+        "internalLinks": [
+          "/stress-relief",
+          "/burnout-prevention",
+          "/anxiety-support",
+          "/sleep-better",
+          "/science-and-safety",
+          "/blogs"
+        ],
+        "schemaTypes": [
+          "WebPage",
+          "BreadcrumbList",
+          "Organization",
+          "SoftwareApplication"
+        ],
+        "issues": [
+          {
+            "code": "canonical-mismatch",
+            "priority": "high",
+            "evidence": "Canonical differs: https://stressguru.ai/"
+          },
+          {
+            "code": "noscript-snapshot",
+            "priority": "medium",
+            "evidence": "Answer snapshot is in noscript; not complete SSR/hydration parity and needs rendered comparison"
+          }
+        ]
+      }
+    }
+  ]
+}

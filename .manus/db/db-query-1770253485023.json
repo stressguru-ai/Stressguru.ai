@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE blogs b\nJOIN gurus g ON b.guruId = g.id\nSET b.authorImage = g.image\nWHERE b.authorImage != g.image OR b.authorImage IS NULL;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3yQAsmZ7HGLtUN5.root --database QZ9wtosM8hUVfX9KHaDdfm --execute UPDATE blogs b\nJOIN gurus g ON b.guruId = g.id\nSET b.authorImage = g.image\nWHERE b.authorImage != g.image OR b.authorImage IS NULL;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 376
+}

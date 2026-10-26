@@ -1,0 +1,182 @@
+[
+  {
+    "id": "analytics-baseline",
+    "kind": "measurement-access",
+    "title": "Connect authorized search and conversion measurement",
+    "path": "/",
+    "score": 89,
+    "confidence": "low",
+    "authorization": "eligible-for-low-risk-review",
+    "requiresApproval": false,
+    "riskGates": [],
+    "reason": "Observed evidence score 100/100 was used; unavailable values were excluded.",
+    "reasonDetails": [
+      "Observed evidence score 100/100 was used; unavailable values were excluded."
+    ],
+    "measurement": {
+      "observedMetricEvidence": true,
+      "observedDemand": false,
+      "historyStatus": "none"
+    }
+  },
+  {
+    "id": "snapshot-rendered-parity",
+    "kind": "technical-research",
+    "title": "Check noscript snapshots against rendered page content",
+    "path": "/blogs",
+    "score": 80,
+    "confidence": "low",
+    "authorization": "eligible-for-low-risk-review",
+    "requiresApproval": false,
+    "riskGates": [],
+    "reason": "Observed evidence score 100/100 was used; unavailable values were excluded.",
+    "reasonDetails": [
+      "Observed evidence score 100/100 was used; unavailable values were excluded."
+    ],
+    "measurement": {
+      "observedMetricEvidence": true,
+      "observedDemand": false,
+      "historyStatus": "none"
+    }
+  },
+  {
+    "id": "clinical-source-fit-review",
+    "kind": "clinical-review",
+    "title": "Review existing guide claims against cited sources",
+    "path": "/stress-relief",
+    "score": 75,
+    "confidence": "low",
+    "authorization": "approval-required",
+    "requiresApproval": true,
+    "riskGates": [
+      "candidate-approval-required",
+      "clinical-or-health-claim"
+    ],
+    "reason": "Observed evidence score 90/100 was used; unavailable values were excluded. Approval gates: candidate-approval-required, clinical-or-health-claim.",
+    "reasonDetails": [
+      "Observed evidence score 90/100 was used; unavailable values were excluded.",
+      "Approval gates: candidate-approval-required, clinical-or-health-claim."
+    ],
+    "measurement": {
+      "observedMetricEvidence": true,
+      "observedDemand": false,
+      "historyStatus": "none"
+    }
+  },
+  {
+    "id": "extensionless-snapshot-serving",
+    "kind": "technical-fix",
+    "title": "Serve generated deep-page HTML before the SPA fallback",
+    "path": "/anxiety-support/sunday-scaries",
+    "score": 56,
+    "confidence": "low",
+    "authorization": "approval-required",
+    "requiresApproval": true,
+    "riskGates": [
+      "duplicate-implementation-pending-measurement"
+    ],
+    "reason": "A comparable implementation is pending measurement; avoid duplicating it before evidence arrives. Observed evidence score 100/100 was used; unavailable values were excluded. Approval gate: duplicate-implementation-pending-measurement.",
+    "reasonDetails": [
+      "A comparable implementation is pending measurement; avoid duplicating it before evidence arrives.",
+      "Observed evidence score 100/100 was used; unavailable values were excluded.",
+      "Approval gate: duplicate-implementation-pending-measurement."
+    ],
+    "measurement": {
+      "observedMetricEvidence": true,
+      "observedDemand": false,
+      "historyStatus": "pending-measurement"
+    }
+  },
+  {
+    "id": "private-crawler-groups",
+    "kind": "technical-fix",
+    "title": "Apply private-path exclusions to every named crawler",
+    "path": "/robots.txt",
+    "score": 50,
+    "confidence": "low",
+    "authorization": "approval-required",
+    "requiresApproval": true,
+    "riskGates": [
+      "duplicate-implementation-pending-measurement"
+    ],
+    "reason": "A comparable implementation is pending measurement; avoid duplicating it before evidence arrives. Observed evidence score 100/100 was used; unavailable values were excluded. Approval gate: duplicate-implementation-pending-measurement.",
+    "reasonDetails": [
+      "A comparable implementation is pending measurement; avoid duplicating it before evidence arrives.",
+      "Observed evidence score 100/100 was used; unavailable values were excluded.",
+      "Approval gate: duplicate-implementation-pending-measurement."
+    ],
+    "measurement": {
+      "observedMetricEvidence": true,
+      "observedDemand": false,
+      "historyStatus": "pending-measurement"
+    }
+  },
+  {
+    "id": "cwv-measurement",
+    "kind": "performance-measurement",
+    "title": "Establish real field and lab page-experience observations",
+    "path": "/",
+    "score": 0,
+    "confidence": "none",
+    "authorization": "insufficient-evidence",
+    "requiresApproval": false,
+    "riskGates": [],
+    "reason": "No observed valid metric evidence was supplied; missing metrics are not scored as opportunity.",
+    "reasonDetails": [
+      "No observed valid metric evidence was supplied; missing metrics are not scored as opportunity."
+    ],
+    "measurement": {
+      "observedMetricEvidence": false,
+      "observedDemand": false,
+      "historyStatus": "none"
+    }
+  },
+  {
+    "id": "source-intent-overlap",
+    "kind": "editorial-research",
+    "title": "Inspect overlapping search intents before any consolidation",
+    "path": "/learn/stress-vs-anxiety",
+    "score": 0,
+    "confidence": "none",
+    "authorization": "approval-required",
+    "requiresApproval": true,
+    "riskGates": [
+      "candidate-approval-required",
+      "destructive-url-change"
+    ],
+    "reason": "No observed valid metric evidence was supplied; missing metrics are not scored as opportunity. Approval gates: candidate-approval-required, destructive-url-change.",
+    "reasonDetails": [
+      "No observed valid metric evidence was supplied; missing metrics are not scored as opportunity.",
+      "Approval gates: candidate-approval-required, destructive-url-change."
+    ],
+    "measurement": {
+      "observedMetricEvidence": false,
+      "observedDemand": false,
+      "historyStatus": "none"
+    }
+  },
+  {
+    "id": "work-to-home-transition",
+    "kind": "existing-page",
+    "title": "Improve the work-to-home transition guide with source-checked examples",
+    "path": "/stress-relief/cant-switch-off-after-work",
+    "score": 0,
+    "confidence": "none",
+    "authorization": "approval-required",
+    "requiresApproval": true,
+    "riskGates": [
+      "candidate-approval-required",
+      "clinical-or-health-claim"
+    ],
+    "reason": "No observed valid metric evidence was supplied; missing metrics are not scored as opportunity. Approval gates: candidate-approval-required, clinical-or-health-claim.",
+    "reasonDetails": [
+      "No observed valid metric evidence was supplied; missing metrics are not scored as opportunity.",
+      "Approval gates: candidate-approval-required, clinical-or-health-claim."
+    ],
+    "measurement": {
+      "observedMetricEvidence": false,
+      "observedDemand": false,
+      "historyStatus": "none"
+    }
+  }
+]

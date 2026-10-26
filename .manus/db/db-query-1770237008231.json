@@ -1,0 +1,26 @@
+{
+  "query": "SELECT id, title FROM blogs WHERE content LIKE '%Key Takeaway%' OR content LIKE '%Did You Know%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3yQAsmZ7HGLtUN5.root --database QZ9wtosM8hUVfX9KHaDdfm --execute SELECT id, title FROM blogs WHERE content LIKE '%Key Takeaway%' OR content LIKE '%Did You Know%';",
+  "rows": [
+    {
+      "id": "1",
+      "title": "The High-Achiever's Paradox: Why Success Feels Like Drowning (And How to Finally Breathe)"
+    },
+    {
+      "id": "30001",
+      "title": "Lost in Thought, Missing the Moment: Reclaiming Presence with Your Loved Ones"
+    },
+    {
+      "id": "60001",
+      "title": "Trapped in the Endless Cycle? How to Disconnect from Work and Reclaim Your Life"
+    },
+    {
+      "id": "60003",
+      "title": "When Your Mind Won't Quit: Taming Racing Thoughts for Restful Sleep"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttitle\n1\tThe High-Achiever's Paradox: Why Success Feels Like Drowning (And How to Finally Breathe)\n30001\tLost in Thought, Missing the Moment: Reclaiming Presence with Your Loved Ones\n60001\tTrapped in the Endless Cycle? How to Disconnect from Work and Reclaim Your Life\n60003\tWhen Your Mind Won't Quit: Taming Racing Thoughts for Restful Sleep\n",
+  "stderr": "",
+  "execution_time_ms": 345
+}

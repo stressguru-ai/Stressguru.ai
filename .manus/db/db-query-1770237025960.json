@@ -1,0 +1,23 @@
+{
+  "query": "SELECT id, title, SUBSTRING(content, LOCATE('Key Takeaway', content) - 100, 300) as callout_preview FROM blogs WHERE content LIKE '%Key Takeaway%' LIMIT 2;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3yQAsmZ7HGLtUN5.root --database QZ9wtosM8hUVfX9KHaDdfm --execute SELECT id, title, SUBSTRING(content, LOCATE('Key Takeaway', content) - 100, 300) as callout_preview FROM blogs WHERE content LIKE '%Key Takeaway%' LIMIT 2;",
+  "rows": [
+    {
+      "id": "1",
+      "title": "The High-Achiever's Paradox: Why Success Feels Like Drowning (And How to Finally Breathe)",
+      "callout_preview": "[#7BDDE5] p-6 my-8 rounded-r-lg\">"
+    },
+    {
+      "id": "30001",
+      "title": "Lost in Thought, Missing the Moment: Reclaiming Presence with Your Loved Ones",
+      "callout_preview": "er-[#7BDDE5] p-6 my-8 rounded-r-lg\"><h3 class=\"callout-title text-[#7BDDE5] font-bold text-xl mb-2\">Key Takeaway</h3><p class=\"text-slate-700 m-0\">Our brains are not designed for the constant stimulation and multitasking demanded by modern life. This 'always-on' state makes it incredibly difficult t"
+    }
+  ],
+  "messages": [
+    "  <h3 class=\"callout-title text-[#7BDDE5] font-bold text-xl mb-2\">Key Takeaway</h3>",
+    "  <p class=\"text-slate-700 m-0\">Success shouldn't cost you your sanity. The feeling of drowning isn't a sign of weakness; it's a sign that your biological systems are overloaded. It'"
+  ],
+  "stdout": "id\ttitle\tcallout_preview\n1\tThe High-Achiever's Paradox: Why Success Feels Like Drowning (And How to Finally Breathe)\t[#7BDDE5] p-6 my-8 rounded-r-lg\">\n  <h3 class=\"callout-title text-[#7BDDE5] font-bold text-xl mb-2\">Key Takeaway</h3>\n  <p class=\"text-slate-700 m-0\">Success shouldn't cost you your sanity. The feeling of drowning isn't a sign of weakness; it's a sign that your biological systems are overloaded. It'\n30001\tLost in Thought, Missing the Moment: Reclaiming Presence with Your Loved Ones\ter-[#7BDDE5] p-6 my-8 rounded-r-lg\"><h3 class=\"callout-title text-[#7BDDE5] font-bold text-xl mb-2\">Key Takeaway</h3><p class=\"text-slate-700 m-0\">Our brains are not designed for the constant stimulation and multitasking demanded by modern life. This 'always-on' state makes it incredibly difficult t\n",
+  "stderr": "",
+  "execution_time_ms": 341
+}

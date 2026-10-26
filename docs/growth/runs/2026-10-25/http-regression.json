@@ -1,0 +1,84 @@
+{
+  "checkedAt": "2026-10-25T14:11:03.699Z",
+  "scope": "database-free actual production static helper with generated local build; not AWS",
+  "checks": [
+    {
+      "route": "/",
+      "actualStatus": 200,
+      "expectedStatus": 200,
+      "pass": true,
+      "noindex": null,
+      "heroMatches": true
+    },
+    {
+      "route": "/anxiety-support/sunday-scaries",
+      "actualStatus": 200,
+      "expectedStatus": 200,
+      "pass": true,
+      "noindex": null,
+      "answerFirst": true,
+      "canonicalMatches": true
+    },
+    {
+      "route": "/blogs/stress-management-guide",
+      "actualStatus": 200,
+      "expectedStatus": 200,
+      "pass": true,
+      "noindex": null
+    },
+    {
+      "route": "/images/RWUZzJBIfZqvGUel.jpg",
+      "actualStatus": 200,
+      "expectedStatus": 200,
+      "pass": true,
+      "noindex": null
+    },
+    {
+      "route": "/sitemap.xml",
+      "actualStatus": 200,
+      "expectedStatus": 200,
+      "pass": true,
+      "noindex": null
+    },
+    {
+      "route": "/llms-full.txt",
+      "actualStatus": 200,
+      "expectedStatus": 200,
+      "pass": true,
+      "noindex": null
+    },
+    {
+      "route": "/definitely-not-a-real-page-growth-audit",
+      "actualStatus": 404,
+      "expectedStatus": 404,
+      "pass": true,
+      "noindex": null
+    },
+    {
+      "route": "/images/not-a-real-image-growth-audit.png",
+      "actualStatus": 404,
+      "expectedStatus": 404,
+      "pass": true,
+      "noindex": null
+    },
+    {
+      "route": "/api/not-a-real-endpoint",
+      "actualStatus": 404,
+      "expectedStatus": 404,
+      "pass": true,
+      "noindex": null
+    },
+    {
+      "route": "/admin/login",
+      "actualStatus": 200,
+      "expectedStatus": 200,
+      "pass": true,
+      "noindex": "noindex, nofollow"
+    }
+  ],
+  "qualityFailures": [],
+  "intentionalLimitations": [
+    "noscript-snapshot remains visible; this is not full SSR or rendered parity",
+    "medium warnings require editorial/accessibility review"
+  ]
+}

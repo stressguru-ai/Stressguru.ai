@@ -1,0 +1,15 @@
+[
+  {
+    "id": "initial-growth-agent-2026-10-24",
+    "author": "user",
+    "status": "approved",
+    "approvedAt": "2026-10-24",
+    "userMessage": "Approve the plan and all four recommendations",
+    "reason": "Initial no-dashboard agent, evidence gates, challenge-count warning, locked hero, validated low-risk main delivery, and preserved training permissions",
+    "paths": ["docs/growth/policy.json", "docs/growth/approvals.json"],
+    "fileHashes": {
+      "docs/growth/policy.json": "e06aee66891a7f235e2f07645071895be651a555a57a0788e200284b9432c9b2"
+    },
+    "excludes": ["hero edits", "pricing changes", "unreviewed health claims", "AWS deployment", "live database writes", "infrastructure changes"]
+  }
+]

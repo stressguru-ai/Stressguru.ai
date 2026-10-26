@@ -1,0 +1,98 @@
+{
+  "query": "SELECT * FROM gurus;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3yQAsmZ7HGLtUN5.root --database QZ9wtosM8hUVfX9KHaDdfm --execute SELECT * FROM gurus;",
+  "rows": [
+    {
+      "id": "1",
+      "slug": "stress-guru",
+      "name": "Stress Guru",
+      "role": "Expert in Stress Reduction",
+      "image": "/images/gurus/stress_guru.png",
+      "description": "Your guide to managing daily stress and preventing burnout.",
+      "icpProblems": "[\"Feeling overwhelmed by work responsibilities and unable to disconnect\", \"Experiencing constant tension and anxiety about deadlines\", \"Struggling to balance career success with personal well-being\", \"Noticing physical symptoms like headaches and muscle tension from stress\", \"Feeling like you're always 'on' and can't relax even during downtime\"]",
+      "createdAt": "2026-02-04 01:19:23",
+      "updatedAt": "2026-02-04 01:19:23"
+    },
+    {
+      "id": "2",
+      "slug": "sleep-guru",
+      "name": "Sleep Guru",
+      "role": "Sleep Restoration Specialist",
+      "image": "/images/gurus/sleep_guru.png",
+      "description": "Helping you achieve deep, restorative sleep every night.",
+      "icpProblems": "[\"Waking up at 3 AM and unable to fall back asleep\", \"Feeling exhausted despite getting 8 hours in bed\", \"Racing thoughts keeping you awake at night\", \"Relying on sleep aids or alcohol to fall asleep\", \"Waking up feeling unrested and reaching for caffeine immediately\"]",
+      "createdAt": "2026-02-04 01:19:24",
+      "updatedAt": "2026-02-04 01:19:24"
+    },
+    {
+      "id": "3",
+      "slug": "anxiety-guru",
+      "name": "Anxiety Guru",
+      "role": "Anxiety & Panic Relief Expert",
+      "image": "/images/gurus/anxiety_guru.png",
+      "description": "Your companion for overcoming anxiety and panic attacks.",
+      "icpProblems": "[\"Experiencing sudden panic attacks in public or at work\", \"Constant worry about things that might go wrong\", \"Physical symptoms like racing heart and shortness of breath\", \"Avoiding social situations due to fear of judgment\", \"Feeling paralyzed by 'what if' thinking\"]",
+      "createdAt": "2026-02-04 01:19:24",
+      "updatedAt": "2026-02-04 01:19:24"
+    },
+    {
+      "id": "4",
+      "slug": "motivation-guru",
+      "name": "Motivation Guru",
+      "role": "Habit & Motivation Coach",
+      "image": "/images/gurus/motivation_guru.png",
+      "description": "Helping you build lasting habits and find your drive.",
+      "icpProblems": "[\"Struggling to start or maintain healthy habits\", \"Feeling stuck in a rut with no motivation to change\", \"Procrastinating on important goals and projects\", \"Losing momentum after initial enthusiasm fades\", \"Feeling disconnected from your purpose and passion\"]",
+      "createdAt": "2026-02-04 01:19:24",
+      "updatedAt": "2026-02-04 01:19:24"
+    },
+    {
+      "id": "5",
+      "slug": "relationship-guru",
+      "name": "Relationship Guru",
+      "role": "Relationship & Communication Expert",
+      "image": "/images/gurus/relationship_guru.png",
+      "description": "Guiding you to healthier, more fulfilling relationships.",
+      "icpProblems": "[\"Feeling disconnected from your partner despite living together\", \"Constant arguments over small things that escalate quickly\", \"Difficulty expressing needs without causing conflict\", \"Feeling unappreciated or taken for granted\", \"Struggling to maintain friendships while managing family and work\"]",
+      "createdAt": "2026-02-04 01:19:24",
+      "updatedAt": "2026-02-04 01:19:24"
+    },
+    {
+      "id": "6",
+      "slug": "happiness-guru",
+      "name": "Happiness Guru",
+      "role": "Joy & Fulfillment Guide",
+      "image": "/images/gurus/happiness_guru.png",
+      "description": "Helping you rediscover joy and live a fulfilling life.",
+      "icpProblems": "[\"Going through the motions without feeling genuine happiness\", \"Achieving goals but still feeling empty inside\", \"Comparing yourself to others and feeling inadequate\", \"Struggling to find meaning in daily activities\", \"Feeling like happiness is always just out of reach\"]",
+      "createdAt": "2026-02-04 01:19:24",
+      "updatedAt": "2026-02-04 01:19:24"
+    },
+    {
+      "id": "7",
+      "slug": "calm-guru",
+      "name": "Calm Guru",
+      "role": "Mindfulness & Meditation Expert",
+      "image": "/images/gurus/calm_guru.jpg",
+      "description": "Your guide to inner peace through mindfulness practices.",
+      "icpProblems": "[\"Mind constantly racing with thoughts and worries\", \"Unable to be present in the moment with loved ones\", \"Feeling reactive instead of responsive to situations\", \"Struggling to find quiet time in a busy schedule\", \"Wanting to meditate but not knowing where to start\"]",
+      "createdAt": "2026-02-04 01:19:24",
+      "updatedAt": "2026-02-04 01:19:24"
+    },
+    {
+      "id": "8",
+      "slug": "spiritual-guru",
+      "name": "Spiritual Guru",
+      "role": "Spiritual Growth & Inner Peace Guide",
+      "image": "/images/gurus/spiritual_guru.png",
+      "description": "Guiding your journey toward spiritual awakening and purpose.",
+      "icpProblems": "[\"Feeling spiritually disconnected or lost\", \"Searching for deeper meaning and purpose in life\", \"Struggling to align actions with personal values\", \"Feeling overwhelmed by existential questions\", \"Wanting to develop a spiritual practice but unsure how\"]",
+      "createdAt": "2026-02-04 01:19:24",
+      "updatedAt": "2026-02-04 01:19:24"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tslug\tname\trole\timage\tdescription\ticpProblems\tcreatedAt\tupdatedAt\n1\tstress-guru\tStress Guru\tExpert in Stress Reduction\t/images/gurus/stress_guru.png\tYour guide to managing daily stress and preventing burnout.\t[\"Feeling overwhelmed by work responsibilities and unable to disconnect\", \"Experiencing constant tension and anxiety about deadlines\", \"Struggling to balance career success with personal well-being\", \"Noticing physical symptoms like headaches and muscle tension from stress\", \"Feeling like you're always 'on' and can't relax even during downtime\"]\t2026-02-04 01:19:23\t2026-02-04 01:19:23\n2\tsleep-guru\tSleep Guru\tSleep Restoration Specialist\t/images/gurus/sleep_guru.png\tHelping you achieve deep, restorative sleep every night.\t[\"Waking up at 3 AM and unable to fall back asleep\", \"Feeling exhausted despite getting 8 hours in bed\", \"Racing thoughts keeping you awake at night\", \"Relying on sleep aids or alcohol to fall asleep\", \"Waking up feeling unrested and reaching for caffeine immediately\"]\t2026-02-04 01:19:24\t2026-02-04 01:19:24\n3\tanxiety-guru\tAnxiety Guru\tAnxiety & Panic Relief Expert\t/images/gurus/anxiety_guru.png\tYour companion for overcoming anxiety and panic attacks.\t[\"Experiencing sudden panic attacks in public or at work\", \"Constant worry about things that might go wrong\", \"Physical symptoms like racing heart and shortness of breath\", \"Avoiding social situations due to fear of judgment\", \"Feeling paralyzed by 'what if' thinking\"]\t2026-02-04 01:19:24\t2026-02-04 01:19:24\n4\tmotivation-guru\tMotivation Guru\tHabit & Motivation Coach\t/images/gurus/motivation_guru.png\tHelping you build lasting habits and find your drive.\t[\"Struggling to start or maintain healthy habits\", \"Feeling stuck in a rut with no motivation to change\", \"Procrastinating on important goals and projects\", \"Losing momentum after initial enthusiasm fades\", \"Feeling disconnected from your purpose and passion\"]\t2026-02-04 01:19:24\t2026-02-04 01:19:24\n5\trelationship-guru\tRelationship Guru\tRelationship & Communication Expert\t/images/gurus/relationship_guru.png\tGuiding you to healthier, more fulfilling relationships.\t[\"Feeling disconnected from your partner despite living together\", \"Constant arguments over small things that escalate quickly\", \"Difficulty expressing needs without causing conflict\", \"Feeling unappreciated or taken for granted\", \"Struggling to maintain friendships while managing family and work\"]\t2026-02-04 01:19:24\t2026-02-04 01:19:24\n6\thappiness-guru\tHappiness Guru\tJoy & Fulfillment Guide\t/images/gurus/happiness_guru.png\tHelping you rediscover joy and live a fulfilling life.\t[\"Going through the motions without feeling genuine happiness\", \"Achieving goals but still feeling empty inside\", \"Comparing yourself to others and feeling inadequate\", \"Struggling to find meaning in daily activities\", \"Feeling like happiness is always just out of reach\"]\t2026-02-04 01:19:24\t2026-02-04 01:19:24\n7\tcalm-guru\tCalm Guru\tMindfulness & Meditation Expert\t/images/gurus/calm_guru.jpg\tYour guide to inner peace through mindfulness practices.\t[\"Mind constantly racing with thoughts and worries\", \"Unable to be present in the moment with loved ones\", \"Feeling reactive instead of responsive to situations\", \"Struggling to find quiet time in a busy schedule\", \"Wanting to meditate but not knowing where to start\"]\t2026-02-04 01:19:24\t2026-02-04 01:19:24\n8\tspiritual-guru\tSpiritual Guru\tSpiritual Growth & Inner Peace Guide\t/images/gurus/spiritual_guru.png\tGuiding your journey toward spiritual awakening and purpose.\t[\"Feeling spiritually disconnected or lost\", \"Searching for deeper meaning and purpose in life\", \"Struggling to align actions with personal values\", \"Feeling overwhelmed by existential questions\", \"Wanting to develop a spiritual practice but unsure how\"]\t2026-02-04 01:19:24\t2026-02-04 01:19:24\n",
+  "stderr": "",
+  "execution_time_ms": 499
+}

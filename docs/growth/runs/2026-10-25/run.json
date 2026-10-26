@@ -1,0 +1,90 @@
+{
+  "runId": "2026-10-25",
+  "updatedAt": "2026-10-25T14:10:06.590986+00:00",
+  "stage": "validated-local-shipping-blocked",
+  "repositoryScope": "Derived from checked-in sitemap, route source, generated guide/blog JSON, and local image files. This is not live AWS, deployment, crawl, analytics, or database evidence.",
+  "counts": {
+    "publicRoutes": 228,
+    "guides": 160,
+    "publishedBlogPackage": 43,
+    "localImages": 54
+  },
+  "audit": {
+    "artifact": "docs/growth/runs/2026-10-25/public-before.json",
+    "totals": {
+      "checked": 228,
+      "http200": 216,
+      "failures": 12
+    },
+    "javascriptExecuted": false
+  },
+  "metricsStatus": "unavailable",
+  "aiBenchmarkStatus": "untested",
+  "github": {
+    "status": "blocked-access",
+    "repository": "zigroninc/StressGuru.ai",
+    "account": "qasimmueen",
+    "httpStatus": 404,
+    "sha": null,
+    "pushPerformed": false
+  },
+  "schedule": "enabled",
+  "nextStage": "Restore executable GitHub shipping access and have the separate AWS deployment agent verify actual extensionless snapshot/404 routing. Continue evidence-led audits in this session. Do not repeat completed source fixes or change protected claims.",
+  "triggerExecution": {
+    "occurredAt": "2026-10-25T14:00:00Z",
+    "sameSession": true,
+    "automationModified": false
+  },
+  "database": {
+    "queriesExecuted": false,
+    "writesExecuted": false
+  },
+  "deployment": {
+    "performed": false,
+    "confirmed": false
+  },
+  "changes": [
+    {
+      "id": "snapshot-repeatability",
+      "path": "scripts/generate-static-seo.js",
+      "status": "validated-local"
+    },
+    {
+      "id": "initial-title-branding-parity",
+      "path": "scripts/generate-static-seo.js",
+      "status": "validated-local"
+    },
+    {
+      "id": "raw-html-audit-precision",
+      "path": "scripts/growth/crawler.mjs",
+      "status": "validated-local"
+    }
+  ],
+  "validation": {
+    "typecheck": "passed",
+    "testsPassed": 70,
+    "contentErrors": 0,
+    "contentWarnings": 0,
+    "productionBuild": "passed",
+    "snapshots": 228,
+    "repeatPasses": 2,
+    "byteIdentical": true,
+    "localHttp200": 228,
+    "highSeverityLocalFindings": 0,
+    "httpRegressionChecksPassed": 10,
+    "readOnlyReview": "Completed concrete generator and parity review",
+    "pristineTemplateOutsidePublicRoot": true
+  },
+  "liveRecheck": {
+    "unresolvedTimeouts": 12,
+    "publicResourcesHttp200": [
+      "/robots.txt",
+      "/sitemap.xml",
+      "/llms-full.txt",
+      "/images/RWUZzJBIfZqvGUel.jpg"
+    ],
+    "unknownRouteHttpStatus": 200,
+    "extensionComparison": "HTTP 200 headers and partial bodies; direct .html has guide canonical while extensionless has homepage canonical; neither body transfer completed"
+  },
+  "validatedAt": "2026-10-25T14:11:34.205393+00:00"
+}

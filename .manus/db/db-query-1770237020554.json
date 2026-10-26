@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE blogs SET content = REPLACE(content, '<h3 class=\"text-[#7BDDE5] font-bold text-xl mb-2\">', '<h3 class=\"callout-title text-[#7BDDE5] font-bold text-xl mb-2\">') WHERE content LIKE '%<h3 class=\"text-[#7BDDE5] font-bold text-xl mb-2\">%' AND content NOT LIKE '%callout-title%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3yQAsmZ7HGLtUN5.root --database QZ9wtosM8hUVfX9KHaDdfm --execute UPDATE blogs SET content = REPLACE(content, '<h3 class=\"text-[#7BDDE5] font-bold text-xl mb-2\">', '<h3 class=\"callout-title text-[#7BDDE5] font-bold text-xl mb-2\">') WHERE content LIKE '%<h3 class=\"text-[#7BDDE5] font-bold text-xl mb-2\">%' AND content NOT LIKE '%callout-title%';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 355
+}

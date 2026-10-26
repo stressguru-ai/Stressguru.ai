@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE blogs SET content = REPLACE(content, '<div class=\"bg-sky-50 border-l-4 border-[#7BDDE5] p-6 my-8 rounded-r-lg\">', '<div class=\"callout-box bg-sky-50 border-l-4 border-[#7BDDE5] p-6 my-8 rounded-r-lg\">') WHERE content LIKE '%<div class=\"bg-sky-50 border-l-4 border-[#7BDDE5] p-6 my-8 rounded-r-lg\">%' AND content NOT LIKE '%callout-box%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3yQAsmZ7HGLtUN5.root --database QZ9wtosM8hUVfX9KHaDdfm --execute UPDATE blogs SET content = REPLACE(content, '<div class=\"bg-sky-50 border-l-4 border-[#7BDDE5] p-6 my-8 rounded-r-lg\">', '<div class=\"callout-box bg-sky-50 border-l-4 border-[#7BDDE5] p-6 my-8 rounded-r-lg\">') WHERE content LIKE '%<div class=\"bg-sky-50 border-l-4 border-[#7BDDE5] p-6 my-8 rounded-r-lg\">%' AND content NOT LIKE '%callout-box%';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 353
+}

@@ -1,0 +1,50 @@
+{
+  "query": "SELECT id, name, role FROM gurus ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3yQAsmZ7HGLtUN5.root --database QZ9wtosM8hUVfX9KHaDdfm --execute SELECT id, name, role FROM gurus ORDER BY id;",
+  "rows": [
+    {
+      "id": "1",
+      "name": "Stress Guru",
+      "role": "Expert in Stress Reduction"
+    },
+    {
+      "id": "2",
+      "name": "Sleep Guru",
+      "role": "Sleep Restoration Specialist"
+    },
+    {
+      "id": "3",
+      "name": "Anxiety Guru",
+      "role": "Anxiety & Panic Relief Expert"
+    },
+    {
+      "id": "4",
+      "name": "Motivation Guru",
+      "role": "Habit & Motivation Coach"
+    },
+    {
+      "id": "5",
+      "name": "Relationship Guru",
+      "role": "Relationship & Communication Expert"
+    },
+    {
+      "id": "6",
+      "name": "Happiness Guru",
+      "role": "Joy & Fulfillment Guide"
+    },
+    {
+      "id": "7",
+      "name": "Calm Guru",
+      "role": "Mindfulness & Meditation Expert"
+    },
+    {
+      "id": "8",
+      "name": "Spiritual Guru",
+      "role": "Spiritual Growth & Inner Peace Guide"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\trole\n1\tStress Guru\tExpert in Stress Reduction\n2\tSleep Guru\tSleep Restoration Specialist\n3\tAnxiety Guru\tAnxiety & Panic Relief Expert\n4\tMotivation Guru\tHabit & Motivation Coach\n5\tRelationship Guru\tRelationship & Communication Expert\n6\tHappiness Guru\tJoy & Fulfillment Guide\n7\tCalm Guru\tMindfulness & Meditation Expert\n8\tSpiritual Guru\tSpiritual Growth & Inner Peace Guide\n",
+  "stderr": "",
+  "execution_time_ms": 1678
+}

@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "approvedAt": "2026-10-24",
+  "website": "https://stressguru.ai",
+  "shippingRepository": "zigroninc/StressGuru.ai",
+  "shippingBranch": "main",
+  "dashboard": false,
+  "autonomousLowRiskDelivery": true,
+  "deployAws": false,
+  "database": {
+    "provider": "user-owned AWS MySQL only",
+    "approvedHost": "db.dentasmart.ai",
+    "approvedDatabase": "manus-stressguru",
+    "forbidTiDB": true,
+    "firstReleaseWrites": false,
+    "secretsInGit": false
+  },
+  "audience": {"country": "US", "primaryAgeRange": [30, 55], "description": "professional women"},
+  "hero": {
+    "locked": true,
+    "headline": "Stop Stress Today.",
+    "subtitle": "Prevent burnout before it steals your sleep, focus and relationships."
+  },
+  "messaging": {
+    "sequence": ["Stop Now", "Prevent Next"],
+    "consumerProblemShareGuideline": 0.8,
+    "wearableShareGuideline": 0.2,
+    "challengeMentions": "nonblocking long-form editorial warning only",
+    "fixedWordCount": false,
+    "medicalOutcomesGuaranteed": false,
+    "aiDisclosureRequired": true,
+    "trainingCrawlerPermission": "preserve existing allow choice",
+    "wearableBroadCategory": "smart wearables",
+    "wearableContextTerm": "stress signal"
+  },
+  "currentProduct": {
+    "platforms": ["iPhone", "Apple Watch"],
+    "plannedIntegrations": ["Oura", "Fitbit", "Samsung", "Garmin"],
+    "gurus": ["Stress Guru", "Anxiety Guru", "Sleep Guru", "Motivation Guru", "Relationship Guru", "Happiness Guru", "Calm Guru", "Spiritual Guru"],
+    "guruNature": "AI wellness personas, not humans or licensed professionals",
+    "pricing": {
+      "Relief": {"monthlyUsd": 0},
+      "Reset": {"sessionsPerMonth": 2, "monthlyUsd": 19.99, "annualUsd": 199.99},
+      "Balance": {"sessionsPerMonth": 5, "monthlyUsd": 49.99, "annualUsd": 499.99, "mostPopular": true},
+      "Thrive": {"sessionsPerMonth": 20, "monthlyUsd": 199.99, "annualUsd": 1999.99},
+      "extraPaidSessionUsd": 12.99,
+      "annualBenefit": "two months free"
+    },
+    "claimsPendingEvidence": ["end-to-end encryption", "HIPAA compliance", "accurate early stress detection", "automatic Guru routing from wearable data", "alerts before overwhelm", "30+ proven therapeutic methods", "permanent memory", "guaranteed clinical or wellness outcomes", "exact free-plan entitlements beyond confirmed current offer"]
+  },
+  "approvalRequired": ["pricing", "product", "capabilities", "hero", "privacy", "legal", "clinical", "sensitive-health", "crisis", "delete-url", "consolidate-url", "infrastructure", "outreach", "training-permissions", "policy"],
+  "protectedPaths": ["Dockerfile", ".dockerignore", "docker-compose.yml", ".env", ".env.*", "client/src/pages/Home.tsx", "client/src/pages/Plans.tsx", "client/src/pages/PrivacyPolicy.tsx", "client/src/pages/TermsAndConditions.tsx", "client/src/pages/ScienceAndSafety.tsx", "docs/growth/policy.json"],
+  "assetPolicy": {"publicDirectory": "client/public/images", "referencePrefix": "/images/", "remoteRenderedImages": false},
+  "schedule": {"name": "StressGuru Autonomous Website Growth", "timezone": "America/New_York", "weekday": "Sunday", "localTime": "10:00", "firstDate": "2026-10-25", "sameTaskContext": true},
+  "measurement": {"missingIsZero": false, "clicksAreInstalls": false, "mentionsAreCitations": false, "rankingGuaranteed": false, "reviewWindowsDays": [30, 60, 90]},
+  "weeklyCapacity": {"existingPageImprovements": [2, 4], "newPages": [1, 3], "quotasMandatory": false, "prioritizedOpportunities": [3, 5]}
+}

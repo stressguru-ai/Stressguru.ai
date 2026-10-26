@@ -1,0 +1,46 @@
+{
+  "query": "SELECT id, title FROM blogs WHERE content LIKE '%callout-box%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3yQAsmZ7HGLtUN5.root --database QZ9wtosM8hUVfX9KHaDdfm --execute SELECT id, title FROM blogs WHERE content LIKE '%callout-box%';",
+  "rows": [
+    {
+      "id": "1",
+      "title": "The High-Achiever's Paradox: Why Success Feels Like Drowning (And How to Finally Breathe)"
+    },
+    {
+      "id": "2",
+      "title": "The 3 AM Wake-Up Call: Why You Can't Stay Asleep (And How to Fix It)"
+    },
+    {
+      "id": "3",
+      "title": "The Invisible Weight: Breaking Free from the Grip of High-Functioning Anxiety"
+    },
+    {
+      "id": "4",
+      "title": "The Motivation Myth: Why Willpower Fails (And What Actually Works)"
+    },
+    {
+      "id": "5",
+      "title": "Love in the Time of Stress: How to Reconnect When You're Running on Empty"
+    },
+    {
+      "id": "6",
+      "title": "Chasing Rainbows: Why Happiness is Elusive (And How to Find Joy in the Ordinary)"
+    },
+    {
+      "id": "7",
+      "title": "The Eye of the Storm: Finding Stillness in a Chaotic World"
+    },
+    {
+      "id": "8",
+      "title": "The Search for Meaning: Connecting to Something Bigger Than Yourself"
+    },
+    {
+      "id": "30001",
+      "title": "Lost in Thought, Missing the Moment: Reclaiming Presence with Your Loved Ones"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttitle\n1\tThe High-Achiever's Paradox: Why Success Feels Like Drowning (And How to Finally Breathe)\n2\tThe 3 AM Wake-Up Call: Why You Can't Stay Asleep (And How to Fix It)\n3\tThe Invisible Weight: Breaking Free from the Grip of High-Functioning Anxiety\n4\tThe Motivation Myth: Why Willpower Fails (And What Actually Works)\n5\tLove in the Time of Stress: How to Reconnect When You're Running on Empty\n6\tChasing Rainbows: Why Happiness is Elusive (And How to Find Joy in the Ordinary)\n7\tThe Eye of the Storm: Finding Stillness in a Chaotic World\n8\tThe Search for Meaning: Connecting to Something Bigger Than Yourself\n30001\tLost in Thought, Missing the Moment: Reclaiming Presence with Your Loved Ones\n",
+  "stderr": "",
+  "execution_time_ms": 345
+}

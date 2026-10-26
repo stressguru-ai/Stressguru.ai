@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE gurus SET image = '/images/gurus/happiness_guru_v2.jpg' WHERE slug = 'happiness-guru';\nUPDATE gurus SET image = '/images/gurus/relationship_guru.jpg' WHERE slug = 'relationship-guru';\nUPDATE gurus SET image = '/images/gurus/sleep_guru.jpg' WHERE slug = 'sleep-guru';\nUPDATE gurus SET image = '/images/gurus/spiritual_guru.jpg' WHERE slug = 'spiritual-guru';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3yQAsmZ7HGLtUN5.root --database QZ9wtosM8hUVfX9KHaDdfm --execute UPDATE gurus SET image = '/images/gurus/happiness_guru_v2.jpg' WHERE slug = 'happiness-guru';\nUPDATE gurus SET image = '/images/gurus/relationship_guru.jpg' WHERE slug = 'relationship-guru';\nUPDATE gurus SET image = '/images/gurus/sleep_guru.jpg' WHERE slug = 'sleep-guru';\nUPDATE gurus SET image = '/images/gurus/spiritual_guru.jpg' WHERE slug = 'spiritual-guru';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 545
+}

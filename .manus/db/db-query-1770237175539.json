@@ -1,0 +1,30 @@
+{
+  "query": "SELECT id, title FROM blogs ORDER BY id DESC LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3yQAsmZ7HGLtUN5.root --database QZ9wtosM8hUVfX9KHaDdfm --execute SELECT id, title FROM blogs ORDER BY id DESC LIMIT 5;",
+  "rows": [
+    {
+      "id": "60003",
+      "title": "When Your Mind Won't Quit: Taming Racing Thoughts for Restful Sleep"
+    },
+    {
+      "id": "60002",
+      "title": "Stuck in the Cycle? How to Finally Build Habits That Stick (and Ditch the Guilt)"
+    },
+    {
+      "id": "60001",
+      "title": "Trapped in the Endless Cycle? How to Disconnect from Work and Reclaim Your Life"
+    },
+    {
+      "id": "30001",
+      "title": "Lost in Thought, Missing the Moment: Reclaiming Presence with Your Loved Ones"
+    },
+    {
+      "id": "8",
+      "title": "The Search for Meaning: Connecting to Something Bigger Than Yourself"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttitle\n60003\tWhen Your Mind Won't Quit: Taming Racing Thoughts for Restful Sleep\n60002\tStuck in the Cycle? How to Finally Build Habits That Stick (and Ditch the Guilt)\n60001\tTrapped in the Endless Cycle? How to Disconnect from Work and Reclaim Your Life\n30001\tLost in Thought, Missing the Moment: Reclaiming Presence with Your Loved Ones\n8\tThe Search for Meaning: Connecting to Something Bigger Than Yourself\n",
+  "stderr": "",
+  "execution_time_ms": 354
+}

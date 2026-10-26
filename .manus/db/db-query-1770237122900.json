@@ -1,0 +1,18 @@
+{
+  "query": "SELECT id, title, SUBSTRING(content, LOCATE('<div class=\"callout-box', content), 200) as callout_html FROM blogs WHERE content LIKE '%callout-box%' LIMIT 1;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3yQAsmZ7HGLtUN5.root --database QZ9wtosM8hUVfX9KHaDdfm --execute SELECT id, title, SUBSTRING(content, LOCATE('<div class=\"callout-box', content), 200) as callout_html FROM blogs WHERE content LIKE '%callout-box%' LIMIT 1;",
+  "rows": [
+    {
+      "id": "1",
+      "title": "The High-Achiever's Paradox: Why Success Feels Like Drowning (And How to Finally Breathe)",
+      "callout_html": "<div class=\"callout-box bg-sky-50 border-l-4 border-[#7BDDE5] p-6 my-8 rounded-r-lg\">"
+    }
+  ],
+  "messages": [
+    "  <h3 class=\"callout-title text-[#7BDDE5] font-bold text-xl mb-2\">Key Takeaway</h3>",
+    "  <p class=\"text-slate-700 m-0"
+  ],
+  "stdout": "id\ttitle\tcallout_html\n1\tThe High-Achiever's Paradox: Why Success Feels Like Drowning (And How to Finally Breathe)\t<div class=\"callout-box bg-sky-50 border-l-4 border-[#7BDDE5] p-6 my-8 rounded-r-lg\">\n  <h3 class=\"callout-title text-[#7BDDE5] font-bold text-xl mb-2\">Key Takeaway</h3>\n  <p class=\"text-slate-700 m-0\n",
+  "stderr": "",
+  "execution_time_ms": 350
+}

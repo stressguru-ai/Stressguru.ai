@@ -1,0 +1,37 @@
+{
+  "runId": "2026-10-24",
+  "updatedAt": "2026-10-24T20:05:26.307Z",
+  "stage": "validated-local",
+  "repositoryScope": "Derived from checked-in sitemap, route source, generated guide/blog JSON, and local image files. This is not live AWS, deployment, crawl, analytics, or database evidence.",
+  "counts": {
+    "publicRoutes": 228,
+    "guides": 160,
+    "publishedBlogPackage": 43,
+    "localImages": 54
+  },
+  "audit": {
+    "artifact": "docs/growth/runs/2026-10-24/public-before.json",
+    "totals": {
+      "checked": 228,
+      "http200": 228,
+      "failures": 0
+    },
+    "javascriptExecuted": false
+  },
+  "metricsStatus": "unavailable",
+  "aiBenchmarkStatus": "untested",
+  "github": {
+    "status": "blocked-access",
+    "repository": "zigroninc/StressGuru.ai",
+    "account": "qasimmueen",
+    "httpStatus": 404,
+    "sha": null
+  },
+  "schedule": "native-timer-enabled-ready-current-session",
+  "scheduleActivation": { "triggerUid": "G9AWXcPAjX6aU6hfLigTrQ", "verifiedAt": "2026-10-24T20:40:22Z", "firstOccurrencePreview": "2026-10-25T14:00:00Z", "executionObserved": false },
+  "nextStage": "Execute the Sunday cycle in this same session. Continue audits despite GitHub access failures, preserve reviewed claims, and report actual changes and blockers. No AWS deployment.",
+  "database": {
+    "queriesExecuted": false,
+    "writesExecuted": false
+  }
+}

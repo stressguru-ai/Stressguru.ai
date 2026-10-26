@@ -1,0 +1,286 @@
+{
+  "document_type": "evidence-linked content-gap hypotheses",
+  "as_of": "2026-10-24",
+  "scope": "U.S. professional women ages 30 to 55; synthesis of the six dedicated competitor reports only.",
+  "inventory_verification": {
+    "source_file": "client/src/data/contentPages.generated.json and docs/seo/blogs.generated.json",
+    "method": "Each target_route below was found as an existing URL in the generated inventory on 2026-10-24.",
+    "routing_rule": "Preserve and improve the existing route. No hypothesis authorizes a new page, URL consolidation, publication, or product claim."
+  },
+  "interpretation": {
+    "all_items_are_hypotheses": true,
+    "not_measured": [
+      "search demand or volume",
+      "keyword difficulty",
+      "rankings or traffic",
+      "conversion",
+      "in-app competitor inventory",
+      "AI-answer-engine citations or visibility"
+    ],
+    "why_existing_routes_first": "The verified inventory already overlaps the proposed reader moments. Improve specificity, practical output and safety boundaries in place rather than inventing 15 near-duplicate pages.",
+    "source_limit": "A competitor URL is evidence of sampled public coverage or a public-surface observation, not proof that a topic is unowned or missing from a competitor product."
+  },
+  "hypotheses": [
+    {
+      "id": "CG-01",
+      "competitor": "Headspace",
+      "priority": "Improve existing route first",
+      "competing_url": "https://www.headspace.com/content/podcast/womens-bodies-and-hair-through-life-stages-with-dr-isabelle-raymond-/11565",
+      "question": "How can a professional woman handle perimenopause-related night waking before a high-stakes workday without turning wellness guidance into menopause or insomnia treatment?",
+      "evidence": "The Headspace report says this public podcast discusses perimenopause, menopause, stress, sleep, mood and brain fog, while Headspace also has general sleep content. The sampled public material did not establish a work-schedule-specific sleep decision guide.",
+      "source": {
+        "report": "headspace.md",
+        "report_research_date": "2026-10-24",
+        "report_references": "[10], [11]",
+        "source_date_in_report": "No publication date for the podcast was supplied in the dedicated report."
+      },
+      "target_route": "/sleep-better/perimenopause-sleep-and-work",
+      "recommended_improvement": "Add a concise night-waking, morning workload-triage and clinician-discussion boundary. Retain existing sleep guidance rather than publish a new menopause page.",
+      "review_required": "Yes. Sensitive-health and clinical review before implementation; no diagnosis, hormone advice, or promise of sleep improvement."
+    },
+    {
+      "id": "CG-02",
+      "competitor": "Headspace",
+      "priority": "Improve existing route first",
+      "competing_url": "https://www.headspace.com/content/expert-guidance/care-for-caregivers/1304",
+      "question": "What can a paid worker do after an overnight adult-caregiving disruption to protect a realistic workday and sleep recovery without implying care coordination or treatment?",
+      "evidence": "The Headspace report identifies a brief caregiver item and an organization-side care journey, but not a practical public adult-caregiver, work and sleep handoff resource.",
+      "source": {
+        "report": "headspace.md",
+        "report_research_date": "2026-10-24",
+        "report_references": "[5], [12]",
+        "source_date_in_report": "No publication date for the cited caregiver item was supplied in the dedicated report."
+      },
+      "target_route": "/blogs/managing-caregiving-stress-and-a-demanding-job-without-carrying-it-alone",
+      "recommended_improvement": "Add a phone-friendly next-morning triage, one neutral priority request and a route to benefits or care resources without claiming workplace entitlement.",
+      "review_required": "Yes. Safety and HR/legal review for workplace language; clinical review if sleep or caregiver-health escalation language is expanded."
+    },
+    {
+      "id": "CG-03",
+      "competitor": "Headspace",
+      "priority": "Improve existing route first",
+      "competing_url": "https://www.headspace.com/mental-health/stress",
+      "question": "How can someone move from a late meeting, unfinished task or difficult interaction into a bounded pre-bed work-close routine?",
+      "evidence": "The Headspace report connects workplace burnout, boundaries and life transitions to its stress hub and lists separate bedtime content, but did not identify one sampled public pathway from an evening work trigger to a bounded sleep routine.",
+      "source": {
+        "report": "headspace.md",
+        "report_research_date": "2026-10-24",
+        "report_references": "[8], [9], [10]",
+        "source_date_in_report": "The cited work article is dated 2023; the sleep article was reviewed March 31, 2025."
+      },
+      "target_route": "/blogs/how-to-stop-thinking-about-work-after-hours-a-small-workday-close-ritual",
+      "recommended_improvement": "Make the existing ritual scenario-led with variants for late meetings, conflict and unfinished work, plus a next-day planning handoff.",
+      "review_required": "No clinical review if copy remains non-diagnostic. Apply normal safety review and add clinical escalation only if persistent sleep symptoms are discussed."
+    },
+    {
+      "id": "CG-04",
+      "competitor": "Calm",
+      "priority": "Improve existing route first",
+      "competing_url": "https://www.calm.com/blog/menopause-and-mental-health",
+      "question": "What discreet, non-diagnostic support can help after perimenopause-related night waking when a reader faces the next meeting and does not want to disclose health details at work?",
+      "evidence": "The Calm report says Calm covers menopause-related brain fog, sleep disruption and boundaries, but the sampled public result did not establish a privacy-preserving next-day meeting plan with optional neutral communication language.",
+      "source": {
+        "report": "calm.md",
+        "report_research_date": "2026-10-24",
+        "report_references": "[9], [12]",
+        "source_date_in_report": "No publication date for the cited Calm article was supplied in the dedicated report."
+      },
+      "target_route": "/blogs/perimenopause-stress-at-work-discreet-support-before-the-next-meeting",
+      "recommended_improvement": "Strengthen the existing page with a privacy-preserving focus-protection script, cognitive-load triage and a medically bounded clinician-discussion note.",
+      "review_required": "Yes. Sensitive-health and clinical review before implementation; do not give diagnosis, workplace-disclosure or treatment advice."
+    },
+    {
+      "id": "CG-05",
+      "competitor": "Calm",
+      "priority": "Improve existing route first",
+      "competing_url": "https://www.calm.com/blog/caregiver-stress",
+      "question": "What can a professional do after a hard caregiving night to ask for limited work flexibility without overdisclosure or implied legal advice?",
+      "evidence": "The Calm report says its caregiver article covers fatigue, sleep changes, job and financial pressure, and that its employer material covers manager empathy and resources. The sampled public pages did not establish a timed first-workday plan with privacy-safe requests and benefits navigation.",
+      "source": {
+        "report": "calm.md",
+        "report_research_date": "2026-10-24",
+        "report_references": "[10], [13]",
+        "source_date_in_report": "No publication date for the cited Calm articles was supplied in the dedicated report."
+      },
+      "target_route": "/blogs/how-to-talk-to-your-manager-about-workload-without-sharing-private-health-details",
+      "recommended_improvement": "Add a clearly optional caregiver scenario, two neutral workload-prioritization messages and a note to confirm benefits and policy with HR.",
+      "review_required": "Yes. HR/legal and safety review before adding workplace or benefit-navigation language."
+    },
+    {
+      "id": "CG-06",
+      "competitor": "Calm",
+      "priority": "Improve existing route first",
+      "competing_url": "https://www.calm.com/blog/how-to-stop-thinking-about-work",
+      "question": "How can a working parent close work after children are asleep, contain next-day planning and protect a realistic wind-down without presenting a cure for insomnia or burnout?",
+      "evidence": "The Calm report says its work-rumination article covers boundaries, worry time and bedtime routines, with separate working-mother and sleep material. It did not establish a sampled indexed page joining the after-bedtime choice point, mental load and a sleep-ready work boundary.",
+      "source": {
+        "report": "calm.md",
+        "report_research_date": "2026-10-24",
+        "report_references": "[8]",
+        "source_date_in_report": "No publication date for the cited Calm article was supplied in the dedicated report."
+      },
+      "target_route": "/for/working-moms",
+      "recommended_improvement": "Add a brief work-capture step, a three-item tomorrow handoff and an if-then late-message boundary, linking to the existing work-close and sleep routes.",
+      "review_required": "No clinical review if copy remains a non-diagnostic boundary experiment. Apply safety review for any sleep or burnout escalation language."
+    },
+    {
+      "id": "CG-07",
+      "competitor": "Ash",
+      "priority": "Improve existing route first",
+      "competing_url": "https://www.talktoash.com/",
+      "question": "How can a professional interrupt a work-stress-to-sleeplessness loop tonight without framing ordinary stress as a diagnosis?",
+      "evidence": "The Ash report says Ash’s homepage connects sleep challenges and work stress, while the sampled public blog index and focused site query did not surface a dedicated public guide for this intersection.",
+      "source": {
+        "report": "ash.md",
+        "report_research_date": "2026-10-24",
+        "report_references": "[1], [7]",
+        "source_date_in_report": "Homepage and blog-index publication dates were not supplied in the dedicated report."
+      },
+      "target_route": "/blogs/how-to-reduce-work-stress-after-work-a-15-minute-reset-that-protects-your-evening-mu8qzvbw",
+      "recommended_improvement": "Refine the existing reset into an after-work decompression, small next-day action and sleep-boundary sequence. Preserve the app's wellness, not therapy, positioning.",
+      "review_required": "Yes. Clinical/sensitive-health review if persistent insomnia or care-escalation content is added; otherwise normal safety review."
+    },
+    {
+      "id": "CG-08",
+      "competitor": "Ash",
+      "priority": "Improve existing route first",
+      "competing_url": "https://www.talktoash.com/blog",
+      "question": "How can a manager, caregiver or both name workplace emotional labor and household load, then choose one bounded delegation or boundary step?",
+      "evidence": "The Ash report says Ash’s product copy lists work stress and mom guilt separately, while the visible sampled public surfaces did not show a focused guide joining workplace emotional labor and household responsibility.",
+      "source": {
+        "report": "ash.md",
+        "report_research_date": "2026-10-24",
+        "report_references": "[3], [7], [9]",
+        "source_date_in_report": "The blog index date was not supplied; the APA context cited by the report is not the competing URL."
+      },
+      "target_route": "/relationship-stress/mental-load",
+      "recommended_improvement": "Improve the current mental-load guide with a work-and-home scenario, one delegation conversation and a link to existing workplace-boundary guidance.",
+      "review_required": "No clinical review if the page remains non-diagnostic and avoids mental-health treatment claims. Apply editorial safety review."
+    },
+    {
+      "id": "CG-09",
+      "competitor": "Ash",
+      "priority": "Improve existing route first",
+      "competing_url": "https://www.talktoash.com/",
+      "question": "How can a woman discuss possible perimenopause-related sleep changes and work strain with a clinician without self-diagnosing or treating an AI wellness tool as medical care?",
+      "evidence": "The Ash report says the sampled public blog index and product listing did not present dedicated menopause or perimenopause education, despite broader support positioning for stress and life changes.",
+      "source": {
+        "report": "ash.md",
+        "report_research_date": "2026-10-24",
+        "report_references": "[1], [3], [7], [10]",
+        "source_date_in_report": "Ash homepage and blog-index dates were not supplied; the report's NIH context is evidence, not the competing URL."
+      },
+      "target_route": "/sleep-better/perimenopause-sleep-and-work",
+      "recommended_improvement": "Add an existing-page symptom-and-context tracker readers can take to a clinician, with clear separation between general stress support and medical evaluation.",
+      "review_required": "Yes. Sensitive-health and clinical review before implementation."
+    },
+    {
+      "id": "CG-10",
+      "competitor": "Wysa",
+      "priority": "Improve existing route first",
+      "competing_url": "https://www.wysa.com/for-individuals",
+      "question": "What can a professional woman do after night waking and before a presentation when perimenopause symptoms may be one of several contributing factors?",
+      "evidence": "The Wysa report identifies generic public work-stress and sleep support but did not establish a sampled Wysa destination for the exact perimenopause-plus-next-workday scenario.",
+      "source": {
+        "report": "wysa.md",
+        "report_research_date": "2026-10-24",
+        "report_references": "[2], [11]",
+        "source_date_in_report": "No publication date for Wysa's individual page was supplied in the dedicated report."
+      },
+      "target_route": "/sleep-better/perimenopause-sleep-and-work",
+      "recommended_improvement": "Improve the existing route with a short awake-at-night and morning-of sequence, a work planning boundary and an urgent or persistent-symptom care prompt.",
+      "review_required": "Yes. Sensitive-health and clinical review before implementation."
+    },
+    {
+      "id": "CG-11",
+      "competitor": "Wysa",
+      "priority": "Improve existing route first",
+      "competing_url": "https://www.wysa.com/for-employers",
+      "question": "What can an employed caregiver do in the 10 minutes between family care and an evening work task when generic self-care feels impractical?",
+      "evidence": "The Wysa report says its employer offering addresses employee stress and sleep, but the sampled material did not establish a dedicated resource for the paid-work and unpaid-care transition.",
+      "source": {
+        "report": "wysa.md",
+        "report_research_date": "2026-10-24",
+        "report_references": "[8], [12]",
+        "source_date_in_report": "No publication date for the Wysa employer page was supplied in the dedicated report."
+      },
+      "target_route": "/for/caregivers",
+      "recommended_improvement": "Add a 10-minute transition plan, a one-screen task triage and optional boundary scripts, linking to the existing caregiving-work blog rather than creating another caregiver page.",
+      "review_required": "Yes. Safety review; obtain HR/legal review for any benefits, accommodation or workplace-rights wording."
+    },
+    {
+      "id": "CG-12",
+      "competitor": "Wysa",
+      "priority": "Improve existing route first",
+      "competing_url": "https://apps.apple.com/us/app/wysa-mental-wellbeing-ai/id1166585565",
+      "question": "How can someone stop replaying a difficult work conversation at bedtime while preserving the option to repair or follow up the next day?",
+      "evidence": "The Wysa report says the app listing includes work conflict, anxiety, mindfulness and sleep, and its workplace page discusses stress that keeps employees awake. It proposes an intent-specific, post-conflict format rather than a generic topic page.",
+      "source": {
+        "report": "wysa.md",
+        "report_research_date": "2026-10-24",
+        "report_references": "[3], [8]",
+        "source_date_in_report": "The App Store listing was observed in the report; no publication date was supplied."
+      },
+      "target_route": "/anxiety-support/overthinking-conversations",
+      "recommended_improvement": "Add fact-versus-interpretation prompts, an optional next-day follow-up sentence and a sleep-protective park-it-until-tomorrow step.",
+      "review_required": "No clinical review if non-diagnostic and limited to everyday coping. Apply safety review and add escalation language if distress or sleep impairment is discussed."
+    },
+    {
+      "id": "CG-13",
+      "competitor": "Youper",
+      "priority": "Monitor; improve existing route only if reader evidence supports it",
+      "competing_url": "https://www.youper.ai",
+      "question": "How can job uncertainty be contained before bedtime without presenting a wellness routine as treatment for anxiety or insomnia?",
+      "evidence": "The Youper report says the official site discontinued services on September 30, 2026 and its focused check found no current official work-plus-sleep content. This is exit context, not a live-product gap or a demand signal.",
+      "source": {
+        "report": "youper.md",
+        "report_research_date": "2026-10-24",
+        "report_references": "[1], [9]",
+        "source_date_in_report": "Official discontinuation effective date: 2026-09-30."
+      },
+      "target_route": "/anxiety-support/layoff-anxiety",
+      "recommended_improvement": "Improve the existing route with an after-work uncertainty-containment routine, bounded planning window and a persistent-sleep or severe-distress care boundary.",
+      "review_required": "Yes. Clinical/sensitive-health review for anxiety, insomnia or crisis language before implementation."
+    },
+    {
+      "id": "CG-14",
+      "competitor": "Woebot",
+      "priority": "Monitor; historical comparator only",
+      "competing_url": "https://woebothealth.com/helping-employees-manage-reentry-anxiety/",
+      "question": "How can someone move from a difficult work interaction into family-care tasks with a bounded transition rather than carrying the conversation through the evening?",
+      "evidence": "The dedicated Woebot report describes this as a 2022 employer-facing reentry-anxiety interview that acknowledges work relationships, uncertainty and home-life management. It does not establish a current consumer option. The same report says the consumer app was retired June 30, 2025.",
+      "source": {
+        "report": "woebot.md",
+        "report_research_date": "2026-10-24",
+        "report_references": "[3], [9]",
+        "source_date_in_report": "Competing article date: May 2022; consumer app retirement date: 2025-06-30."
+      },
+      "target_route": "/blogs/managing-caregiving-stress-and-a-demanding-job-without-carrying-it-alone",
+      "recommended_improvement": "Add a short end-of-work thought capture and two-item care handoff, then connect to the existing work-boundary and sleep routes.",
+      "review_required": "No clinical review if non-diagnostic. Apply safety review; require HR/legal review for workplace rights or accommodation claims."
+    },
+    {
+      "id": "CG-15",
+      "competitor": "Woebot",
+      "priority": "Monitor; historical comparator only",
+      "competing_url": "https://woebothealth.com/a-i-healthcare-an-interview-with-dr-eric-topol/",
+      "question": "How can a professional woman track perimenopause-related sleep disruption and work impact for a nonurgent clinician conversation without self-diagnosing?",
+      "evidence": "The dedicated Woebot report found sleep only as a data stream in a future-looking 2023 interview, not a practical consumer sleep program. It separately directs planners to treat Woebot as an inactive direct-to-consumer option because its official FAQ says the app retired June 30, 2025.",
+      "source": {
+        "report": "woebot.md",
+        "report_research_date": "2026-10-24",
+        "report_references": "[3], [12], [13]",
+        "source_date_in_report": "Competing interview date: 2023; consumer app retirement date: 2025-06-30."
+      },
+      "target_route": "/sleep-better/perimenopause-sleep-and-work",
+      "recommended_improvement": "Enhance the existing route with a non-diagnostic context tracker and clear thresholds for a clinician discussion. Do not compare against an active Woebot consumer product.",
+      "review_required": "Yes. Sensitive-health and clinical review before implementation."
+    }
+  ],
+  "implementation_guardrails": [
+    "Do not create 15 new pages. The verified existing routes above are the default editorial targets.",
+    "Do not change pricing, product capabilities, clinical claims, crisis guidance, or sensitive-health copy without the explicit review required by docs/growth/policy.json.",
+    "Validate any selected hypothesis with current audience feedback and a fresh on-site and SERP review before production. This synthesis does not supply those measurements.",
+    "Treat Youper and Woebot as discontinued or inactive direct-to-consumer context, not as live product comparisons."
+  ]
+}

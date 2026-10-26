@@ -1,0 +1,37 @@
+{
+  "query": "SELECT id, title, SUBSTRING(content, 1, 500) as content_preview FROM blogs LIMIT 3;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3yQAsmZ7HGLtUN5.root --database QZ9wtosM8hUVfX9KHaDdfm --execute SELECT id, title, SUBSTRING(content, 1, 500) as content_preview FROM blogs LIMIT 3;",
+  "rows": [
+    {
+      "id": "1",
+      "title": "The High-Achiever's Paradox: Why Success Feels Like Drowning (And How to Finally Breathe)",
+      "content_preview": "<p class=\"lead\">You are the person everyone relies on. The problem solver. The rock. But lately, the weight of that responsibility feels less like a badge of honor and more like a crushing burden. You wake up tired, you go to bed wired, and in between, you're running a marathon at a sprint's pace.</p>"
+    },
+    {
+      "id": "2",
+      "title": "The 3 AM Wake-Up Call: Why You Can't Stay Asleep (And How to Fix It)",
+      "content_preview": "<p class=\"lead\">It's the loneliest time of the day. 3:14 AM. The house is silent, the world is asleep, but you are wide awake, staring at the ceiling while a highlight reel of your worries plays on a loop in your mind. You calculate how many hours of sleep you can get if you fall asleep <em>right now</em>. Then you check the clock again. 3:19 AM. The panic sets in.</p>"
+    },
+    {
+      "id": "3",
+      "title": "The Invisible Weight: Breaking Free from the Grip of High-Functioning Anxiety",
+      "content_preview": "<p class=\"lead\">To the outside world, you have it all together. You're the one who always delivers, the one who never drops the ball. But inside, there's a constant hum of worry, a relentless inner critic, and a nagging fear that at any moment, everyone will discover you're a fraud. Welcome to the world of high-functioning anxiety.</p>"
+    }
+  ],
+  "messages": [
+    "<br><br>",
+    "<div class=\"bg-sky-50 border-l-4 border-[#7BDDE5] p-6 my-8 rounded-r-lg\">",
+    "  <h3 class=\"text-[#7BDDE5] font-bold text-xl mb-2\">Key Takeaway</h3>",
+    "  <p class=\"text-slate-700 m-0\">Success sho",
+    "<br><br>",
+    "<div class=\"bg-sky-50 border-l-4 border-[#7BDDE5] p-6 my-8 rounded-r-lg\">",
+    "  <h3 class=\"text-[#7BDDE5] font-bold text-x",
+    "<br><br>",
+    "<div class=\"bg-sky-50 border-l-4 border-[#7BDDE5] p-6 my-8 rounded-r-lg\">",
+    "  <h3 class=\"text-[#7BDDE5] font-bold text-xl mb-2\">The Hidden Truth</h3>",
+    "  <p"
+  ],
+  "stdout": "id\ttitle\tcontent_preview\n1\tThe High-Achiever's Paradox: Why Success Feels Like Drowning (And How to Finally Breathe)\t<p class=\"lead\">You are the person everyone relies on. The problem solver. The rock. But lately, the weight of that responsibility feels less like a badge of honor and more like a crushing burden. You wake up tired, you go to bed wired, and in between, you're running a marathon at a sprint's pace.</p>\n<br><br>\n\n<div class=\"bg-sky-50 border-l-4 border-[#7BDDE5] p-6 my-8 rounded-r-lg\">\n  <h3 class=\"text-[#7BDDE5] font-bold text-xl mb-2\">Key Takeaway</h3>\n  <p class=\"text-slate-700 m-0\">Success sho\n2\tThe 3 AM Wake-Up Call: Why You Can't Stay Asleep (And How to Fix It)\t<p class=\"lead\">It's the loneliest time of the day. 3:14 AM. The house is silent, the world is asleep, but you are wide awake, staring at the ceiling while a highlight reel of your worries plays on a loop in your mind. You calculate how many hours of sleep you can get if you fall asleep <em>right now</em>. Then you check the clock again. 3:19 AM. The panic sets in.</p>\n<br><br>\n\n<div class=\"bg-sky-50 border-l-4 border-[#7BDDE5] p-6 my-8 rounded-r-lg\">\n  <h3 class=\"text-[#7BDDE5] font-bold text-x\n3\tThe Invisible Weight: Breaking Free from the Grip of High-Functioning Anxiety\t<p class=\"lead\">To the outside world, you have it all together. You're the one who always delivers, the one who never drops the ball. But inside, there's a constant hum of worry, a relentless inner critic, and a nagging fear that at any moment, everyone will discover you're a fraud. Welcome to the world of high-functioning anxiety.</p>\n<br><br>\n\n<div class=\"bg-sky-50 border-l-4 border-[#7BDDE5] p-6 my-8 rounded-r-lg\">\n  <h3 class=\"text-[#7BDDE5] font-bold text-xl mb-2\">The Hidden Truth</h3>\n  <p\n",
+  "stderr": "",
+  "execution_time_ms": 429
+}

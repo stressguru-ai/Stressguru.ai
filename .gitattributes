@@ -1,0 +1,12 @@
+# Exclude unnecessary files from git archive exports
+*.md export-ignore
+error_analysis.md export-ignore
+guru_avatar_analysis.md export-ignore
+ideas.md export-ignore
+layout_policy.md export-ignore
+preview_test_results.md export-ignore
+refined_content_strategy.md export-ignore
+social_sharing_test_results.md export-ignore
+testimonials_data.md export-ignore
+contact_content.md export-ignore
+content_updates.md export-ignore

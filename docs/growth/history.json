@@ -1,0 +1,65 @@
+[
+  {
+    "id": "extensionless-snapshot-serving",
+    "candidateId": "extensionless-snapshot-serving",
+    "path": "/anxiety-support/sunday-scaries",
+    "status": "implemented",
+    "implemented": true,
+    "implementedAt": "2026-10-24",
+    "measurementObserved": false,
+    "outcome": "pending GitHub delivery, AWS deployment confirmation and later measurement",
+    "rationale": "Production extensionless requests did not select existing .html snapshots",
+    "reversal": "Revert server/seoStatic.ts integration only after verifying any replacement routing"
+  },
+  {
+    "id": "private-crawler-groups",
+    "candidateId": "private-crawler-groups",
+    "path": "/robots.txt",
+    "status": "implemented",
+    "implemented": true,
+    "implementedAt": "2026-10-24",
+    "measurementObserved": false,
+    "outcome": "pending GitHub delivery and AWS deployment confirmation",
+    "rationale": "Specific crawler groups lacked private-path exclusions from the wildcard group",
+    "reversal": "Restore prior robots group structure only with equivalent private exclusions and unchanged training choice"
+  },
+  {
+    "id": "snapshot-repeatability",
+    "candidateId": "snapshot-repeatability",
+    "path": "scripts/generate-static-seo.js",
+    "status": "implemented",
+    "implemented": true,
+    "implementedAt": "2026-10-25",
+    "measurementObserved": false,
+    "technicalValidationObserved": true,
+    "outcome": "Validated locally; GitHub and AWS delivery unconfirmed",
+    "rationale": "Repeated generation doubled H1 and JSON-LD; now 228 files remain byte-identical across two repeats",
+    "reversal": "Revert the October 25 implementation and matching tests, preserving policy, earlier routing fixes and audit evidence"
+  },
+  {
+    "id": "initial-title-branding-parity",
+    "candidateId": "initial-title-branding-parity",
+    "path": "scripts/generate-static-seo.js",
+    "status": "implemented",
+    "implemented": true,
+    "implementedAt": "2026-10-25",
+    "measurementObserved": false,
+    "technicalValidationObserved": true,
+    "outcome": "Validated locally; GitHub and AWS delivery unconfirmed",
+    "rationale": "Client SEO appends StressGuru while generated guide titles previously did not",
+    "reversal": "Revert the October 25 implementation and matching tests, preserving policy, earlier routing fixes and audit evidence"
+  },
+  {
+    "id": "raw-html-audit-precision",
+    "candidateId": "raw-html-audit-precision",
+    "path": "scripts/growth/crawler.mjs",
+    "status": "implemented",
+    "implemented": true,
+    "implementedAt": "2026-10-25",
+    "measurementObserved": false,
+    "technicalValidationObserved": true,
+    "outcome": "Validated locally; GitHub and AWS delivery unconfirmed",
+    "rationale": "Isolated tests verify long head-only content stays empty and hidden tracking/decorative images do not trigger missing-alt findings",
+    "reversal": "Revert the October 25 implementation and matching tests, preserving policy, earlier routing fixes and audit evidence"
+  }
+]

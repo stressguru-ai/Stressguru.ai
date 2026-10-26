@@ -1,0 +1,370 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  /* StressGuru Brand Colors - Oura Style */
+  /* Primary Red from guidelines: #B62427 */
+  /* Secondary Cyan from guidelines: #7BDDE5 */
+  /* Black: #000000, White: #FFFFFF */
+  
+  --primary: #B62427; /* Brand Red */
+  --primary-foreground: #FFFFFF;
+  --sidebar-primary: #B62427;
+  --sidebar-primary-foreground: #FFFFFF;
+  
+  /* Charts adapted to brand palette */
+  --chart-1: #B62427; /* Red */
+  --chart-2: #7BDDE5; /* Cyan */
+  --chart-3: #000000; /* Black */
+  --chart-4: #4A4A4A; /* Dark Gray */
+  --chart-5: #E5E5E5; /* Light Gray */
+  
+  --radius: 2rem; /* Oura uses very rounded, pill-like shapes */
+  
+  /* Oura-like clean background */
+  --background: #F9F9F9; /* Very warm/neutral off-white, typical of premium wellness */
+  --foreground: #000000; /* Stark black for contrast */
+  
+  --card: #FFFFFF;
+  --card-foreground: #000000;
+  --popover: #FFFFFF;
+  --popover-foreground: #000000;
+  
+  /* Secondary acts as the soft accent (Cyan) */
+  --secondary: #E0F7F9; /* Very light tint of #7BDDE5 */
+  --secondary-foreground: #000000;
+  
+  --muted: #F3F3F3;
+  --muted-foreground: #666666;
+  
+  /* Accent can be the Cyan or a soft neutral */
+  --accent: #7BDDE5;
+  --accent-foreground: #000000;
+  
+  --destructive: #B62427;
+  --destructive-foreground: #FFFFFF;
+  
+  --border: #E5E5E5;
+  --input: #FFFFFF;
+  --ring: #B62427;
+  
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #000000;
+  --sidebar-accent: #F3F3F3;
+  --sidebar-accent-foreground: #000000;
+  --sidebar-border: #E5E5E5;
+  --sidebar-ring: #B62427;
+}
+
+.dark {
+  /* StressGuru Dark Mode */
+  --primary: #17A2B8;
+  --primary-foreground: #FFFFFF;
+  --sidebar-primary: #17A2B8;
+  --sidebar-primary-foreground: #FFFFFF;
+  --background: #0F172A; /* Slate 900 */
+  --foreground: #F8FAFC; /* Slate 50 */
+  --card: #1E293B; /* Slate 800 */
+  --card-foreground: #F8FAFC;
+  --popover: #1E293B;
+  --popover-foreground: #F8FAFC;
+  --secondary: #134E4A; /* Teal 900 */
+  --secondary-foreground: #CCFBF1; /* Teal 100 */
+  --muted: #334155; /* Slate 700 */
+  --muted-foreground: #94A3B8; /* Slate 400 */
+  --accent: #FF8C42;
+  --accent-foreground: #FFFFFF;
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+  --border: #334155;
+  --input: #1E293B;
+  --ring: #17A2B8;
+  --chart-1: #2DD4BF;
+  --chart-2: #14B8A6;
+  --chart-3: #0D9488;
+  --chart-4: #0F766E;
+  --chart-5: #115E59;
+  --sidebar: #0F172A;
+  --sidebar-foreground: #F8FAFC;
+  --sidebar-accent: #1E293B;
+  --sidebar-accent-foreground: #F8FAFC;
+  --sidebar-border: #334155;
+  --sidebar-ring: #17A2B8;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Poppins', sans-serif; /* Enforce Poppins globally as per guidelines */
+    /* Oura style: Clean, solid backgrounds or very subtle gradients. Removing the colorful blobs. */
+    background-color: var(--background);
+    background-image: none; 
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    @apply tracking-tight font-medium; /* Oura headings are often lighter/medium, not always bold */
+  }
+  h1 {
+    @apply text-5xl md:text-6xl font-bold leading-tight;
+  }
+  h2 {
+    @apply text-3xl md:text-4xl font-semibold leading-snug;
+  }
+  h3 {
+    @apply text-2xl font-medium leading-snug;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Utilities */
+  .glass {
+    @apply bg-white/70 dark:bg-slate-900/70 backdrop-blur-lg border border-white/20 dark:border-slate-700/30 shadow-xl;
+  }
+  
+  .glass-card {
+    @apply bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border border-slate-200/50 dark:border-slate-700/50 shadow-lg rounded-2xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  /* Gradient Text - Oura uses less gradients on text, more solid high-contrast. 
+     But if we need it, we use Brand Red to Cyan or Black to Red. 
+     Let's keep it subtle or remove. Let's redefine for specific emphasis. */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#B62427] to-[#000000];
+  }
+
+  /* Oura Button Styles: Solid, Pill-shaped, Minimal Shadows */
+  .btn-primary {
+    @apply bg-[#B62427] text-white hover:bg-[#901D1F] hover:scale-105 transition-all duration-300 rounded-full font-medium px-8 py-3 shadow-none;
+  }
+
+  .btn-outline {
+    @apply border border-[#000000] text-[#000000] hover:bg-[#000000] hover:text-white transition-all duration-300 rounded-full font-medium px-8 py-3 bg-transparent;
+  }
+
+  /* Smooth transitions and animations */
+  * {
+    @apply transition-all duration-200 ease-out;
+  }
+
+  /* Fade-in animation for page load */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-fade-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  /* Apply animations to sections */
+  section {
+    @apply animate-in fade-in duration-700 slide-in-from-bottom-4;
+  }
+
+  /* Custom container utility */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      max-width: 1280px;
+    }
+  }
+
+  /* Input Fields */
+  .input-modern {
+    @apply bg-white/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-300 outline-none w-full;
+  }
+}
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Blog Callout Boxes - Key Takeaway and Did You Know styling */
+.prose h3:has(+ p) {
+  position: relative;
+}
+
+/* Style Key Takeaway and Did You Know as callout boxes */
+.blog-callout-wrapper {
+  background-color: rgb(240 249 255); /* sky-50 */
+  border-left: 4px solid #7BDDE5;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.blog-callout-wrapper h3 {
+  color: #7BDDE5 !important;
+  font-weight: 700 !important;
+  font-size: 1.25rem !important;
+  margin-bottom: 0.5rem !important;
+  margin-top: 0 !important;
+}
+
+.blog-callout-wrapper p {
+  color: rgb(51 65 85) !important; /* slate-700 */
+  margin: 0 !important;
+}
+
+/* Blog Content Typography - Best Practices Formatting */
+.prose {
+  /* Ensure consistent paragraph spacing */
+  --tw-prose-body: rgb(51 65 85); /* slate-700 */
+  --tw-prose-headings: #7BDDE5;
+  --tw-prose-links: #7BDDE5;
+  --tw-prose-bold: rgb(15 23 42); /* slate-900 */
+  --tw-prose-quotes: rgb(71 85 105); /* slate-600 */
+  --tw-prose-quote-borders: #7BDDE5;
+}
+
+/* Ensure proper spacing between consecutive paragraphs */
+.prose p + p {
+  margin-top: 1rem;
+}
+
+/* Better list item spacing */
+.prose ul > li,
+.prose ol > li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Heading spacing improvements */
+.prose h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* First paragraph after heading should have less top margin */
+.prose h2 + p,
+.prose h3 + p {
+  margin-top: 0;
+}
+
+/* Callout box specific styling */
+.callout-box {
+  background-color: rgb(240 249 255) !important; /* sky-50 */
+  border-left: 4px solid #7BDDE5 !important;
+  padding: 1.5rem !important;
+  margin: 1.5rem 0 !important;
+  border-radius: 0 0.5rem 0.5rem 0 !important;
+}
+
+.callout-box .callout-title,
+.callout-box h3 {
+  color: #7BDDE5 !important;
+  font-weight: 700 !important;
+  font-size: 1.25rem !important;
+  margin-bottom: 0.5rem !important;
+  margin-top: 0 !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.callout-box p {
+  color: rgb(51 65 85) !important; /* slate-700 */
+  margin: 0 !important;
+}

@@ -1,0 +1,50 @@
+{
+  "query": "SELECT id, name, image FROM gurus;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3yQAsmZ7HGLtUN5.root --database QZ9wtosM8hUVfX9KHaDdfm --execute SELECT id, name, image FROM gurus;",
+  "rows": [
+    {
+      "id": "1",
+      "name": "Stress Guru",
+      "image": "/images/gurus/stress_guru.png"
+    },
+    {
+      "id": "2",
+      "name": "Sleep Guru",
+      "image": "/images/gurus/sleep_guru.png"
+    },
+    {
+      "id": "3",
+      "name": "Anxiety Guru",
+      "image": "/images/gurus/anxiety_guru.png"
+    },
+    {
+      "id": "4",
+      "name": "Motivation Guru",
+      "image": "/images/gurus/motivation_guru.png"
+    },
+    {
+      "id": "5",
+      "name": "Relationship Guru",
+      "image": "/images/gurus/relationship_guru.png"
+    },
+    {
+      "id": "6",
+      "name": "Happiness Guru",
+      "image": "/images/gurus/happiness_guru.png"
+    },
+    {
+      "id": "7",
+      "name": "Calm Guru",
+      "image": "/images/gurus/calm_guru.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Spiritual Guru",
+      "image": "/images/gurus/spiritual_guru.png"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\timage\n1\tStress Guru\t/images/gurus/stress_guru.png\n2\tSleep Guru\t/images/gurus/sleep_guru.png\n3\tAnxiety Guru\t/images/gurus/anxiety_guru.png\n4\tMotivation Guru\t/images/gurus/motivation_guru.png\n5\tRelationship Guru\t/images/gurus/relationship_guru.png\n6\tHappiness Guru\t/images/gurus/happiness_guru.png\n7\tCalm Guru\t/images/gurus/calm_guru.jpg\n8\tSpiritual Guru\t/images/gurus/spiritual_guru.png\n",
+  "stderr": "",
+  "execution_time_ms": 378
+}

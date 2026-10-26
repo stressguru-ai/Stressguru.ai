@@ -1,0 +1,11 @@
+{
+  "observedAt": "2026-10-25T14:07:16.309Z",
+  "scope": "Local generated snapshots only; no production or database writes",
+  "routesChecked": 228,
+  "generatorReruns": 2,
+  "byteIdentical": true,
+  "guideTitleParity": true,
+  "headingsAndSchemaValidatedBy": "targeted tests and local HTTP audit",
+  "pristineTemplateOutsidePublicRoot": true,
+  "publicCacheAbsent": true
+}

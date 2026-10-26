@@ -1,0 +1,58 @@
+{
+  "query": "SELECT id, name, slug, image FROM gurus ORDER BY name;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3yQAsmZ7HGLtUN5.root --database QZ9wtosM8hUVfX9KHaDdfm --execute SELECT id, name, slug, image FROM gurus ORDER BY name;",
+  "rows": [
+    {
+      "id": "3",
+      "name": "Anxiety Guru",
+      "slug": "anxiety-guru",
+      "image": "/images/gurus/anxiety_guru.png"
+    },
+    {
+      "id": "7",
+      "name": "Calm Guru",
+      "slug": "calm-guru",
+      "image": "/images/gurus/calm_guru.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Happiness Guru",
+      "slug": "happiness-guru",
+      "image": "/images/gurus/happiness_guru.png"
+    },
+    {
+      "id": "4",
+      "name": "Motivation Guru",
+      "slug": "motivation-guru",
+      "image": "/images/gurus/motivation_guru.png"
+    },
+    {
+      "id": "5",
+      "name": "Relationship Guru",
+      "slug": "relationship-guru",
+      "image": "/images/gurus/relationship_guru.png"
+    },
+    {
+      "id": "2",
+      "name": "Sleep Guru",
+      "slug": "sleep-guru",
+      "image": "/images/gurus/sleep_guru.png"
+    },
+    {
+      "id": "8",
+      "name": "Spiritual Guru",
+      "slug": "spiritual-guru",
+      "image": "/images/gurus/spiritual_guru.png"
+    },
+    {
+      "id": "1",
+      "name": "Stress Guru",
+      "slug": "stress-guru",
+      "image": "/images/gurus/stress_guru.png"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tslug\timage\n3\tAnxiety Guru\tanxiety-guru\t/images/gurus/anxiety_guru.png\n7\tCalm Guru\tcalm-guru\t/images/gurus/calm_guru.jpg\n6\tHappiness Guru\thappiness-guru\t/images/gurus/happiness_guru.png\n4\tMotivation Guru\tmotivation-guru\t/images/gurus/motivation_guru.png\n5\tRelationship Guru\trelationship-guru\t/images/gurus/relationship_guru.png\n2\tSleep Guru\tsleep-guru\t/images/gurus/sleep_guru.png\n8\tSpiritual Guru\tspiritual-guru\t/images/gurus/spiritual_guru.png\n1\tStress Guru\tstress-guru\t/images/gurus/stress_guru.png\n",
+  "stderr": "",
+  "execution_time_ms": 385
+}
