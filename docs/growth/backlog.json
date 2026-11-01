@@ -191,7 +191,7 @@
     "type": "technical-fix",
     "title": "Redirect valid generated trailing-slash variants to extensionless canonicals",
     "path": "/anxiety-support/sunday-scaries/",
-    "status": "validated-local-delivery-pending",
+    "status": "shipped-awaiting-aws-deployment",
     "evidenceObserved": true,
     "evidenceScore": 100,
     "impact": 45,
@@ -200,6 +200,9 @@
     "evidenceSource": "server/seoStatic.ts source review and server/seoStatic.test.ts regression",
     "expectedMetric": "HTTP 301 from a valid trailing-slash snapshot URL to its extensionless canonical after confirmed AWS deployment",
     "reviewRequired": false,
-    "reversal": "Revert the redirect helper and its isolated regression cases"
+    "reversal": "Revert the redirect helper and its isolated regression cases",
+    "deliveryRepository": "stressguru-ai/Stressguru.ai",
+    "deliverySha": "121a0a8b0f011ce6de71ea55b61b28fbcbac1ea9",
+    "deliveredAt": "2026-11-01T15:09:37.000Z"
   }
 ]

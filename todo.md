@@ -382,5 +382,5 @@ Implementation is validated locally. The native Sunday automation timer is enabl
 
 - [x] Audit all 228 source-derived public URLs as raw initial HTML and preserve a dated evidence record. Do not interpret client-rendered content, analytics, rankings, conversions, App Store installs, or AI citations without direct measured evidence.
 - [x] Redirect a trailing-slash public request to its existing extensionless canonical URL only if a matching generated snapshot exists, retaining its query string. Keep root, private routes, assets, unknown paths, page copy, database behavior, crawler permissions, and AWS routing unchanged; add isolated regression coverage.
-- [ ] Validate the narrow source fix and record the actual GitHub delivery SHA to `stressguru-ai/Stressguru.ai` main. Keep all images self-hosted, do not export environment files or external SQL, and do not deploy AWS.
+- [x] Validate the narrow source fix and record the actual GitHub delivery SHA to `stressguru-ai/Stressguru.ai` main. Keep all images self-hosted, do not export environment files or external SQL, and do not deploy AWS.
 - [x] Record the verified live AWS blocker: all 228 sitemap URLs return the homepage initial HTML and canonical, while the direct guide `.html` response has the distinct guide canonical. Route correction remains for the separate deployment agent, not this growth session.

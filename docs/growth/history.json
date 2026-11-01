@@ -66,13 +66,16 @@
     "id": "trailing-slash-snapshot-canonicalization",
     "candidateId": "trailing-slash-snapshot-canonicalization",
     "path": "/anxiety-support/sunday-scaries/",
-    "status": "validated-local-delivery-pending",
+    "status": "shipped-awaiting-aws-deployment",
     "implemented": true,
     "implementedAt": "2026-11-01",
     "measurementObserved": false,
     "technicalValidationObserved": true,
-    "outcome": "Local behavior validated; GitHub delivery and AWS deployment confirmation pending",
+    "outcome": "Validated locally and delivered to GitHub; AWS deployment and later measurement remain unconfirmed",
     "rationale": "Generated sitemap and snapshot canonicals are extensionless while a valid trailing slash otherwise falls through",
-    "reversal": "Revert the November 1 helper redirect and matching regression cases"
+    "reversal": "Revert the November 1 helper redirect and matching regression cases",
+    "deliveredAt": "2026-11-01T15:09:37.000Z",
+    "deliveryRepository": "stressguru-ai/Stressguru.ai",
+    "deliverySha": "121a0a8b0f011ce6de71ea55b61b28fbcbac1ea9"
   }
 ]
