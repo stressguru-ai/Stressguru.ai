@@ -117,6 +117,27 @@ describe("installSeoStatic", () => {
     expect(blog.body).toContain("Known blog direct answer.");
   });
 
+  it("redirects a trailing snapshot slash to its extensionless canonical path", async () => {
+    const guide = await request(
+      server,
+      "/anxiety-support/sunday-scaries/?source=weekly"
+    );
+
+    expect(guide.statusCode).toBe(301);
+    expect(guide.headers.location).toBe(
+      "/anxiety-support/sunday-scaries?source=weekly"
+    );
+  });
+
+  it("does not redirect the root or unknown trailing-slash paths", async () => {
+    const root = await request(server, "/?source=weekly");
+    const unknown = await request(server, "/not-a-real-page/?source=weekly");
+
+    expect(root.statusCode).toBe(200);
+    expect(unknown.statusCode).toBe(404);
+    expect(unknown.headers.location).toBeUndefined();
+  });
+
   it("serves the root and real static assets", async () => {
     const root = await request(server, "/");
     const asset = await request(server, "/assets/app.js");

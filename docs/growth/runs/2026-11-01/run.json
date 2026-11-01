@@ -1,0 +1,82 @@
+{
+  "runId": "2026-11-01",
+  "updatedAt": "2026-11-01T15:07:30.000Z",
+  "stage": "validated-local-delivery-pending",
+  "repositoryScope": "Derived from checked-in sitemap, route source, generated guide/blog JSON, and local image files. This is not live AWS, deployment, crawl, analytics, or database evidence.",
+  "counts": {
+    "publicRoutes": 228,
+    "guides": 160,
+    "publishedBlogPackage": 43,
+    "localImages": 54
+  },
+  "audit": {
+    "artifact": "docs/growth/runs/2026-11-01/public-before.json",
+    "totals": {
+      "checked": 228,
+      "http200": 228,
+      "failures": 0
+    },
+    "javascriptExecuted": false
+  },
+  "metricsStatus": "unavailable",
+  "aiBenchmarkStatus": "untested",
+  "github": {
+    "status": "accessible-base-verified; pending this-cycle delivery",
+    "repository": "stressguru-ai/Stressguru.ai",
+    "branch": "main",
+    "baseSha": "32ccb4a110bcedcbc8c8cc380f7a1f35f9ece429",
+    "pushPerformed": false
+  },
+  "schedule": "enabled",
+  "nextStage": "Commit and push this low-risk source correction to the user-authorized GitHub destination. AWS deployment agent then verifies extensionless snapshots, trailing-slash canonical redirect, robots rules, and genuine 404 responses.",
+  "triggerExecution": {
+    "occurredAt": "2026-11-01T15:00:00Z",
+    "sameSession": true,
+    "automationModified": false
+  },
+  "liveAudit": {
+    "allSitemapUrlsReturned200": true,
+    "checked": 228,
+    "duplicateInitialHtmlGroups": 3,
+    "canonicalMismatches": 227,
+    "unknownRouteHttpStatus": 200,
+    "extensionlessGuideCanonical": "https://stressguru.ai/",
+    "directHtmlGuideCanonical": "https://stressguru.ai/anxiety-support/sunday-scaries",
+    "conclusion": "AWS deployment or frontend-routing verification required; no AWS change made"
+  },
+  "sourceRobots": {
+    "namedCrawlersSharePrivatePathExclusions": true,
+    "liveDeploymentMatchesSource": false,
+    "trainingPermissionsChanged": false
+  },
+  "changes": [
+    {
+      "id": "trailing-slash-snapshot-canonicalization",
+      "path": "server/seoStatic.ts",
+      "status": "validated-local",
+      "rationale": "Valid trailing-slash generated snapshot routes should consolidate to their extensionless canonical route",
+      "reversal": "Revert the helper redirect and matching regression cases"
+    }
+  ],
+  "validation": {
+    "typecheck": "passed",
+    "testsPassed": 82,
+    "contentErrors": 0,
+    "contentWarnings": 0,
+    "productionBuild": "passed",
+    "snapshots": 228,
+    "localHttp200": 228,
+    "highSeverityLocalFindings": 0,
+    "httpRegressionChecksPassed": 10,
+    "releaseGuard": "passed",
+    "robotsRegression": "passed"
+  },
+  "database": {
+    "queriesExecuted": false,
+    "writesExecuted": false
+  },
+  "deployment": {
+    "performed": false,
+    "confirmed": false
+  }
+}

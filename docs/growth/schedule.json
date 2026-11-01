@@ -12,8 +12,14 @@
   "entryUid": "FChNnvSBYxpwhTbKebQ28a",
   "revision": "1",
   "resourceUri": "manus-resource://manus-triggers/trigger/G9AWXcPAjX6aU6hfLigTrQ",
-  "target": { "mode": "current_session", "sessionUid": "WjnN8RvYAJlwYGiDfSuS1D" },
-  "cron": { "expression": "0 0 10 * * 0", "timezone": "America/New_York" },
+  "target": {
+    "mode": "current_session",
+    "sessionUid": "WjnN8RvYAJlwYGiDfSuS1D"
+  },
+  "cron": {
+    "expression": "0 0 10 * * 0",
+    "timezone": "America/New_York"
+  },
   "runtimeStatus": "ready",
   "syncState": "synced",
   "lastErrorCode": "",
@@ -21,10 +27,13 @@
   "timezoneAcceptedAndVerified": true,
   "nextRunVerified": true,
   "firstOccurrencePreview": "2026-10-25T14:00:00Z",
-  "dstTransitionPreview": ["2026-11-01T15:00:00Z", "2026-11-08T15:00:00Z"],
+  "dstTransitionPreview": [
+    "2026-11-01T15:00:00Z",
+    "2026-11-08T15:00:00Z"
+  ],
   "executionObserved": true,
   "firstExecutionObservedAt": "2026-10-25T14:00:00Z",
-  "lastRunId": "2026-10-25",
+  "lastRunId": "2026-11-01",
   "automationModifiedDuringRun": false,
   "newTaskCreated": false,
   "newTabOpened": false,
@@ -35,5 +44,6 @@
     "serviceError": "failed_precondition: project not deployed yet — please deploy in the webdev panel and retry",
     "scheduleCreated": false
   },
-  "operatingInstructions": "docs/growth/RUNBOOK.md"
+  "operatingInstructions": "docs/growth/RUNBOOK.md",
+  "lastExecutionObservedAt": "2026-11-01T15:00:00Z"
 }

@@ -4,7 +4,7 @@
     "type": "technical-fix",
     "title": "Serve generated deep-page HTML before the SPA fallback",
     "path": "/anxiety-support/sunday-scaries",
-    "status": "implemented-awaiting-github",
+    "status": "shipped-awaiting-aws-deployment",
     "evidenceObserved": true,
     "evidenceScore": 100,
     "impact": 90,
@@ -12,21 +12,25 @@
     "freshness": 90,
     "evidenceSource": "server/index.ts before patch; server/seoStatic.test.ts",
     "expectedMetric": "distinct initial HTML and HTTP status, then GSC indexing/engagement after confirmed AWS deployment",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "deliveryRepository": "stressguru-ai/Stressguru.ai",
+    "deliverySha": "32ccb4a110bcedcbc8c8cc380f7a1f35f9ece429"
   },
   {
     "id": "private-crawler-groups",
     "type": "technical-fix",
     "title": "Apply private-path exclusions to every named crawler",
     "path": "/robots.txt",
-    "status": "implemented-awaiting-github",
+    "status": "shipped-awaiting-aws-deployment",
     "evidenceObserved": true,
     "evidenceScore": 100,
     "impact": 70,
     "effort": 15,
     "freshness": 90,
     "evidenceSource": "client/public/robots.txt before patch; server/growthRobots.test.ts",
-    "expectedMetric": "private crawl exclusions retained across named groups; training allow choice unchanged"
+    "expectedMetric": "private crawl exclusions retained across named groups; training allow choice unchanged",
+    "deliveryRepository": "stressguru-ai/Stressguru.ai",
+    "deliverySha": "32ccb4a110bcedcbc8c8cc380f7a1f35f9ece429"
   },
   {
     "id": "snapshot-rendered-parity",
@@ -118,7 +122,7 @@
     "type": "technical-fix",
     "title": "Make snapshot generation safe to rerun",
     "path": "scripts/generate-static-seo.js",
-    "status": "implemented-awaiting-github",
+    "status": "shipped-awaiting-aws-deployment",
     "evidenceObserved": true,
     "evidenceScore": 100,
     "impact": 70,
@@ -126,14 +130,16 @@
     "freshness": 100,
     "evidenceSource": "Repeated generation doubled H1 and JSON-LD; now 228 files remain byte-identical across two repeats",
     "reviewRequired": false,
-    "expectedMetric": "Deterministic local regression correctness; production effects need confirmed delivery"
+    "expectedMetric": "Deterministic local regression correctness; production effects need confirmed delivery",
+    "deliveryRepository": "stressguru-ai/Stressguru.ai",
+    "deliverySha": "32ccb4a110bcedcbc8c8cc380f7a1f35f9ece429"
   },
   {
     "id": "initial-title-branding-parity",
     "type": "technical-fix",
     "title": "Match initial titles to the existing client branding rule",
     "path": "scripts/generate-static-seo.js",
-    "status": "implemented-awaiting-github",
+    "status": "shipped-awaiting-aws-deployment",
     "evidenceObserved": true,
     "evidenceScore": 100,
     "impact": 70,
@@ -141,14 +147,16 @@
     "freshness": 100,
     "evidenceSource": "Client SEO appends StressGuru while generated guide titles previously did not",
     "reviewRequired": false,
-    "expectedMetric": "Deterministic local regression correctness; production effects need confirmed delivery"
+    "expectedMetric": "Deterministic local regression correctness; production effects need confirmed delivery",
+    "deliveryRepository": "stressguru-ai/Stressguru.ai",
+    "deliverySha": "32ccb4a110bcedcbc8c8cc380f7a1f35f9ece429"
   },
   {
     "id": "raw-html-audit-precision",
     "type": "technical-fix",
     "title": "Do not count head text or explicit decorative images as meaningful-content defects",
     "path": "scripts/growth/crawler.mjs",
-    "status": "implemented-awaiting-github",
+    "status": "shipped-awaiting-aws-deployment",
     "evidenceObserved": true,
     "evidenceScore": 100,
     "impact": 70,
@@ -156,7 +164,9 @@
     "freshness": 100,
     "evidenceSource": "Isolated tests verify long head-only content stays empty and hidden tracking/decorative images do not trigger missing-alt findings",
     "reviewRequired": false,
-    "expectedMetric": "Deterministic local regression correctness; production effects need confirmed delivery"
+    "expectedMetric": "Deterministic local regression correctness; production effects need confirmed delivery",
+    "deliveryRepository": "stressguru-ai/Stressguru.ai",
+    "deliverySha": "32ccb4a110bcedcbc8c8cc380f7a1f35f9ece429"
   },
   {
     "id": "aws-frontend-snapshot-routing",
@@ -175,5 +185,21 @@
     "requiresApproval": true,
     "evidenceSource": "docs/growth/runs/2026-10-25/extension-comparison.json; public-recheck.json",
     "description": "Direct .html partial response has guide canonical; extensionless partial response has homepage canonical. Bodies timed out. Unknown page returned 200. External deployment agent must inspect actual frontend routing; do not change AWS settings here."
+  },
+  {
+    "id": "trailing-slash-snapshot-canonicalization",
+    "type": "technical-fix",
+    "title": "Redirect valid generated trailing-slash variants to extensionless canonicals",
+    "path": "/anxiety-support/sunday-scaries/",
+    "status": "validated-local-delivery-pending",
+    "evidenceObserved": true,
+    "evidenceScore": 100,
+    "impact": 45,
+    "effort": 10,
+    "freshness": 100,
+    "evidenceSource": "server/seoStatic.ts source review and server/seoStatic.test.ts regression",
+    "expectedMetric": "HTTP 301 from a valid trailing-slash snapshot URL to its extensionless canonical after confirmed AWS deployment",
+    "reviewRequired": false,
+    "reversal": "Revert the redirect helper and its isolated regression cases"
   }
 ]

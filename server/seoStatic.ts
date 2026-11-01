@@ -58,7 +58,6 @@ function findSnapshot(
 function sendSnapshot(staticPath: string) {
   return (req: Request, res: Response, next: NextFunction) => {
     const snapshotPath = findSnapshot(staticPath, req.path);
-
     if (!snapshotPath) {
       next();
       return;
@@ -69,6 +68,25 @@ function sendSnapshot(staticPath: string) {
         next(error);
       }
     });
+  };
+}
+
+function redirectTrailingSnapshotSlash(staticPath: string) {
+  return (req: Request, res: Response, next: NextFunction) => {
+    if (req.path === "/" || !req.path.endsWith("/")) {
+      next();
+      return;
+    }
+
+    const canonicalPath = req.path.slice(0, -1);
+    if (!findSnapshot(staticPath, canonicalPath)) {
+      next();
+      return;
+    }
+
+    const questionMark = req.originalUrl.indexOf("?");
+    const query = questionMark >= 0 ? req.originalUrl.slice(questionMark) : "";
+    res.redirect(301, `${canonicalPath}${query}`);
   };
 }
 
@@ -102,6 +120,10 @@ export function installSeoStatic(
 
   // Admin is a private client-only area, rather than a crawlable public route.
   app.get(privateClientRoute, sendPrivateClientShell(staticPath));
+
+  // Generated URLs are extensionless canonicals. Normalize only alternate
+  // trailing-slash forms when the matching public snapshot is real.
+  app.get("*", redirectTrailingSnapshotSlash(staticPath));
 
   // Blog publication is owned by the AWS database, not the build-time package.
   // This also protects direct .html snapshots after an article is unpublished.

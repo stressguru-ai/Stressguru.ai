@@ -376,3 +376,11 @@ Implementation is validated locally. The native Sunday automation timer is enabl
 - [x] Remove the real admin credential from test fixtures, use isolated synthetic environment configuration, and cover successful/incorrect credentials plus missing or blank ADMIN_PASSWORD without any database access or live changes.
 - [x] Validate TypeScript, tests, content audit and existing production build; inspect every tracked source file before upload. Keep credentials, environment files, Dockerfile, external database SQL/rollback/backups, node_modules and build artifacts out of the public release; retain existing project schema migrations and all 54 self-hosted images.
 - [ ] Push the sanitized current project code to main in stressguru-ai/Stressguru.ai without old private Git history, force-push, repository recreation or changes to the original Manus origin. Preserve the destination's initial commit and README; verify the actual remote commit SHA, source files and image count. Do not deploy AWS or write any database.
+
+
+## Sunday Growth Cycle: November 1, 2026
+
+- [x] Audit all 228 source-derived public URLs as raw initial HTML and preserve a dated evidence record. Do not interpret client-rendered content, analytics, rankings, conversions, App Store installs, or AI citations without direct measured evidence.
+- [x] Redirect a trailing-slash public request to its existing extensionless canonical URL only if a matching generated snapshot exists, retaining its query string. Keep root, private routes, assets, unknown paths, page copy, database behavior, crawler permissions, and AWS routing unchanged; add isolated regression coverage.
+- [ ] Validate the narrow source fix and record the actual GitHub delivery SHA to `stressguru-ai/Stressguru.ai` main. Keep all images self-hosted, do not export environment files or external SQL, and do not deploy AWS.
+- [x] Record the verified live AWS blocker: all 228 sitemap URLs return the homepage initial HTML and canonical, while the direct guide `.html` response has the distinct guide canonical. Route correction remains for the separate deployment agent, not this growth session.
