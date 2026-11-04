@@ -384,3 +384,9 @@ Implementation is validated locally. The native Sunday automation timer is enabl
 - [x] Redirect a trailing-slash public request to its existing extensionless canonical URL only if a matching generated snapshot exists, retaining its query string. Keep root, private routes, assets, unknown paths, page copy, database behavior, crawler permissions, and AWS routing unchanged; add isolated regression coverage.
 - [x] Validate the narrow source fix and record the actual GitHub delivery SHA to `stressguru-ai/Stressguru.ai` main. Keep all images self-hosted, do not export environment files or external SQL, and do not deploy AWS.
 - [x] Record the verified live AWS blocker: all 228 sitemap URLs return the homepage initial HTML and canonical, while the direct guide `.html` response has the distinct guide canonical. Route correction remains for the separate deployment agent, not this growth session.
+
+## Guru Portrait Correction: November 4, 2026
+
+- [x] Relationship Guru uses the supplied beige-and-olive portrait and Anxiety Guru the supplied maroon portrait across Guru pages/cards, navigation, quiz, source generators, seeded data, and blog/static SEO packages. All images remain self-hosted under `client/public/images/` and original assets are preserved.
+- [x] Correct the corresponding Guru and blog image assignments in the user's AWS MySQL database only, after an external backup and guarded transaction verification. Do not connect to TiDB, touch unrelated records or change blog text, IDs, dates, status, attribution, pricing, or layouts. Keep backups and rollback/migration SQL outside GitHub.
+- [ ] Validate source mapping coverage, existing TypeScript/tests/content/build gates and all new assets, then push only the intended changes to `stressguru-ai/Stressguru.ai` main and report the verified SHA. Do not deploy AWS or change infrastructure.

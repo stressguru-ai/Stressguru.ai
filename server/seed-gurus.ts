@@ -36,7 +36,7 @@ const gurusData = [
     slug: "anxiety-guru",
     name: "Anxiety Guru",
     role: "AI Wellness Persona for Anxiety Support",
-    image: "/images/RiYvCLRiSOOKHHcr.png",
+    image: "/images/RjEvlDvMOtWTRzEq.png",
     description: "AI-guided grounding and reflection for moments when everyday worry feels loud.",
     icpProblems: [
       "Experiencing sudden panic attacks in public or at work",
@@ -64,7 +64,7 @@ const gurusData = [
     slug: "relationship-guru",
     name: "Relationship Guru",
     role: "AI Wellness Persona for Relationship Reflection",
-    image: "/images/RjEvlDvMOtWTRzEq.png",
+    image: "/images/RiYvCLRiSOOKHHcr.png",
     description: "AI-guided reflection for preparing clearer boundaries and conversations.",
     icpProblems: [
       "Feeling disconnected from your partner despite living together",

@@ -28,9 +28,9 @@ BATCH_SIZE = int(os.environ.get("BLOG_BATCH_SIZE", "3"))
 GURUS = {
     1: {"name": "Stress Guru", "role": "AI Wellness Persona for Stress Support", "image": "/images/ckfNdeCXRAEriBpm.png", "slug": "stress"},
     2: {"name": "Sleep Guru", "role": "AI Wellness Persona for Sleep Support", "image": "/images/sDSBaqlRTTJBzglV.png", "slug": "sleep"},
-    3: {"name": "Anxiety Guru", "role": "AI Wellness Persona for Anxiety Support", "image": "/images/RiYvCLRiSOOKHHcr.png", "slug": "anxiety"},
+    3: {"name": "Anxiety Guru", "role": "AI Wellness Persona for Anxiety Support", "image": "/images/RjEvlDvMOtWTRzEq.png", "slug": "anxiety"},
     4: {"name": "Motivation Guru", "role": "AI Wellness Persona for Motivation Support", "image": "/images/dynzrWuhAjoaQmHN.png", "slug": "motivation"},
-    5: {"name": "Relationship Guru", "role": "AI Wellness Persona for Relationship Reflection", "image": "/images/RjEvlDvMOtWTRzEq.png", "slug": "relationship"},
+    5: {"name": "Relationship Guru", "role": "AI Wellness Persona for Relationship Reflection", "image": "/images/RiYvCLRiSOOKHHcr.png", "slug": "relationship"},
     6: {"name": "Happiness Guru", "role": "AI Wellness Persona for Everyday Joy", "image": "/images/xSeUQcwBWbWGSnFH.jpg", "slug": "happiness"},
     7: {"name": "Calm Guru", "role": "AI Wellness Persona for Calm Practices", "image": "/images/GjrsMwPTDhrCwQjg.jpg", "slug": "calm"},
     8: {"name": "Spiritual Guru", "role": "AI Wellness Persona for Values and Meaning", "image": "/images/itZXkUHXnEimtTTz.png", "slug": "spiritual"},

@@ -39,7 +39,7 @@ const options: QuizOption[] = [
     guruId: "anxiety",
     guruName: "Anxiety Guru",
     guruPath: "/gurus/anxiety",
-    guruImage: "/images/RiYvCLRiSOOKHHcr.png",
+    guruImage: "/images/RjEvlDvMOtWTRzEq.png",
     guruColor: "bg-purple-100 text-purple-600"
   },
   {
@@ -57,7 +57,7 @@ const options: QuizOption[] = [
     guruId: "relationship",
     guruName: "Relationship Guru",
     guruPath: "/gurus/relationship",
-    guruImage: "/images/RjEvlDvMOtWTRzEq.png",
+    guruImage: "/images/RiYvCLRiSOOKHHcr.png",
     guruColor: "bg-pink-100 text-pink-600"
   },
   {

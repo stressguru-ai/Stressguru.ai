@@ -46,9 +46,9 @@ export default function Navigation() {
   const gurus = [
     { label: "Stress Guru", href: "/gurus/stress", icon: "/images/ckfNdeCXRAEriBpm.png" },
     { label: "Sleep Guru", href: "/gurus/sleep", icon: "/images/sDSBaqlRTTJBzglV.png" },
-    { label: "Anxiety Guru", href: "/gurus/anxiety", icon: "/images/RiYvCLRiSOOKHHcr.png" },
+    { label: "Anxiety Guru", href: "/gurus/anxiety", icon: "/images/RjEvlDvMOtWTRzEq.png" },
     { label: "Motivation Guru", href: "/gurus/motivation", icon: "/images/dynzrWuhAjoaQmHN.png" },
-    { label: "Relationship Guru", href: "/gurus/relationship", icon: "/images/RjEvlDvMOtWTRzEq.png" },
+    { label: "Relationship Guru", href: "/gurus/relationship", icon: "/images/RiYvCLRiSOOKHHcr.png" },
     { label: "Happiness Guru", href: "/gurus/happiness", icon: "/images/xSeUQcwBWbWGSnFH.jpg" },
     { label: "Calm Guru", href: "/gurus/calm", icon: "/images/GjrsMwPTDhrCwQjg.jpg" },
     { label: "Spiritual Guru", href: "/gurus/spiritual", icon: "/images/itZXkUHXnEimtTTz.png" },

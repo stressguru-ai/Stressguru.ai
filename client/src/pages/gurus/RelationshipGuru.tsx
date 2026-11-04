@@ -8,7 +8,7 @@ export default function RelationshipGuru() {
       guruTitle="Your Guide for Hard Conversations"
       heroImage="/images/xzxYBEiYFEVfANIo.jpg"
 
-      avatarImage="/images/RjEvlDvMOtWTRzEq.png"
+      avatarImage="/images/RiYvCLRiSOOKHHcr.png"
       problemHeadline="Before Small Friction Becomes the Whole Evening"
       problemDescription="A missed text, uneven chores, or a rushed handoff can follow you through the house. Relationship Guru helps you pause before replying and find words that better match what you mean."
       challenges={[

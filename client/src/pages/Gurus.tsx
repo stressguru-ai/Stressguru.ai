@@ -33,7 +33,7 @@ export default function Gurus() {
       name: "Anxiety Guru",
       role: "Step Out of Worry Loops",
       description: "When worry keeps circling one decision, use a grounding prompt and return to the task in front of you.",
-      image: "/images/RiYvCLRiSOOKHHcr.png",
+      image: "/images/RjEvlDvMOtWTRzEq.png",
       link: "/gurus/anxiety",
       color: "bg-purple-100 text-purple-600"
     },
@@ -49,7 +49,7 @@ export default function Gurus() {
       name: "Relationship Guru",
       role: "Respond With Care",
       description: "When a small disagreement follows you through the house, pause before replying and find words that match what you mean.",
-      image: "/images/RjEvlDvMOtWTRzEq.png",
+      image: "/images/RiYvCLRiSOOKHHcr.png",
       link: "/gurus/relationship",
       color: "bg-pink-100 text-pink-600"
     },

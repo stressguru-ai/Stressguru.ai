@@ -1,0 +1,21 @@
+[
+  {
+    "id": "user-guru-portrait-correction-2026-11-04",
+    "author": "user",
+    "status": "approved",
+    "approvedAt": "2026-11-04T15:37:17-05:00",
+    "userMessage": "we need to swap relationship guru and anxiety guru pictures .. they are wrong .. everywhere across the site and blogs .. the first one light brown clothes desi looking lady is relationship guru and the chinese looking lady in maroon dress is anxiety guru",
+    "reason": "User explicitly requested the two supplied portrait identities to be corrected everywhere on the site and blogs. Only existing image paths are swapped. No health, product, pricing, safety, or attribution copy is changed. AWS image-only changes preserve all non-image fields; standard validated GitHub delivery is authorized by the standing user instruction.",
+    "paths": [
+      "client/src/pages/gurus/AnxietyGuru.tsx",
+      "client/src/pages/gurus/RelationshipGuru.tsx",
+      "docs/seo/blogs.generated.json",
+      "scripts/generate_blog_content.py"
+    ],
+    "portraitMapping": {
+      "Relationship Guru": "/images/RiYvCLRiSOOKHHcr.png",
+      "Anxiety Guru": "/images/RjEvlDvMOtWTRzEq.png"
+    },
+    "excludes": ["public copy edits", "other Guru image changes", "pricing changes", "health claims", "AWS deployment", "infrastructure changes", "TiDB access", "external SQL or credentials in Git"]
+  }
+]

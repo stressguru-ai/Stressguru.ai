@@ -8,7 +8,7 @@ export default function AnxietyGuru() {
       guruTitle="Your Guide for Worry-Filled Moments"
       heroImage="/images/cbBkKzHOhCgwDsEl.jpg"
 
-      avatarImage="/images/RiYvCLRiSOOKHHcr.png"
+      avatarImage="/images/RjEvlDvMOtWTRzEq.png"
       problemHeadline="When Worry Takes Up the Whole Day, Make Room to Think"
       problemDescription="A single meeting, message, or decision can keep replaying long after it is over. Anxiety Guru gives you a grounding pause so you can return to the next thing you can actually do."
       challenges={[
