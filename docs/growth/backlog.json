@@ -231,7 +231,10 @@
     "freshness": 100,
     "reversal": "Revert optional discovery utility, runner integration and its tests",
     "description": "Read-only listing expands 228 source routes to 240 live public routes; 55 published articles include 12 outside the 43-blog source package.",
-    "status": "validated-preparing-github-delivery"
+    "status": "completed-in-agent",
+    "deliverySha": "2766f48591c0378faa4f719fc1bf668d7b00a0b7",
+    "deliveryRepository": "stressguru-ai/Stressguru.ai",
+    "deliveredAt": "2026-11-08T15:12:15.070Z"
   },
   {
     "id": "blog-snapshot-logical-publication-check",
@@ -245,7 +248,10 @@
     "freshness": 100,
     "reversal": "Revert logical-path gate only after an equivalent publication boundary is retained",
     "description": "Synthetic unpublished resolver reproduced encoded/double-slash/dot-path snapshot access without publication lookup. No live draft exposure or record change was inferred.",
-    "status": "validated-preparing-github-delivery"
+    "status": "shipped-awaiting-aws-deployment",
+    "deliverySha": "2766f48591c0378faa4f719fc1bf668d7b00a0b7",
+    "deliveryRepository": "stressguru-ai/Stressguru.ai",
+    "deliveredAt": "2026-11-08T15:12:15.070Z"
   },
   {
     "id": "jsonld-shape-audit-resilience",
@@ -259,7 +265,10 @@
     "freshness": 100,
     "reversal": "Revert diagnostic collector and matching isolated tests",
     "description": "Null or scalar JSON-LD no longer throws away the HTTP/title/canonical observation. Public schema remains unchanged.",
-    "status": "validated-preparing-github-delivery"
+    "status": "completed-in-agent",
+    "deliverySha": "2766f48591c0378faa4f719fc1bf668d7b00a0b7",
+    "deliveryRepository": "stressguru-ai/Stressguru.ai",
+    "deliveredAt": "2026-11-08T15:12:15.070Z"
   },
   {
     "id": "new-published-blog-snapshot-coverage",

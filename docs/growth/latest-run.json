@@ -1,4 +1,6 @@
 {
   "runId": "2026-11-08",
-  "artifact": "docs/growth/runs/2026-11-08/run.json"
+  "artifact": "docs/growth/runs/2026-11-08/run.json",
+  "stage": "completed-github-delivered",
+  "githubCodeSha": "2766f48591c0378faa4f719fc1bf668d7b00a0b7"
 }

@@ -1,7 +1,7 @@
 {
   "runId": "2026-11-08",
   "updatedAt": "2026-11-08T15:08:05.618Z",
-  "stage": "validated",
+  "stage": "completed-github-delivered",
   "repositoryScope": "Derived from checked-in sitemap, route source, generated guide/blog JSON, and local image files. This is not live AWS, deployment, crawl, analytics, or database evidence.",
   "counts": {
     "publicRoutes": 228,
@@ -21,13 +21,14 @@
   "metricsStatus": "unavailable",
   "aiBenchmarkStatus": "untested",
   "github": {
-    "status": "preparing-validated-delivery",
+    "status": "delivered-verified",
     "repository": "stressguru-ai/Stressguru.ai",
     "branch": "main",
-    "sha": null
+    "codeSha": "2766f48591c0378faa4f719fc1bf668d7b00a0b7",
+    "verification": "Normal push, Git remote main and GitHub branch API matched"
   },
   "schedule": "enabled",
-  "nextStage": "Verify GitHub delivery; separate deployment agent handles AWS. Review new article snapshot and self-hosted hero coverage before any content/database changes.",
+  "nextStage": "Separate deployment agent handles the new source release on AWS. Review newer article snapshots and remote hero paths; no growth metrics inferred.",
   "liveBlogCoverage": {
     "status": "observed",
     "sourceRouteCount": 228,
@@ -77,5 +78,7 @@
   "databaseAccessed": false,
   "databaseWritten": false,
   "infrastructureChanged": false,
-  "automationModified": false
+  "automationModified": false,
+  "completedAt": "2026-11-08T15:12:15.070Z",
+  "newSourceReleaseDeployed": false
 }
