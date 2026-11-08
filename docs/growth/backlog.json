@@ -4,7 +4,7 @@
     "type": "technical-fix",
     "title": "Serve generated deep-page HTML before the SPA fallback",
     "path": "/anxiety-support/sunday-scaries",
-    "status": "shipped-awaiting-aws-deployment",
+    "status": "deployed-observed-awaiting-growth-measurement",
     "evidenceObserved": true,
     "evidenceScore": 100,
     "impact": 90,
@@ -14,14 +14,17 @@
     "expectedMetric": "distinct initial HTML and HTTP status, then GSC indexing/engagement after confirmed AWS deployment",
     "reviewRequired": false,
     "deliveryRepository": "stressguru-ai/Stressguru.ai",
-    "deliverySha": "32ccb4a110bcedcbc8c8cc380f7a1f35f9ece429"
+    "deliverySha": "32ccb4a110bcedcbc8c8cc380f7a1f35f9ece429",
+    "deploymentObservedAt": "2026-11-08",
+    "observationArtifact": "docs/growth/runs/2026-11-08/representative-live.json",
+    "deploymentDateKnown": false
   },
   {
     "id": "private-crawler-groups",
     "type": "technical-fix",
     "title": "Apply private-path exclusions to every named crawler",
     "path": "/robots.txt",
-    "status": "shipped-awaiting-aws-deployment",
+    "status": "deployed-observed-awaiting-growth-measurement",
     "evidenceObserved": true,
     "evidenceScore": 100,
     "impact": 70,
@@ -30,7 +33,10 @@
     "evidenceSource": "client/public/robots.txt before patch; server/growthRobots.test.ts",
     "expectedMetric": "private crawl exclusions retained across named groups; training allow choice unchanged",
     "deliveryRepository": "stressguru-ai/Stressguru.ai",
-    "deliverySha": "32ccb4a110bcedcbc8c8cc380f7a1f35f9ece429"
+    "deliverySha": "32ccb4a110bcedcbc8c8cc380f7a1f35f9ece429",
+    "deploymentObservedAt": "2026-11-08",
+    "observationArtifact": "docs/growth/runs/2026-11-08/representative-live.json",
+    "deploymentDateKnown": false
   },
   {
     "id": "snapshot-rendered-parity",
@@ -139,7 +145,7 @@
     "type": "technical-fix",
     "title": "Match initial titles to the existing client branding rule",
     "path": "scripts/generate-static-seo.js",
-    "status": "shipped-awaiting-aws-deployment",
+    "status": "deployed-observed-awaiting-growth-measurement",
     "evidenceObserved": true,
     "evidenceScore": 100,
     "impact": 70,
@@ -149,7 +155,10 @@
     "reviewRequired": false,
     "expectedMetric": "Deterministic local regression correctness; production effects need confirmed delivery",
     "deliveryRepository": "stressguru-ai/Stressguru.ai",
-    "deliverySha": "32ccb4a110bcedcbc8c8cc380f7a1f35f9ece429"
+    "deliverySha": "32ccb4a110bcedcbc8c8cc380f7a1f35f9ece429",
+    "deploymentObservedAt": "2026-11-08",
+    "observationArtifact": "docs/growth/runs/2026-11-08/representative-live.json",
+    "deploymentDateKnown": false
   },
   {
     "id": "raw-html-audit-precision",
@@ -173,7 +182,7 @@
     "type": "infrastructure",
     "title": "Verify the AWS frontend resolves existing .html snapshots at extensionless public URLs",
     "path": "/anxiety-support/sunday-scaries",
-    "status": "blocked-external-deployment",
+    "status": "resolved-observed",
     "evidenceObserved": true,
     "evidenceScore": 100,
     "impact": 95,
@@ -184,14 +193,16 @@
     ],
     "requiresApproval": true,
     "evidenceSource": "docs/growth/runs/2026-10-25/extension-comparison.json; public-recheck.json",
-    "description": "Direct .html partial response has guide canonical; extensionless partial response has homepage canonical. Bodies timed out. Unknown page returned 200. External deployment agent must inspect actual frontend routing; do not change AWS settings here."
+    "description": "All 228 source-listed URLs now return distinct correct canonicals; representative missing route is 404 and trailing-slash guide is 301. This does not establish complete rendered parity or search indexing.",
+    "resolvedAt": "2026-11-08",
+    "observationArtifact": "docs/growth/runs/2026-11-08/public-before.json"
   },
   {
     "id": "trailing-slash-snapshot-canonicalization",
     "type": "technical-fix",
     "title": "Redirect valid generated trailing-slash variants to extensionless canonicals",
     "path": "/anxiety-support/sunday-scaries/",
-    "status": "shipped-awaiting-aws-deployment",
+    "status": "deployed-observed-awaiting-growth-measurement",
     "evidenceObserved": true,
     "evidenceScore": 100,
     "impact": 45,
@@ -203,6 +214,84 @@
     "reversal": "Revert the redirect helper and its isolated regression cases",
     "deliveryRepository": "stressguru-ai/Stressguru.ai",
     "deliverySha": "121a0a8b0f011ce6de71ea55b61b28fbcbac1ea9",
-    "deliveredAt": "2026-11-01T15:09:37.000Z"
+    "deliveredAt": "2026-11-01T15:09:37.000Z",
+    "deploymentObservedAt": "2026-11-08",
+    "observationArtifact": "docs/growth/runs/2026-11-08/representative-live.json",
+    "deploymentDateKnown": false
+  },
+  {
+    "id": "public-blog-audit-coverage",
+    "type": "technical-fix",
+    "title": "Audit published articles missing from the source package",
+    "path": "scripts/growth/public-blogs.mjs",
+    "impact": 80,
+    "effort": 25,
+    "evidenceObserved": true,
+    "evidenceScore": 100,
+    "freshness": 100,
+    "reversal": "Revert optional discovery utility, runner integration and its tests",
+    "description": "Read-only listing expands 228 source routes to 240 live public routes; 55 published articles include 12 outside the 43-blog source package.",
+    "status": "validated-preparing-github-delivery"
+  },
+  {
+    "id": "blog-snapshot-logical-publication-check",
+    "type": "technical-fix",
+    "title": "Preserve publication checks for equivalent URL spellings",
+    "path": "server/seoStatic.ts",
+    "impact": 90,
+    "effort": 25,
+    "evidenceObserved": true,
+    "evidenceScore": 100,
+    "freshness": 100,
+    "reversal": "Revert logical-path gate only after an equivalent publication boundary is retained",
+    "description": "Synthetic unpublished resolver reproduced encoded/double-slash/dot-path snapshot access without publication lookup. No live draft exposure or record change was inferred.",
+    "status": "validated-preparing-github-delivery"
+  },
+  {
+    "id": "jsonld-shape-audit-resilience",
+    "type": "technical-fix",
+    "title": "Preserve route evidence when JSON-LD contains invalid node shapes",
+    "path": "scripts/growth/crawler.mjs",
+    "impact": 50,
+    "effort": 10,
+    "evidenceObserved": true,
+    "evidenceScore": 100,
+    "freshness": 100,
+    "reversal": "Revert diagnostic collector and matching isolated tests",
+    "description": "Null or scalar JSON-LD no longer throws away the HTTP/title/canonical observation. Public schema remains unchanged.",
+    "status": "validated-preparing-github-delivery"
+  },
+  {
+    "id": "new-published-blog-snapshot-coverage",
+    "type": "editorial-technical-review",
+    "title": "Refresh initial HTML coverage for 12 newer published articles",
+    "path": "/blogs",
+    "status": "blocked-review",
+    "requiresApproval": true,
+    "risks": [
+      "sensitive-health"
+    ],
+    "evidenceObserved": true,
+    "evidenceScore": 100,
+    "impact": 95,
+    "effort": 45,
+    "freshness": 100,
+    "evidenceSource": "docs/growth/runs/2026-11-08/public-new-blogs.json",
+    "description": "All 12 additional public articles return homepage initial title/canonical. Existing publication fallback keeps pages available after JS, but no current article snapshot exists in the generated package. Review preserving published source content in snapshots or a scoped public renderer; no rewrite or DB edit authorized here."
+  },
+  {
+    "id": "new-blog-remote-image-regression",
+    "type": "asset-data-review",
+    "title": "Restore self-hosted hero paths for newer published blog records",
+    "path": "/blogs",
+    "status": "blocked-review",
+    "requiresApproval": true,
+    "evidenceObserved": true,
+    "evidenceScore": 100,
+    "impact": 70,
+    "effort": 35,
+    "freshness": 100,
+    "evidenceSource": "docs/growth/runs/2026-11-08/representative-live.json",
+    "description": "The public API lists 12 remote blog hero URLs. Existing avatars remain local and correct. An approved asset-localization/data update is needed; this run neither rewrites DB image fields nor alters assets."
   }
 ]

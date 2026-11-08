@@ -390,3 +390,12 @@ Implementation is validated locally. The native Sunday automation timer is enabl
 - [x] Relationship Guru uses the supplied beige-and-olive portrait and Anxiety Guru the supplied maroon portrait across Guru pages/cards, navigation, quiz, source generators, seeded data, and blog/static SEO packages. All images remain self-hosted under `client/public/images/` and original assets are preserved.
 - [x] Correct the corresponding Guru and blog image assignments in the user's AWS MySQL database only, after an external backup and guarded transaction verification. Do not connect to TiDB, touch unrelated records or change blog text, IDs, dates, status, attribution, pricing, or layouts. Keep backups and rollback/migration SQL outside GitHub.
 - [x] Validate source mapping coverage, existing TypeScript/tests/content/build gates and all new assets, then push only the intended changes to `stressguru-ai/Stressguru.ai` main and report the verified SHA. Do not deploy AWS or change infrastructure.
+
+## Sunday Growth Cycle: November 8, 2026
+
+- [x] Verify current source and live HTTP behavior, recent portrait mapping, sitemap/crawler documents, and six official competitor surfaces. Mark deployment only from observed responses; preserve missing ranking, conversion, demand and AI-citation metrics as unavailable. No dashboard, new task, database writes, timer change, AWS deployment or infrastructure change.
+- [x] Add an optional read-only live published-blog discovery audit so new public articles absent from the 43-blog source package are not silently omitted. Validate public-only origin, JSON response and safe distinct slugs; preserve source-only baseline and record expanded evidence separately. Do not ingest/publish/rewrite article content or change image URLs.
+- [x] Handle invalid JSON-LD object shapes without crashing the route inspector, with isolated diagnostics regressions. Preserve public schema, copy, hero, pricing, images, DB restrictions and approval gates.
+- [ ] Validate required TypeScript/tests/content/build and release checks, retain durable observations/priorities/reversal details, and push only intended changes to the existing GitHub main while keeping deployment separate.
+
+- [x] Preserve the existing blog publication boundary for encoded, repeated-slash and dot-segment URL variants by checking the normalized logical slug before redirects and file serving. Use synthetic tests only; do not change live article state, authentication, database records or deployment configuration.

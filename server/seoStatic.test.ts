@@ -90,7 +90,7 @@ describe("installSeoStatic", () => {
 
     const app = express();
     installSeoStatic(app, { staticPath: fixturePath });
-    server = app.listen(0, "127.0.0.1");
+    server = http.createServer(app).listen(0, "127.0.0.1");
     await new Promise<void>(resolve => server.once("listening", resolve));
   });
 
@@ -127,6 +127,13 @@ describe("installSeoStatic", () => {
     expect(guide.headers.location).toBe(
       "/anxiety-support/sunday-scaries?source=weekly"
     );
+  });
+
+  it("keeps repeated-leading-slash canonical redirects on the same origin", async () => {
+    const response = await request(server, "//anxiety-support/sunday-scaries/?source=weekly");
+    expect(response.statusCode).toBe(301);
+    expect(response.headers.location).toBe("/anxiety-support/sunday-scaries?source=weekly");
+    expect(response.headers.location?.startsWith("//")).toBe(false);
   });
 
   it("does not redirect the root or unknown trailing-slash paths", async () => {
@@ -174,7 +181,7 @@ describe("installSeoStatic", () => {
       staticPath: fixturePath,
       resolvePublishedBlog: async slug => slug === "new-published",
     });
-    server = app.listen(0, "127.0.0.1");
+    server = http.createServer(app).listen(0, "127.0.0.1");
     await new Promise<void>(resolve => server.once("listening", resolve));
     expect((await request(server, "/blogs/new-published")).statusCode).toBe(
       200
@@ -182,6 +189,47 @@ describe("installSeoStatic", () => {
     expect((await request(server, "/blogs/known")).statusCode).toBe(404);
     expect((await request(server, "/blogs/known.html")).statusCode).toBe(404);
     expect((await request(server, "/blogs/missing")).statusCode).toBe(404);
+  });
+
+  it("checks publication before equivalent encoded and normalized blog snapshot paths", async () => {
+    await new Promise<void>(resolve => server.close(() => resolve()));
+    const slugs: string[] = [];
+    const app = express();
+    installSeoStatic(app, { staticPath: fixturePath, resolvePublishedBlog: async slug => { slugs.push(slug); return false; } });
+    server = http.createServer(app).listen(0, "127.0.0.1");
+    await new Promise<void>(resolve => server.once("listening", resolve));
+    const variants = ["/blogs/known", "/blogs/known.html", "/blogs/%6Bnown", "/blogs/%6Bnown.html", "/%62logs/known", "//blogs/known", "/blogs/../blogs/known", "/blogs/known/", "/blogs/%6Bnown/?source=test"];
+    for (const variant of variants) {
+      const response = await request(server, variant);
+      expect(response.statusCode, variant).toBe(404);
+      expect(response.body).not.toContain("Known blog direct answer");
+      expect(response.headers.location).toBeUndefined();
+    }
+    expect(slugs).toEqual(variants.map(() => "known"));
+  });
+
+  it("keeps published encoded snapshots available and encoded lookup failures temporary", async () => {
+    await new Promise<void>(resolve => server.close(() => resolve()));
+    const app = express();
+    installSeoStatic(app, { staticPath: fixturePath, resolvePublishedBlog: async slug => {
+      if (slug === "unavailable") throw new Error("synthetic lookup failure");
+      return slug === "known";
+    } });
+    server = http.createServer(app).listen(0, "127.0.0.1");
+    await new Promise<void>(resolve => server.once("listening", resolve));
+    for (const variant of ["/blogs/%6Bnown", "/blogs/%6Bnown.html", "/%62logs/known"]) {
+      const response = await request(server, variant);
+      expect(response.statusCode).toBe(200);
+      expect(response.body).toContain("Known blog direct answer");
+    }
+    const redirect = await request(server, "/blogs/known/?source=test");
+    expect(redirect.statusCode).toBe(301);
+    expect(redirect.headers.location).toBe("/blogs/known?source=test");
+    const unavailable = await request(server, "/blogs/%75navailable.html");
+    expect(unavailable.statusCode).toBe(503);
+    expect(unavailable.headers["retry-after"]).toBe("60");
+    // Express rejects malformed wildcard percent-encoding before this handler.
+    expect((await request(server, "/blogs/%ZZknown")).statusCode).toBe(400);
   });
 
   it("returns temporary failure rather than inventing publication when the lookup fails", async () => {
@@ -193,7 +241,7 @@ describe("installSeoStatic", () => {
         throw new Error("synthetic unavailable");
       },
     });
-    server = app.listen(0, "127.0.0.1");
+    server = http.createServer(app).listen(0, "127.0.0.1");
     await new Promise<void>(resolve => server.once("listening", resolve));
     const response = await request(server, "/blogs/known");
     expect(response.statusCode).toBe(503);

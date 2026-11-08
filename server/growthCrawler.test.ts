@@ -30,6 +30,18 @@ describe("growth raw HTML audit", () => {
     const result = inspectHtml('<title>Home</title><div id="root"></div><script type="application/ld+json">invalid</script>', "https://stressguru.ai/unknown");
     expect(result.issues.map((i: any) => i.code)).toEqual(expect.arrayContaining(["missing-crawlable-body", "missing-canonical", "invalid-jsonld", "h1-count"]));
   });
+  it.each(["null", '"scalar"', "42", '{"@graph":null}', '[null,{"@type":"WebPage"}]'])("reports invalid JSON-LD shapes without losing route evidence: %s", schema => {
+    const result = inspectHtml(`<html><head><title>Example</title><script type="application/ld+json">${schema}</script></head><body><h1>Example</h1></body></html>`, "https://stressguru.ai/example");
+    expect(result.status).toBe(200);
+    expect(result.title).toBe("Example");
+    expect(result.issues.map((i: any) => i.code)).toContain("invalid-jsonld-shape");
+    if (schema.includes("WebPage")) expect(result.schemaTypes).toContain("WebPage");
+  });
+  it("preserves valid graph objects, arrays and multiple schema types", () => {
+    const result = inspectHtml('<script type="application/ld+json">{"@graph":{"@type":["Article","WebPage"]}}</script><script type="application/ld+json">{"@graph":[{"@type":"Article"},{"@type":"FAQPage"}]}</script>', "https://stressguru.ai/example");
+    expect(result.schemaTypes).toEqual(["Article", "WebPage", "FAQPage"]);
+    expect(result.issues.map((i: any) => i.code)).not.toContain("invalid-jsonld-shape");
+  });
   it("rejects credentials, external origins, and arbitrary crawl targets", () => {
     expect(() => validateCrawlOrigin("https://user:password@stressguru.ai")).toThrow();
     expect(() => validateCrawlOrigin("https://example.com")).toThrow();

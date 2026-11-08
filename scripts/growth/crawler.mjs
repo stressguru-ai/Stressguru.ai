@@ -29,8 +29,20 @@ export function inspectHtml(html, requestedUrl, { status = 200, finalUrl = reque
   const imagePaths = [...html.matchAll(/<img\b[^>]*>/gi)].map(m => attributes(m[0]));
   const schemas = [];
   const issues = [];
+  const collectSchema = value => {
+    if (Array.isArray(value)) return value.forEach(collectSchema);
+    if (!value || typeof value !== "object") {
+      issues.push({ code: "invalid-jsonld-shape", priority: "high", evidence: "JSON-LD contains a non-object value" });
+      return;
+    }
+    if (Object.hasOwn(value, "@graph")) {
+      collectSchema(value["@graph"]);
+    }
+    if (typeof value["@type"] === "string") schemas.push(value["@type"]);
+    else if (Array.isArray(value["@type"])) schemas.push(...value["@type"].filter(type => typeof type === "string"));
+  };
   for (const m of html.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
-    try { schemas.push(JSON.parse(m[1])); } catch { issues.push({ code: "invalid-jsonld", priority: "high", evidence: "JSON-LD could not be parsed" }); }
+    try { collectSchema(JSON.parse(m[1])); } catch { issues.push({ code: "invalid-jsonld", priority: "high", evidence: "JSON-LD could not be parsed" }); }
   }
   const add = (code, priority, evidence) => issues.push({ code, priority, evidence });
   if (status !== 200) add("http-status", "high", `HTTP ${status}`);
@@ -51,7 +63,7 @@ export function inspectHtml(html, requestedUrl, { status = 200, finalUrl = reque
     textCharacters: bodyText.length, textHash: createHash("sha256").update(bodyText).digest("hex"),
     answerFirst: /data-answer\s*=\s*["']true["']/i.test(html),
     noscriptContent: /<noscript\b/i.test(html), internalLinks: [...new Set(internalLinks)],
-    schemaTypes: schemas.flatMap(s => Array.isArray(s) ? s.map(v => v["@type"]) : s["@graph"] ? s["@graph"].map(v => v["@type"]) : [s["@type"]]).filter(Boolean),
+    schemaTypes: [...new Set(schemas)],
     issues };
 }
 

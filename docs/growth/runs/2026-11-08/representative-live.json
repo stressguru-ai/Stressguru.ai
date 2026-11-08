@@ -1,0 +1,114 @@
+{
+  "observedAt": "2026-11-08T15:03:52.344183+00:00",
+  "javascriptExecuted": false,
+  "rows": [
+    {
+      "path": "/",
+      "response": "200|text/html; charset=UTF-8|",
+      "curlExit": 0,
+      "canonical": "https://stressguru.ai/",
+      "title": "Stop Stress Today. Prevent the Same Pattern Tomorrow | StressGuru",
+      "approvedHeroPresent": true
+    },
+    {
+      "path": "/anxiety-support/sunday-scaries",
+      "response": "200|text/html; charset=UTF-8|",
+      "curlExit": 0,
+      "canonical": "https://stressguru.ai/anxiety-support/sunday-scaries",
+      "title": "Sunday scaries: Calm late-week anxiety quickly | StressGuru"
+    },
+    {
+      "path": "/anxiety-support/sunday-scaries/",
+      "response": "301|text/plain; charset=utf-8|https://stressguru.ai/anxiety-support/sunday-scaries",
+      "curlExit": 0,
+      "canonical": null,
+      "title": null
+    },
+    {
+      "path": "/anxiety-support/sunday-scaries.html",
+      "response": "200|text/html; charset=UTF-8|",
+      "curlExit": 0,
+      "canonical": "https://stressguru.ai/anxiety-support/sunday-scaries",
+      "title": "Sunday scaries: Calm late-week anxiety quickly | StressGuru"
+    },
+    {
+      "path": "/gurus/anxiety",
+      "response": "200|text/html; charset=UTF-8|",
+      "curlExit": 0,
+      "canonical": "https://stressguru.ai/gurus/anxiety",
+      "title": "Anxiety Guru | AI-Guided Grounding Support | StressGuru"
+    },
+    {
+      "path": "/gurus/relationship",
+      "response": "200|text/html; charset=UTF-8|",
+      "curlExit": 0,
+      "canonical": "https://stressguru.ai/gurus/relationship",
+      "title": "Relationship Guru | AI-Guided Conversation Reflection | StressGuru"
+    },
+    {
+      "path": "/robots.txt",
+      "response": "200|text/plain; charset=UTF-8|",
+      "curlExit": 0,
+      "canonical": null,
+      "title": null,
+      "rules": "# Public discovery and existing training permissions are preserved.\n# These rules apply to every named group; robots.txt is not authentication.\nUser-agent: *\nUser-agent: Googlebot\nUser-agent: Bingbot\nUser-agent: OAI-SearchBot\nUser-agent: ChatGPT-User\nUser-agent: PerplexityBot\nUser-agent: Claude-SearchBot\nUser-agent: Claude-User\nUser-agent: GPTBot\nUser-agent: ClaudeBot\nUser-agent: Google-Extended\nAllow: /\nDisallow: /api\nDisallow: /admin\nDisallow: /account\nDisallow: /preview\n\nSitemap: https://stressguru.ai/sitemap.xml\n"
+    },
+    {
+      "path": "/sitemap.xml",
+      "response": "200|application/xml|",
+      "curlExit": 0,
+      "canonical": null,
+      "title": null,
+      "urlCount": 228
+    },
+    {
+      "path": "/llms-full.txt",
+      "response": "200|text/plain; charset=UTF-8|",
+      "curlExit": 0,
+      "canonical": null,
+      "title": null
+    },
+    {
+      "path": "/images/RiYvCLRiSOOKHHcr.png",
+      "response": "200|image/png|",
+      "curlExit": 0
+    },
+    {
+      "path": "/images/RjEvlDvMOtWTRzEq.png",
+      "response": "200|image/png|",
+      "curlExit": 0
+    },
+    {
+      "path": "/growth-audit-missing-2026-11-08",
+      "response": "404|text/plain; charset=utf-8|",
+      "curlExit": 0,
+      "canonical": null,
+      "title": null
+    },
+    {
+      "path": "/api/trpc/blog.listPublished?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%7D%7D",
+      "response": "200|application/json|",
+      "curlExit": 0,
+      "canonical": null,
+      "title": null,
+      "publishedBlogCount": 55,
+      "affectedPortraitCount": 18,
+      "allAffectedPortraitsCorrect": true,
+      "remoteHeroCount": 12,
+      "publicBlogSlugsOutsideGeneratedPackage": [
+        "decision-fatigue-at-work-a-10-minute-reset-for-too-many-choices-muflyb67",
+        "how-to-get-out-of-freeze-mode-when-overwhelmed-mvqrghw0",
+        "how-to-stop-being-irritable-after-work-mvjmjobv",
+        "how-to-stop-crying-at-work-a-private-5-minute-reset-muply6iz",
+        "how-to-stop-doomscrolling-at-night-a-10-minute-reset-that-protects-your-sleep-mucr4mie",
+        "how-to-stop-email-anxiety-before-it-steals-your-evening-mv6rced4",
+        "how-to-stop-feeling-behind-all-the-time-mv9m5bhm",
+        "how-to-stop-feeling-overstimulated-mvgria2j",
+        "how-to-stop-people-pleasing-at-work-mvtmcgwd",
+        "how-to-stop-replaying-a-conversation-in-your-head-muzlzvhm",
+        "how-to-stop-the-sunday-scaries-before-monday-muwr6xvn",
+        "how-to-take-a-mental-health-day-without-feeling-guilty-mumr2yik"
+      ]
+    }
+  ]
+}

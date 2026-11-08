@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildInventory } from "./inventory.mjs";
 import { crawlRoutes } from "./crawler.mjs";
+import { discoverPublicBlogRoutes, mergePublicBlogRoutes } from "./public-blogs.mjs";
 import { prioritizeOpportunities } from "./decision-engine.mjs";
 import { ingestMetrics, summarizeEngineBenchmark } from "./metrics.mjs";
 import { assertHeroUnchanged, safeWriteJson, assertSafeRecord } from "./guardrails.mjs";
@@ -13,7 +14,10 @@ const option = name => { const i = args.indexOf(name); return i < 0 ? null : arg
 const runId = option("--run-id") ?? new Date().toISOString().slice(0, 10);
 if (!/^\d{4}-\d{2}-\d{2}$/.test(runId) || Number.isNaN(Date.parse(runId))) throw new Error("Run ID must be a valid YYYY-MM-DD date");
 const origin = option("--origin") ?? "https://stressguru.ai";
-const label = origin.startsWith("http://127.0.0.1:") || origin.startsWith("http://localhost:") ? "local-after" : "public-before";
+const localOrigin = origin.startsWith("http://127.0.0.1:") || origin.startsWith("http://localhost:");
+const includeLiveBlogs = args.includes("--include-live-blogs");
+if (localOrigin && includeLiveBlogs) throw new Error("Live blog discovery is not available in local-only verification");
+const label = localOrigin ? "local-after" : includeLiveBlogs ? "public-expanded" : "public-before";
 const growth = path.join(root, "docs/growth");
 const runDirectory = path.join(growth, "runs", runId);
 fs.mkdirSync(runDirectory, { recursive: true });
@@ -28,6 +32,19 @@ try {
   assertHeroUnchanged(root, policy);
   const inventory = buildInventory(root);
   safeWriteJson(path.join(growth, "content-inventory.json"), inventory);
+  let auditRoutes = inventory.publicRoutes;
+  let liveBlogCoverage = null;
+  if (includeLiveBlogs) {
+    const discoveryPath = path.join(runDirectory, "public-blog-discovery.json");
+    const discovery = read(discoveryPath, null) ?? await discoverPublicBlogRoutes(origin);
+    if (!fs.existsSync(discoveryPath)) safeWriteJson(discoveryPath, discovery);
+    const merged = mergePublicBlogRoutes(inventory.publicRoutes, discovery);
+    auditRoutes = merged.routes;
+    liveBlogCoverage = { status: discovery.status, sourceRouteCount: merged.sourceRouteCount,
+      discoveredPublishedBlogs: merged.discoveredPublishedBlogs,
+      publicBlogsMissingFromSource: merged.publicBlogsMissingFromSource,
+      reason: discovery.reason ?? null, artifact: `docs/growth/runs/${runId}/public-blog-discovery.json` };
+  }
   const inputMetrics = option("--metrics");
   const metrics = inputMetrics ? ingestMetrics(read(path.resolve(inputMetrics), [])) : { records: [], rejected: [], status: "unavailable: analytics properties have not been connected" };
   safeWriteJson(path.join(runDirectory, "metrics.json"), metrics);
@@ -40,7 +57,7 @@ try {
   if (args.includes("--crawl")) {
     if (audit && !args.includes("--refresh-audit")) console.log(`Reuse existing ${label} evidence; use --refresh-audit only for a new intentional measurement.`);
     else {
-      audit = await crawlRoutes(origin, inventory.publicRoutes, { concurrency: 3, onProgress: (done, total, row) => {
+      audit = await crawlRoutes(origin, auditRoutes, { concurrency: 3, onProgress: (done, total, row) => {
         if (done % 25 === 0 || done === total) console.log(`${label}: ${done}/${total} requests; last HTTP ${row.status}`);
       } });
       safeWriteJson(auditPath, audit);
@@ -65,6 +82,7 @@ try {
     repositoryScope: inventory.snapshot.description,
     counts: { publicRoutes: inventory.publicRoutes.length, guides: inventory.guides.length, publishedBlogPackage: inventory.publishedBlogs.length, localImages: inventory.localImages.count },
     audit: audit ? { artifact: `docs/growth/runs/${runId}/${label}.json`, totals: audit.totals, javascriptExecuted: false } : null,
+    liveBlogCoverage,
     metricsStatus: metrics.records.length ? "imported aggregate records; inspect rejected records and comparability" : "unavailable",
     aiBenchmarkStatus: benchmarkSummary.testCount ? "actual observed responses recorded" : "untested",
     github: existing.github ?? { status: "unverified", sha: null },

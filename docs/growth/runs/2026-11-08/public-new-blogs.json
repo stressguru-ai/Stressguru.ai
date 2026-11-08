@@ -1,0 +1,582 @@
+{
+  "origin": "https://stressguru.ai",
+  "observedAt": "2026-11-08T15:05:09.153Z",
+  "javascriptExecuted": false,
+  "methodology": "Initial HTTP HTML only. Request timing is a lab observation, not LCP, INP, CLS or field Core Web Vitals.",
+  "routes": [
+    {
+      "url": "https://stressguru.ai/blogs/decision-fatigue-at-work-a-10-minute-reset-for-too-many-choices-muflyb67",
+      "finalUrl": "https://stressguru.ai/blogs/decision-fatigue-at-work-a-10-minute-reset-for-too-many-choices-muflyb67",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Stop Stress Today. Prevent the Same Pattern Tomorrow | StressGuru",
+      "description": "Stop everyday stress from taking the rest of your day. StressGuru helps professional women pause now and plan how to prevent the same pressure from repeating.",
+      "canonical": "https://stressguru.ai/",
+      "h1s": [
+        "Stop Stress Today."
+      ],
+      "textCharacters": 609,
+      "textHash": "f96426ef65d48f1bd9b77311c42f56d278008afb20b1e3819ba2336399c5a9f1",
+      "answerFirst": true,
+      "noscriptContent": true,
+      "internalLinks": [
+        "/stress-relief",
+        "/burnout-prevention",
+        "/anxiety-support",
+        "/sleep-better",
+        "/science-and-safety",
+        "/blogs"
+      ],
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "Organization",
+        "SoftwareApplication"
+      ],
+      "issues": [
+        {
+          "code": "canonical-mismatch",
+          "priority": "high",
+          "evidence": "Canonical differs: https://stressguru.ai/"
+        },
+        {
+          "code": "noscript-snapshot",
+          "priority": "medium",
+          "evidence": "Answer snapshot is in noscript; not complete SSR/hydration parity and needs rendered comparison"
+        }
+      ],
+      "labRequestMs": 3041
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-get-out-of-freeze-mode-when-overwhelmed-mvqrghw0",
+      "finalUrl": "https://stressguru.ai/blogs/how-to-get-out-of-freeze-mode-when-overwhelmed-mvqrghw0",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Stop Stress Today. Prevent the Same Pattern Tomorrow | StressGuru",
+      "description": "Stop everyday stress from taking the rest of your day. StressGuru helps professional women pause now and plan how to prevent the same pressure from repeating.",
+      "canonical": "https://stressguru.ai/",
+      "h1s": [
+        "Stop Stress Today."
+      ],
+      "textCharacters": 609,
+      "textHash": "f96426ef65d48f1bd9b77311c42f56d278008afb20b1e3819ba2336399c5a9f1",
+      "answerFirst": true,
+      "noscriptContent": true,
+      "internalLinks": [
+        "/stress-relief",
+        "/burnout-prevention",
+        "/anxiety-support",
+        "/sleep-better",
+        "/science-and-safety",
+        "/blogs"
+      ],
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "Organization",
+        "SoftwareApplication"
+      ],
+      "issues": [
+        {
+          "code": "canonical-mismatch",
+          "priority": "high",
+          "evidence": "Canonical differs: https://stressguru.ai/"
+        },
+        {
+          "code": "noscript-snapshot",
+          "priority": "medium",
+          "evidence": "Answer snapshot is in noscript; not complete SSR/hydration parity and needs rendered comparison"
+        }
+      ],
+      "labRequestMs": 2406
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-being-irritable-after-work-mvjmjobv",
+      "finalUrl": "https://stressguru.ai/blogs/how-to-stop-being-irritable-after-work-mvjmjobv",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Stop Stress Today. Prevent the Same Pattern Tomorrow | StressGuru",
+      "description": "Stop everyday stress from taking the rest of your day. StressGuru helps professional women pause now and plan how to prevent the same pressure from repeating.",
+      "canonical": "https://stressguru.ai/",
+      "h1s": [
+        "Stop Stress Today."
+      ],
+      "textCharacters": 609,
+      "textHash": "f96426ef65d48f1bd9b77311c42f56d278008afb20b1e3819ba2336399c5a9f1",
+      "answerFirst": true,
+      "noscriptContent": true,
+      "internalLinks": [
+        "/stress-relief",
+        "/burnout-prevention",
+        "/anxiety-support",
+        "/sleep-better",
+        "/science-and-safety",
+        "/blogs"
+      ],
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "Organization",
+        "SoftwareApplication"
+      ],
+      "issues": [
+        {
+          "code": "canonical-mismatch",
+          "priority": "high",
+          "evidence": "Canonical differs: https://stressguru.ai/"
+        },
+        {
+          "code": "noscript-snapshot",
+          "priority": "medium",
+          "evidence": "Answer snapshot is in noscript; not complete SSR/hydration parity and needs rendered comparison"
+        }
+      ],
+      "labRequestMs": 2747
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-crying-at-work-a-private-5-minute-reset-muply6iz",
+      "finalUrl": "https://stressguru.ai/blogs/how-to-stop-crying-at-work-a-private-5-minute-reset-muply6iz",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Stop Stress Today. Prevent the Same Pattern Tomorrow | StressGuru",
+      "description": "Stop everyday stress from taking the rest of your day. StressGuru helps professional women pause now and plan how to prevent the same pressure from repeating.",
+      "canonical": "https://stressguru.ai/",
+      "h1s": [
+        "Stop Stress Today."
+      ],
+      "textCharacters": 609,
+      "textHash": "f96426ef65d48f1bd9b77311c42f56d278008afb20b1e3819ba2336399c5a9f1",
+      "answerFirst": true,
+      "noscriptContent": true,
+      "internalLinks": [
+        "/stress-relief",
+        "/burnout-prevention",
+        "/anxiety-support",
+        "/sleep-better",
+        "/science-and-safety",
+        "/blogs"
+      ],
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "Organization",
+        "SoftwareApplication"
+      ],
+      "issues": [
+        {
+          "code": "canonical-mismatch",
+          "priority": "high",
+          "evidence": "Canonical differs: https://stressguru.ai/"
+        },
+        {
+          "code": "noscript-snapshot",
+          "priority": "medium",
+          "evidence": "Answer snapshot is in noscript; not complete SSR/hydration parity and needs rendered comparison"
+        }
+      ],
+      "labRequestMs": 2611
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-doomscrolling-at-night-a-10-minute-reset-that-protects-your-sleep-mucr4mie",
+      "finalUrl": "https://stressguru.ai/blogs/how-to-stop-doomscrolling-at-night-a-10-minute-reset-that-protects-your-sleep-mucr4mie",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Stop Stress Today. Prevent the Same Pattern Tomorrow | StressGuru",
+      "description": "Stop everyday stress from taking the rest of your day. StressGuru helps professional women pause now and plan how to prevent the same pressure from repeating.",
+      "canonical": "https://stressguru.ai/",
+      "h1s": [
+        "Stop Stress Today."
+      ],
+      "textCharacters": 609,
+      "textHash": "f96426ef65d48f1bd9b77311c42f56d278008afb20b1e3819ba2336399c5a9f1",
+      "answerFirst": true,
+      "noscriptContent": true,
+      "internalLinks": [
+        "/stress-relief",
+        "/burnout-prevention",
+        "/anxiety-support",
+        "/sleep-better",
+        "/science-and-safety",
+        "/blogs"
+      ],
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "Organization",
+        "SoftwareApplication"
+      ],
+      "issues": [
+        {
+          "code": "canonical-mismatch",
+          "priority": "high",
+          "evidence": "Canonical differs: https://stressguru.ai/"
+        },
+        {
+          "code": "noscript-snapshot",
+          "priority": "medium",
+          "evidence": "Answer snapshot is in noscript; not complete SSR/hydration parity and needs rendered comparison"
+        }
+      ],
+      "labRequestMs": 1422
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-email-anxiety-before-it-steals-your-evening-mv6rced4",
+      "finalUrl": "https://stressguru.ai/blogs/how-to-stop-email-anxiety-before-it-steals-your-evening-mv6rced4",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Stop Stress Today. Prevent the Same Pattern Tomorrow | StressGuru",
+      "description": "Stop everyday stress from taking the rest of your day. StressGuru helps professional women pause now and plan how to prevent the same pressure from repeating.",
+      "canonical": "https://stressguru.ai/",
+      "h1s": [
+        "Stop Stress Today."
+      ],
+      "textCharacters": 609,
+      "textHash": "f96426ef65d48f1bd9b77311c42f56d278008afb20b1e3819ba2336399c5a9f1",
+      "answerFirst": true,
+      "noscriptContent": true,
+      "internalLinks": [
+        "/stress-relief",
+        "/burnout-prevention",
+        "/anxiety-support",
+        "/sleep-better",
+        "/science-and-safety",
+        "/blogs"
+      ],
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "Organization",
+        "SoftwareApplication"
+      ],
+      "issues": [
+        {
+          "code": "canonical-mismatch",
+          "priority": "high",
+          "evidence": "Canonical differs: https://stressguru.ai/"
+        },
+        {
+          "code": "noscript-snapshot",
+          "priority": "medium",
+          "evidence": "Answer snapshot is in noscript; not complete SSR/hydration parity and needs rendered comparison"
+        }
+      ],
+      "labRequestMs": 1476
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-feeling-behind-all-the-time-mv9m5bhm",
+      "finalUrl": "https://stressguru.ai/blogs/how-to-stop-feeling-behind-all-the-time-mv9m5bhm",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Stop Stress Today. Prevent the Same Pattern Tomorrow | StressGuru",
+      "description": "Stop everyday stress from taking the rest of your day. StressGuru helps professional women pause now and plan how to prevent the same pressure from repeating.",
+      "canonical": "https://stressguru.ai/",
+      "h1s": [
+        "Stop Stress Today."
+      ],
+      "textCharacters": 609,
+      "textHash": "f96426ef65d48f1bd9b77311c42f56d278008afb20b1e3819ba2336399c5a9f1",
+      "answerFirst": true,
+      "noscriptContent": true,
+      "internalLinks": [
+        "/stress-relief",
+        "/burnout-prevention",
+        "/anxiety-support",
+        "/sleep-better",
+        "/science-and-safety",
+        "/blogs"
+      ],
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "Organization",
+        "SoftwareApplication"
+      ],
+      "issues": [
+        {
+          "code": "canonical-mismatch",
+          "priority": "high",
+          "evidence": "Canonical differs: https://stressguru.ai/"
+        },
+        {
+          "code": "noscript-snapshot",
+          "priority": "medium",
+          "evidence": "Answer snapshot is in noscript; not complete SSR/hydration parity and needs rendered comparison"
+        }
+      ],
+      "labRequestMs": 1685
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-feeling-overstimulated-mvgria2j",
+      "finalUrl": "https://stressguru.ai/blogs/how-to-stop-feeling-overstimulated-mvgria2j",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Stop Stress Today. Prevent the Same Pattern Tomorrow | StressGuru",
+      "description": "Stop everyday stress from taking the rest of your day. StressGuru helps professional women pause now and plan how to prevent the same pressure from repeating.",
+      "canonical": "https://stressguru.ai/",
+      "h1s": [
+        "Stop Stress Today."
+      ],
+      "textCharacters": 609,
+      "textHash": "f96426ef65d48f1bd9b77311c42f56d278008afb20b1e3819ba2336399c5a9f1",
+      "answerFirst": true,
+      "noscriptContent": true,
+      "internalLinks": [
+        "/stress-relief",
+        "/burnout-prevention",
+        "/anxiety-support",
+        "/sleep-better",
+        "/science-and-safety",
+        "/blogs"
+      ],
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "Organization",
+        "SoftwareApplication"
+      ],
+      "issues": [
+        {
+          "code": "canonical-mismatch",
+          "priority": "high",
+          "evidence": "Canonical differs: https://stressguru.ai/"
+        },
+        {
+          "code": "noscript-snapshot",
+          "priority": "medium",
+          "evidence": "Answer snapshot is in noscript; not complete SSR/hydration parity and needs rendered comparison"
+        }
+      ],
+      "labRequestMs": 1418
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-people-pleasing-at-work-mvtmcgwd",
+      "finalUrl": "https://stressguru.ai/blogs/how-to-stop-people-pleasing-at-work-mvtmcgwd",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Stop Stress Today. Prevent the Same Pattern Tomorrow | StressGuru",
+      "description": "Stop everyday stress from taking the rest of your day. StressGuru helps professional women pause now and plan how to prevent the same pressure from repeating.",
+      "canonical": "https://stressguru.ai/",
+      "h1s": [
+        "Stop Stress Today."
+      ],
+      "textCharacters": 609,
+      "textHash": "f96426ef65d48f1bd9b77311c42f56d278008afb20b1e3819ba2336399c5a9f1",
+      "answerFirst": true,
+      "noscriptContent": true,
+      "internalLinks": [
+        "/stress-relief",
+        "/burnout-prevention",
+        "/anxiety-support",
+        "/sleep-better",
+        "/science-and-safety",
+        "/blogs"
+      ],
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "Organization",
+        "SoftwareApplication"
+      ],
+      "issues": [
+        {
+          "code": "canonical-mismatch",
+          "priority": "high",
+          "evidence": "Canonical differs: https://stressguru.ai/"
+        },
+        {
+          "code": "noscript-snapshot",
+          "priority": "medium",
+          "evidence": "Answer snapshot is in noscript; not complete SSR/hydration parity and needs rendered comparison"
+        }
+      ],
+      "labRequestMs": 1674
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-replaying-a-conversation-in-your-head-muzlzvhm",
+      "finalUrl": "https://stressguru.ai/blogs/how-to-stop-replaying-a-conversation-in-your-head-muzlzvhm",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Stop Stress Today. Prevent the Same Pattern Tomorrow | StressGuru",
+      "description": "Stop everyday stress from taking the rest of your day. StressGuru helps professional women pause now and plan how to prevent the same pressure from repeating.",
+      "canonical": "https://stressguru.ai/",
+      "h1s": [
+        "Stop Stress Today."
+      ],
+      "textCharacters": 609,
+      "textHash": "f96426ef65d48f1bd9b77311c42f56d278008afb20b1e3819ba2336399c5a9f1",
+      "answerFirst": true,
+      "noscriptContent": true,
+      "internalLinks": [
+        "/stress-relief",
+        "/burnout-prevention",
+        "/anxiety-support",
+        "/sleep-better",
+        "/science-and-safety",
+        "/blogs"
+      ],
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "Organization",
+        "SoftwareApplication"
+      ],
+      "issues": [
+        {
+          "code": "canonical-mismatch",
+          "priority": "high",
+          "evidence": "Canonical differs: https://stressguru.ai/"
+        },
+        {
+          "code": "noscript-snapshot",
+          "priority": "medium",
+          "evidence": "Answer snapshot is in noscript; not complete SSR/hydration parity and needs rendered comparison"
+        }
+      ],
+      "labRequestMs": 1722
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-the-sunday-scaries-before-monday-muwr6xvn",
+      "finalUrl": "https://stressguru.ai/blogs/how-to-stop-the-sunday-scaries-before-monday-muwr6xvn",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Stop Stress Today. Prevent the Same Pattern Tomorrow | StressGuru",
+      "description": "Stop everyday stress from taking the rest of your day. StressGuru helps professional women pause now and plan how to prevent the same pressure from repeating.",
+      "canonical": "https://stressguru.ai/",
+      "h1s": [
+        "Stop Stress Today."
+      ],
+      "textCharacters": 609,
+      "textHash": "f96426ef65d48f1bd9b77311c42f56d278008afb20b1e3819ba2336399c5a9f1",
+      "answerFirst": true,
+      "noscriptContent": true,
+      "internalLinks": [
+        "/stress-relief",
+        "/burnout-prevention",
+        "/anxiety-support",
+        "/sleep-better",
+        "/science-and-safety",
+        "/blogs"
+      ],
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "Organization",
+        "SoftwareApplication"
+      ],
+      "issues": [
+        {
+          "code": "canonical-mismatch",
+          "priority": "high",
+          "evidence": "Canonical differs: https://stressguru.ai/"
+        },
+        {
+          "code": "noscript-snapshot",
+          "priority": "medium",
+          "evidence": "Answer snapshot is in noscript; not complete SSR/hydration parity and needs rendered comparison"
+        }
+      ],
+      "labRequestMs": 1393
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-take-a-mental-health-day-without-feeling-guilty-mumr2yik",
+      "finalUrl": "https://stressguru.ai/blogs/how-to-take-a-mental-health-day-without-feeling-guilty-mumr2yik",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Stop Stress Today. Prevent the Same Pattern Tomorrow | StressGuru",
+      "description": "Stop everyday stress from taking the rest of your day. StressGuru helps professional women pause now and plan how to prevent the same pressure from repeating.",
+      "canonical": "https://stressguru.ai/",
+      "h1s": [
+        "Stop Stress Today."
+      ],
+      "textCharacters": 609,
+      "textHash": "f96426ef65d48f1bd9b77311c42f56d278008afb20b1e3819ba2336399c5a9f1",
+      "answerFirst": true,
+      "noscriptContent": true,
+      "internalLinks": [
+        "/stress-relief",
+        "/burnout-prevention",
+        "/anxiety-support",
+        "/sleep-better",
+        "/science-and-safety",
+        "/blogs"
+      ],
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "Organization",
+        "SoftwareApplication"
+      ],
+      "issues": [
+        {
+          "code": "canonical-mismatch",
+          "priority": "high",
+          "evidence": "Canonical differs: https://stressguru.ai/"
+        },
+        {
+          "code": "noscript-snapshot",
+          "priority": "medium",
+          "evidence": "Answer snapshot is in noscript; not complete SSR/hydration parity and needs rendered comparison"
+        }
+      ],
+      "labRequestMs": 1289
+    }
+  ],
+  "duplicateGroups": [
+    {
+      "kind": "title",
+      "urls": [
+        "https://stressguru.ai/blogs/decision-fatigue-at-work-a-10-minute-reset-for-too-many-choices-muflyb67",
+        "https://stressguru.ai/blogs/how-to-get-out-of-freeze-mode-when-overwhelmed-mvqrghw0",
+        "https://stressguru.ai/blogs/how-to-stop-being-irritable-after-work-mvjmjobv",
+        "https://stressguru.ai/blogs/how-to-stop-crying-at-work-a-private-5-minute-reset-muply6iz",
+        "https://stressguru.ai/blogs/how-to-stop-doomscrolling-at-night-a-10-minute-reset-that-protects-your-sleep-mucr4mie",
+        "https://stressguru.ai/blogs/how-to-stop-email-anxiety-before-it-steals-your-evening-mv6rced4",
+        "https://stressguru.ai/blogs/how-to-stop-feeling-behind-all-the-time-mv9m5bhm",
+        "https://stressguru.ai/blogs/how-to-stop-feeling-overstimulated-mvgria2j",
+        "https://stressguru.ai/blogs/how-to-stop-people-pleasing-at-work-mvtmcgwd",
+        "https://stressguru.ai/blogs/how-to-stop-replaying-a-conversation-in-your-head-muzlzvhm",
+        "https://stressguru.ai/blogs/how-to-stop-the-sunday-scaries-before-monday-muwr6xvn",
+        "https://stressguru.ai/blogs/how-to-take-a-mental-health-day-without-feeling-guilty-mumr2yik"
+      ]
+    },
+    {
+      "kind": "description",
+      "urls": [
+        "https://stressguru.ai/blogs/decision-fatigue-at-work-a-10-minute-reset-for-too-many-choices-muflyb67",
+        "https://stressguru.ai/blogs/how-to-get-out-of-freeze-mode-when-overwhelmed-mvqrghw0",
+        "https://stressguru.ai/blogs/how-to-stop-being-irritable-after-work-mvjmjobv",
+        "https://stressguru.ai/blogs/how-to-stop-crying-at-work-a-private-5-minute-reset-muply6iz",
+        "https://stressguru.ai/blogs/how-to-stop-doomscrolling-at-night-a-10-minute-reset-that-protects-your-sleep-mucr4mie",
+        "https://stressguru.ai/blogs/how-to-stop-email-anxiety-before-it-steals-your-evening-mv6rced4",
+        "https://stressguru.ai/blogs/how-to-stop-feeling-behind-all-the-time-mv9m5bhm",
+        "https://stressguru.ai/blogs/how-to-stop-feeling-overstimulated-mvgria2j",
+        "https://stressguru.ai/blogs/how-to-stop-people-pleasing-at-work-mvtmcgwd",
+        "https://stressguru.ai/blogs/how-to-stop-replaying-a-conversation-in-your-head-muzlzvhm",
+        "https://stressguru.ai/blogs/how-to-stop-the-sunday-scaries-before-monday-muwr6xvn",
+        "https://stressguru.ai/blogs/how-to-take-a-mental-health-day-without-feeling-guilty-mumr2yik"
+      ]
+    },
+    {
+      "kind": "body",
+      "urls": [
+        "https://stressguru.ai/blogs/decision-fatigue-at-work-a-10-minute-reset-for-too-many-choices-muflyb67",
+        "https://stressguru.ai/blogs/how-to-get-out-of-freeze-mode-when-overwhelmed-mvqrghw0",
+        "https://stressguru.ai/blogs/how-to-stop-being-irritable-after-work-mvjmjobv",
+        "https://stressguru.ai/blogs/how-to-stop-crying-at-work-a-private-5-minute-reset-muply6iz",
+        "https://stressguru.ai/blogs/how-to-stop-doomscrolling-at-night-a-10-minute-reset-that-protects-your-sleep-mucr4mie",
+        "https://stressguru.ai/blogs/how-to-stop-email-anxiety-before-it-steals-your-evening-mv6rced4",
+        "https://stressguru.ai/blogs/how-to-stop-feeling-behind-all-the-time-mv9m5bhm",
+        "https://stressguru.ai/blogs/how-to-stop-feeling-overstimulated-mvgria2j",
+        "https://stressguru.ai/blogs/how-to-stop-people-pleasing-at-work-mvtmcgwd",
+        "https://stressguru.ai/blogs/how-to-stop-replaying-a-conversation-in-your-head-muzlzvhm",
+        "https://stressguru.ai/blogs/how-to-stop-the-sunday-scaries-before-monday-muwr6xvn",
+        "https://stressguru.ai/blogs/how-to-take-a-mental-health-day-without-feeling-guilty-mumr2yik"
+      ]
+    }
+  ],
+  "totals": {
+    "checked": 12,
+    "http200": 12,
+    "failures": 0
+  }
+}

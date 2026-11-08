@@ -1,0 +1,228 @@
+{
+  "status": "observed",
+  "endpoint": "https://stressguru.ai/api/trpc/blog.listPublished?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%7D%7D",
+  "publishedListingRows": 55,
+  "rejectedRows": 0,
+  "routes": [
+    {
+      "path": "/blogs/anxiety-relief-guide",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/calm-mindfulness-guide",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/decision-fatigue-at-work-a-10-minute-reset-for-too-many-choices-muflyb67",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/does-apple-watch-track-stress-levels-what-heart-rate-and-hrv-can-and-cannot-tell-you",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/feeling-like-a-ghost-in-your-own-life-let-s-talk-about-that-mmlnmbnu",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/feeling-like-there-s-more-yeah-there-probably-is-mm0ey7aq",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/grounding-techniques-for-anxiety-at-work-discreet-options-between-meetings",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/happiness-joy-guide",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/how-to-get-out-of-freeze-mode-when-overwhelmed-mvqrghw0",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/how-to-reduce-work-stress-after-work-a-15-minute-reset-that-protects-your-evening-mu8qzvbw",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/how-to-set-work-boundaries-without-hurting-your-career",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/how-to-share-the-mental-load-with-your-partner-move-from-helping-to-ownership",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/how-to-stop-being-irritable-after-work-mvjmjobv",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/how-to-stop-crying-at-work-a-private-5-minute-reset-muply6iz",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/how-to-stop-doomscrolling-at-night-a-10-minute-reset-that-protects-your-sleep-mucr4mie",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/how-to-stop-email-anxiety-before-it-steals-your-evening-mv6rced4",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/how-to-stop-feeling-behind-all-the-time-mv9m5bhm",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/how-to-stop-feeling-overstimulated-mvgria2j",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/how-to-stop-overthinking-at-night-without-turning-bedtime-into-another-task",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/how-to-stop-people-pleasing-at-work-mvtmcgwd",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/how-to-stop-replaying-a-conversation-in-your-head-muzlzvhm",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/how-to-stop-the-sunday-scaries-before-monday-muwr6xvn",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/how-to-stop-thinking-about-work-after-hours-a-small-workday-close-ritual",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/how-to-take-a-mental-health-day-without-feeling-guilty-mumr2yik",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/how-to-talk-to-your-manager-about-workload-without-sharing-private-health-details",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/impostor-feelings-after-a-promotion-a-first-30-days-reset",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/is-this-burnout-or-depression-what-an-app-can-and-cannot-tell-you",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/it-s-not-about-the-dishes-it-s-never-about-the-dishes-mljgn48c",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/layoff-anxiety-a-grounded-plan-for-today-s-uncertainty",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/lost-in-the-labyrinth-of-life-how-to-gently-begin-your-spiritual-practice-ml8rvvyn",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/lost-in-thought-missing-the-moment-reclaiming-presence-with-your-loved-ones",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/managing-caregiving-stress-and-a-demanding-job-without-carrying-it-alone",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/managing-stress-as-a-woman-leader-without-making-resilience-the-whole-plan",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/motivation-habits-guide",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/new-anxiety-during-perimenopause-what-may-be-worth-discussing-with-a-clinician",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/perimenopause-stress-at-work-discreet-support-before-the-next-meeting",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/racing-thoughts-after-work-and-sleep-build-an-off-ramp-before-bed",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/relationship-healing-guide",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/signs-of-burnout-at-work-a-non-diagnostic-check-in-and-next-step",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/sleep-restoration-guide",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/spiritual-growth-guide",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/stress-management-guide",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/stuck-in-the-what-if-whirlwind-your-escape-plan-from-constant-worry-mlbcgb0v",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/talking-about-unequal-household-responsibilities-before-the-fall-calendar-fills-up",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/that-gnawing-feeling-after-5-pm-it-s-not-just-more-to-do-mncyxxn7",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/trapped-in-the-endless-cycle-how-to-disconnect-from-work-and-reclaim-your-life-ml8h4mcj",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/trapped-in-tomorrow-how-to-break-free-from-procrastination-s-grip-and-reclaim-your-power-ml8sysi1",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/when-the-world-stops-navigating-sudden-panic-attacks-in-public-and-at-work-mla7wrpf",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/when-your-body-betrays-you-in-public-or-why-that-meeting-felt-like-a-heart-attack-mm4gpebn",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/when-your-mind-won-t-quit-taming-racing-thoughts-for-restful-sleep-ml8h7dam",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/why-you-can-t-stop-thinking-about-everything-that-could-go-wrong-mo6uyg3i",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/why-you-wake-up-at-3-a-m-multiple-possibilities-and-a-low-stimulation-next-step",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/you-hit-all-your-goals-so-why-do-you-still-feel-like-something-s-missing-mle4jzt2",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/you-re-not-lazy-you-re-just-stuck-in-the-always-on-trap-mp1417m2",
+      "evidenceSource": "public-published-blog-api"
+    },
+    {
+      "path": "/blogs/your-brain-won-t-shut-up-at-3-am-yeah-i-ve-seen-that-before-mmojfgdt",
+      "evidenceSource": "public-published-blog-api"
+    }
+  ]
+}

@@ -22,6 +22,8 @@ Use the available GSC, GA4, Bing Webmaster, and App Store attribution connection
 
 Run `node scripts/growth/run.mjs --run-id YYYY-MM-DD --crawl` to establish the source inventory and bounded public raw-HTML audit. Use `--origin http://127.0.0.1:PORT` only for a temporary local test server. Lab request timing is not a Core Web Vitals field measurement. Check the sitemap, robots, one known deep guide, one published blog, local image URLs, and a genuine missing page. Keep before/after audit files separate.
 
+For weekly public coverage, add `--include-live-blogs` to read only the public published-blog listing and include valid article routes absent from the source package. This writes a separate `public-expanded.json` audit and `public-blog-discovery.json` provenance without replacing `public-before.json`. A failed listing remains unavailable, not zero; it does not trigger a database fallback. Keep local verification source-only. Do not rewrite published content or expand schema/sitemap packages solely from discovery without the required review.
+
 Import aggregate analytics through the metric utility only in its documented validated format. Record source, property, period, reporting delays, coverage, and confounders. Compare like-for-like periods. Never call App Store outbound clicks downloads or a brand mention a citation. Use thirty-, sixty-, and ninety-day review windows; seven days of inconclusive data is not grounds to reverse a change.
 
 A scheduled run prepares inventory and evidence; the Manus agent performs research and approved code changes. The Node utilities do not impersonate an AI-search engine or autonomously rewrite content without the Manus reasoning/review stage.

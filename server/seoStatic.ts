@@ -78,7 +78,7 @@ function redirectTrailingSnapshotSlash(staticPath: string) {
       return;
     }
 
-    const canonicalPath = req.path.slice(0, -1);
+    const canonicalPath = req.path.slice(0, -1).replace(/^\/+/, "/");
     if (!findSnapshot(staticPath, canonicalPath)) {
       next();
       return;
@@ -121,17 +121,26 @@ export function installSeoStatic(
   // Admin is a private client-only area, rather than a crawlable public route.
   app.get(privateClientRoute, sendPrivateClientShell(staticPath));
 
-  // Generated URLs are extensionless canonicals. Normalize only alternate
-  // trailing-slash forms when the matching public snapshot is real.
-  app.get("*", redirectTrailingSnapshotSlash(staticPath));
-
   // Blog publication is owned by the AWS database, not the build-time package.
-  // This also protects direct .html snapshots after an article is unpublished.
+  // Identify the same decoded logical path that file serving will resolve, so
+  // equivalent encoded or normalized URLs cannot bypass publication checks.
   if (resolvePublishedBlog) {
     app.get(
-      /^\/blogs\/([a-z0-9]+(?:-[a-z0-9]+)*)(?:\.html)?$/,
+      "*",
       (req, res, next) => {
-        const slug = req.params[0];
+        let pathname: string;
+        try {
+          pathname = path.posix.normalize(decodeURIComponent(req.path));
+        } catch {
+          res.status(404).type("text/plain").send("Not found");
+          return;
+        }
+        const match = /^\/blogs\/([a-z0-9]+(?:-[a-z0-9]+)*)(?:\.html)?\/?$/.exec(pathname);
+        if (!match) {
+          next();
+          return;
+        }
+        const slug = match[1];
         resolvePublishedBlog(slug)
           .then(published => {
             if (!published) {
@@ -157,6 +166,9 @@ export function installSeoStatic(
       }
     );
   }
+
+  // Redirect only after publication is verified for any logical blog request.
+  app.get("*", redirectTrailingSnapshotSlash(staticPath));
 
   // Resolve extensionless snapshots before express.static so `/blogs` resolves
   // to `blogs.html` even when `blogs/` also contains individual blog snapshots.

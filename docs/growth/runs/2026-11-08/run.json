@@ -1,0 +1,81 @@
+{
+  "runId": "2026-11-08",
+  "updatedAt": "2026-11-08T15:08:05.618Z",
+  "stage": "validated",
+  "repositoryScope": "Derived from checked-in sitemap, route source, generated guide/blog JSON, and local image files. This is not live AWS, deployment, crawl, analytics, or database evidence.",
+  "counts": {
+    "publicRoutes": 228,
+    "guides": 160,
+    "publishedBlogPackage": 43,
+    "localImages": 54
+  },
+  "audit": {
+    "artifact": "docs/growth/runs/2026-11-08/public-expanded.json",
+    "totals": {
+      "checked": 240,
+      "http200": 240,
+      "failures": 0
+    },
+    "javascriptExecuted": false
+  },
+  "metricsStatus": "unavailable",
+  "aiBenchmarkStatus": "untested",
+  "github": {
+    "status": "preparing-validated-delivery",
+    "repository": "stressguru-ai/Stressguru.ai",
+    "branch": "main",
+    "sha": null
+  },
+  "schedule": "enabled",
+  "nextStage": "Verify GitHub delivery; separate deployment agent handles AWS. Review new article snapshot and self-hosted hero coverage before any content/database changes.",
+  "liveBlogCoverage": {
+    "status": "observed",
+    "sourceRouteCount": 228,
+    "discoveredPublishedBlogs": 55,
+    "publicBlogsMissingFromSource": [
+      "/blogs/decision-fatigue-at-work-a-10-minute-reset-for-too-many-choices-muflyb67",
+      "/blogs/how-to-get-out-of-freeze-mode-when-overwhelmed-mvqrghw0",
+      "/blogs/how-to-stop-being-irritable-after-work-mvjmjobv",
+      "/blogs/how-to-stop-crying-at-work-a-private-5-minute-reset-muply6iz",
+      "/blogs/how-to-stop-doomscrolling-at-night-a-10-minute-reset-that-protects-your-sleep-mucr4mie",
+      "/blogs/how-to-stop-email-anxiety-before-it-steals-your-evening-mv6rced4",
+      "/blogs/how-to-stop-feeling-behind-all-the-time-mv9m5bhm",
+      "/blogs/how-to-stop-feeling-overstimulated-mvgria2j",
+      "/blogs/how-to-stop-people-pleasing-at-work-mvtmcgwd",
+      "/blogs/how-to-stop-replaying-a-conversation-in-your-head-muzlzvhm",
+      "/blogs/how-to-stop-the-sunday-scaries-before-monday-muwr6xvn",
+      "/blogs/how-to-take-a-mental-health-day-without-feeling-guilty-mumr2yik"
+    ],
+    "reason": null,
+    "artifact": "docs/growth/runs/2026-11-08/public-blog-discovery.json"
+  },
+  "validation": {
+    "typescript": "passed",
+    "tests": 104,
+    "contentAudit": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "productionBuild": "passed",
+    "sourceSnapshots": 228,
+    "localHttpHighSeverityFindings": 0,
+    "representativeChecks": 10,
+    "publicationTests": "synthetic local resolvers only"
+  },
+  "publicFindings": {
+    "sourceRoutes": 228,
+    "sourceHighSeverityFindings": 0,
+    "expandedRoutes": 240,
+    "publishedBlogs": 55,
+    "sourcePublishedBlogs": 43,
+    "newBlogsWithHomepageCanonical": 12,
+    "remoteHeroUrls": 12,
+    "correctedPortraitRows": 18,
+    "unknownRouteStatus": 404,
+    "guideTrailingSlashStatus": 301
+  },
+  "databaseAccessed": false,
+  "databaseWritten": false,
+  "infrastructureChanged": false,
+  "automationModified": false
+}

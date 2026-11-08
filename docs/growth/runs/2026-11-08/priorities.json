@@ -1,0 +1,182 @@
+[
+  {
+    "id": "new-published-blog-snapshot-coverage",
+    "kind": "editorial-technical-review",
+    "title": "Refresh initial HTML coverage for 12 newer published articles",
+    "path": "/blogs",
+    "score": 91,
+    "confidence": "low",
+    "authorization": "approval-required",
+    "requiresApproval": true,
+    "riskGates": [
+      "candidate-approval-required",
+      "clinical-or-health-claim"
+    ],
+    "reason": "Observed evidence score 100/100 was used; unavailable values were excluded. Approval gates: candidate-approval-required, clinical-or-health-claim.",
+    "reasonDetails": [
+      "Observed evidence score 100/100 was used; unavailable values were excluded.",
+      "Approval gates: candidate-approval-required, clinical-or-health-claim."
+    ],
+    "measurement": {
+      "observedMetricEvidence": true,
+      "observedDemand": false,
+      "historyStatus": "none"
+    }
+  },
+  {
+    "id": "analytics-baseline",
+    "kind": "measurement-access",
+    "title": "Connect authorized search and conversion measurement",
+    "path": "/",
+    "score": 89,
+    "confidence": "low",
+    "authorization": "eligible-for-low-risk-review",
+    "requiresApproval": false,
+    "riskGates": [],
+    "reason": "Observed evidence score 100/100 was used; unavailable values were excluded.",
+    "reasonDetails": [
+      "Observed evidence score 100/100 was used; unavailable values were excluded."
+    ],
+    "measurement": {
+      "observedMetricEvidence": true,
+      "observedDemand": false,
+      "historyStatus": "none"
+    }
+  },
+  {
+    "id": "new-blog-remote-image-regression",
+    "kind": "asset-data-review",
+    "title": "Restore self-hosted hero paths for newer published blog records",
+    "path": "/blogs",
+    "score": 83,
+    "confidence": "low",
+    "authorization": "approval-required",
+    "requiresApproval": true,
+    "riskGates": [
+      "candidate-approval-required",
+      "locked-hero"
+    ],
+    "reason": "Observed evidence score 100/100 was used; unavailable values were excluded. Approval gates: candidate-approval-required, locked-hero.",
+    "reasonDetails": [
+      "Observed evidence score 100/100 was used; unavailable values were excluded.",
+      "Approval gates: candidate-approval-required, locked-hero."
+    ],
+    "measurement": {
+      "observedMetricEvidence": true,
+      "observedDemand": false,
+      "historyStatus": "none"
+    }
+  },
+  {
+    "id": "snapshot-rendered-parity",
+    "kind": "technical-research",
+    "title": "Check noscript snapshots against rendered page content",
+    "path": "/blogs",
+    "score": 80,
+    "confidence": "low",
+    "authorization": "eligible-for-low-risk-review",
+    "requiresApproval": false,
+    "riskGates": [],
+    "reason": "Observed evidence score 100/100 was used; unavailable values were excluded.",
+    "reasonDetails": [
+      "Observed evidence score 100/100 was used; unavailable values were excluded."
+    ],
+    "measurement": {
+      "observedMetricEvidence": true,
+      "observedDemand": false,
+      "historyStatus": "none"
+    }
+  },
+  {
+    "id": "clinical-source-fit-review",
+    "kind": "clinical-review",
+    "title": "Review existing guide claims against cited sources",
+    "path": "/stress-relief",
+    "score": 75,
+    "confidence": "low",
+    "authorization": "approval-required",
+    "requiresApproval": true,
+    "riskGates": [
+      "candidate-approval-required",
+      "clinical-or-health-claim"
+    ],
+    "reason": "Observed evidence score 90/100 was used; unavailable values were excluded. Approval gates: candidate-approval-required, clinical-or-health-claim.",
+    "reasonDetails": [
+      "Observed evidence score 90/100 was used; unavailable values were excluded.",
+      "Approval gates: candidate-approval-required, clinical-or-health-claim."
+    ],
+    "measurement": {
+      "observedMetricEvidence": true,
+      "observedDemand": false,
+      "historyStatus": "none"
+    }
+  },
+  {
+    "id": "cwv-measurement",
+    "kind": "performance-measurement",
+    "title": "Establish real field and lab page-experience observations",
+    "path": "/",
+    "score": 0,
+    "confidence": "none",
+    "authorization": "insufficient-evidence",
+    "requiresApproval": false,
+    "riskGates": [],
+    "reason": "No observed valid metric evidence was supplied; missing metrics are not scored as opportunity.",
+    "reasonDetails": [
+      "No observed valid metric evidence was supplied; missing metrics are not scored as opportunity."
+    ],
+    "measurement": {
+      "observedMetricEvidence": false,
+      "observedDemand": false,
+      "historyStatus": "none"
+    }
+  },
+  {
+    "id": "source-intent-overlap",
+    "kind": "editorial-research",
+    "title": "Inspect overlapping search intents before any consolidation",
+    "path": "/learn/stress-vs-anxiety",
+    "score": 0,
+    "confidence": "none",
+    "authorization": "approval-required",
+    "requiresApproval": true,
+    "riskGates": [
+      "candidate-approval-required",
+      "destructive-url-change"
+    ],
+    "reason": "No observed valid metric evidence was supplied; missing metrics are not scored as opportunity. Approval gates: candidate-approval-required, destructive-url-change.",
+    "reasonDetails": [
+      "No observed valid metric evidence was supplied; missing metrics are not scored as opportunity.",
+      "Approval gates: candidate-approval-required, destructive-url-change."
+    ],
+    "measurement": {
+      "observedMetricEvidence": false,
+      "observedDemand": false,
+      "historyStatus": "none"
+    }
+  },
+  {
+    "id": "work-to-home-transition",
+    "kind": "existing-page",
+    "title": "Improve the work-to-home transition guide with source-checked examples",
+    "path": "/stress-relief/cant-switch-off-after-work",
+    "score": 0,
+    "confidence": "none",
+    "authorization": "approval-required",
+    "requiresApproval": true,
+    "riskGates": [
+      "candidate-approval-required",
+      "clinical-or-health-claim"
+    ],
+    "reason": "No observed valid metric evidence was supplied; missing metrics are not scored as opportunity. Approval gates: candidate-approval-required, clinical-or-health-claim.",
+    "reasonDetails": [
+      "No observed valid metric evidence was supplied; missing metrics are not scored as opportunity.",
+      "Approval gates: candidate-approval-required, clinical-or-health-claim."
+    ],
+    "measurement": {
+      "observedMetricEvidence": false,
+      "observedDemand": false,
+      "historyStatus": "none"
+    }
+  }
+]
