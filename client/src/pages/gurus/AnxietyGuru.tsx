@@ -6,7 +6,7 @@ export default function AnxietyGuru() {
     <GuruPage
       guruName="Anxiety Guru"
       guruTitle="Your Guide for Worry-Filled Moments"
-      heroImage="/images/cbBkKzHOhCgwDsEl.jpg"
+      heroImage="/images/xzxYBEiYFEVfANIo.jpg"
 
       avatarImage="/images/RjEvlDvMOtWTRzEq.png"
       problemHeadline="When Worry Takes Up the Whole Day, Make Room to Think"

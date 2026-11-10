@@ -6,7 +6,7 @@ export default function RelationshipGuru() {
     <GuruPage
       guruName="Relationship Guru"
       guruTitle="Your Guide for Hard Conversations"
-      heroImage="/images/xzxYBEiYFEVfANIo.jpg"
+      heroImage="/images/cbBkKzHOhCgwDsEl.jpg"
 
       avatarImage="/images/RiYvCLRiSOOKHHcr.png"
       problemHeadline="Before Small Friction Becomes the Whole Evening"
