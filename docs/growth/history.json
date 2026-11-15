@@ -158,7 +158,7 @@
     "title": "Do not treat unmeasured or inconclusive history as measured evidence",
     "type": "agent-utility-fix",
     "path": "scripts/growth/decision-engine.mjs",
-    "status": "validated-awaiting-github-delivery",
+    "status": "completed-locally-github-write-blocked",
     "evidenceObserved": true,
     "evidenceScore": 100,
     "impact": 70,
@@ -170,7 +170,11 @@
     "technicalValidationObserved": true,
     "evidenceSource": "docs/growth/runs/2026-11-15/decision-comparison.json",
     "outcome": "Deterministic classifier corrected; website growth unmeasured",
-    "reversal": "Review then revert the exact outcome-label matcher and regression fixtures; no automatic rollback"
+    "reversal": "Review then revert the exact outcome-label matcher and regression fixtures; no automatic rollback",
+    "preparedCodeCommit": "fd377900f6d1cf823338a2a1215bfea02eea965b",
+    "sourceCodeCommit": "62c741cd8c705981f58eb5b3f61444a3ecb1003f",
+    "githubPushed": false,
+    "deliveryBlocker": "fatal: could not read Username for https://github.com: terminal prompts disabled"
   },
   {
     "id": "guru-hero-banner-swap-2026-11-10",

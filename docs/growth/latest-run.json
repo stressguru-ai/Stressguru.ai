@@ -1,5 +1,20 @@
 {
   "runId": "2026-11-15",
   "artifact": "docs/growth/runs/2026-11-15/run.json",
-  "stage": "validated-awaiting-github-delivery"
+  "stage": "completed-locally-github-write-blocked",
+  "github": {
+    "repository": "stressguru-ai/Stressguru.ai",
+    "branch": "main",
+    "status": "blocked-write-authentication",
+    "baselineSha": "574c28850387056de08d532da47caadb698df75a",
+    "remoteSha": "574c28850387056de08d532da47caadb698df75a",
+    "sha": null,
+    "pushed": false,
+    "preparedCodeCommit": "fd377900f6d1cf823338a2a1215bfea02eea965b",
+    "sourceCodeCommit": "62c741cd8c705981f58eb5b3f61444a3ecb1003f",
+    "readTransport": "Unauthenticated read of public repository; not proof of write authorization",
+    "connectorSetting": "enabled",
+    "cliAuthentication": "No GH_TOKEN/GITHUB_TOKEN or authenticated gh configuration available",
+    "error": "fatal: could not read Username for https://github.com: terminal prompts disabled"
+  }
 }

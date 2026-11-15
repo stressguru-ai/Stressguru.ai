@@ -1,7 +1,7 @@
 {
   "runId": "2026-11-15",
-  "updatedAt": "2026-11-15T15:13:06.000Z",
-  "stage": "validated-awaiting-github-delivery",
+  "updatedAt": "2026-11-15T15:15:45.391Z",
+  "stage": "completed-locally-github-write-blocked",
   "repositoryScope": "Derived from checked-in sitemap, route source, generated guide/blog JSON, and local image files. This is not live AWS, deployment, crawl, analytics, or database evidence.",
   "counts": {
     "publicRoutes": 228,
@@ -44,10 +44,17 @@
   "github": {
     "repository": "stressguru-ai/Stressguru.ai",
     "branch": "main",
-    "status": "pending",
+    "status": "blocked-write-authentication",
     "baselineSha": "574c28850387056de08d532da47caadb698df75a",
+    "remoteSha": "574c28850387056de08d532da47caadb698df75a",
     "sha": null,
-    "transport": "existing authorized Git transport"
+    "pushed": false,
+    "preparedCodeCommit": "fd377900f6d1cf823338a2a1215bfea02eea965b",
+    "sourceCodeCommit": "62c741cd8c705981f58eb5b3f61444a3ecb1003f",
+    "readTransport": "Unauthenticated read of public repository; not proof of write authorization",
+    "connectorSetting": "enabled",
+    "cliAuthentication": "No GH_TOKEN/GITHUB_TOKEN or authenticated gh configuration available",
+    "error": "fatal: could not read Username for https://github.com: terminal prompts disabled"
   },
   "schedule": "enabled",
   "nextStage": "Manus agent researches and implements approved priorities, runs release validation, delivers through verified GitHub access, records actual outcomes. No dashboard or automatic content quota.",
@@ -71,7 +78,8 @@
     "build": "passed",
     "snapshots": 228,
     "localHttpSourceRoutesPassed": 228,
-    "localHttpAdditionalChecksPassed": 10
+    "localHttpAdditionalChecksPassed": 10,
+    "releaseGuard": "passed"
   },
   "liveObservations": {
     "sourceRoutesHttp200": 228,
