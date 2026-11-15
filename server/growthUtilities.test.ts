@@ -97,6 +97,44 @@ describe("approval-aware decision engine", () => {
     expect(decision.reason).toMatch(/does not establish a reversal/i);
   });
 
+  it.each(["inconclusive", "unmeasured", "growth impact remain unmeasured", "not measured", "not conclusive"])("keeps implemented work pending measurement for %s", (outcome) => {
+    const [decision]: any[] = prioritizeOpportunities(
+      [{ id: "history-fixture", type: "technical-fix", evidenceObserved: true, evidenceScore: 90 }],
+      { history: [{ candidateId: "history-fixture", implemented: true, implementedAt: "2026-11-14", measurementObserved: false, outcome }], policy: { asOf: "2026-11-15" } },
+    );
+    expect(decision.score).toBe(55);
+    expect(decision.authorization).toBe("approval-required");
+    expect(decision.measurement.historyStatus).toBe("pending-measurement");
+    expect(decision.riskGates).toContain("duplicate-implementation-pending-measurement");
+  });
+
+  it.each(["measured", "positive", "negative", "conclusive", " MEASURED "])("preserves the exact legacy measurement label %s", (outcome) => {
+    const [decision]: any[] = prioritizeOpportunities(
+      [{ id: "history-fixture", type: "technical-fix", evidenceObserved: true, evidenceScore: 90 }],
+      { history: [{ candidateId: "history-fixture", implemented: true, outcome }], policy: { asOf: "2026-11-15" } },
+    );
+    expect(decision.score).toBe(90);
+    expect(decision.riskGates).not.toContain("duplicate-implementation-pending-measurement");
+  });
+
+  it.each(["measurementObserved", "observedMeasurement"])("preserves explicit %s without treating an inconclusive week as reversal evidence", (flag) => {
+    const [decision]: any[] = prioritizeOpportunities(
+      [{ id: "history-fixture", type: "technical-fix", evidenceObserved: true, evidenceScore: 90 }],
+      { history: [{ candidateId: "history-fixture", implemented: true, implementedAt: "2026-11-01", outcome: "inconclusive", [flag]: true }], policy: { asOf: "2026-11-15" } },
+    );
+    expect(decision.riskGates).not.toContain("duplicate-implementation-pending-measurement");
+    expect(decision.riskGates).toContain("inconclusive-history-not-reversal-evidence");
+    expect(decision.authorization).toBe("approval-required");
+  });
+
+  it("retains both pending-measurement and non-reversal gates for older unobserved inconclusive work", () => {
+    const candidate = { id: "history-fixture", type: "technical-fix", evidenceObserved: true, evidenceScore: 90 };
+    const options = { history: [{ candidateId: "history-fixture", implemented: true, implementedAt: "2026-11-01", measurementObserved: false, outcome: "inconclusive" }], policy: { asOf: "2026-11-15" } };
+    const first: any[] = prioritizeOpportunities([candidate], options);
+    expect(first).toEqual(prioritizeOpportunities([candidate], options));
+    expect(first[0].riskGates).toEqual(expect.arrayContaining(["duplicate-implementation-pending-measurement", "inconclusive-history-not-reversal-evidence"]));
+  });
+
   it("uses supplied observation dates rather than the machine clock for deterministic history decisions", () => {
     const candidate = { id: "dated", metrics: [{ observed: true, value: 70 }], asOf: "2026-10-20" };
     const history = [{ candidateId: "dated", completedAt: "2026-10-10", outcome: "inconclusive" }];

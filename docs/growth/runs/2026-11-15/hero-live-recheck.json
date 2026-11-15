@@ -1,0 +1,22 @@
+{
+  "observedAt": "2026-11-15T15:10:56.254247+00:00",
+  "asset": "/assets/index-mnh7ctq4.js",
+  "method": "Whitespace/quoted-key-tolerant inspection of actual live JS, not a rendered browser screenshot or exact AWS commit",
+  "curlExit": 0,
+  "rows": [
+    {
+      "guru": "Anxiety Guru",
+      "heroImage": null,
+      "avatarImage": null,
+      "approvedMappingPresent": false
+    },
+    {
+      "guru": "Relationship Guru",
+      "heroImage": null,
+      "avatarImage": null,
+      "approvedMappingPresent": false
+    }
+  ],
+  "assetSha256": "7af89ed874df144437207f39310a07a6ac18c028735198ea23f1c1e103f87878",
+  "status": "unverified"
+}

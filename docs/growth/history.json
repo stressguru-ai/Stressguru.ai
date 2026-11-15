@@ -151,5 +151,39 @@
     "deliverySha": "2766f48591c0378faa4f719fc1bf668d7b00a0b7",
     "deliveryRepository": "stressguru-ai/Stressguru.ai",
     "deliveredAt": "2026-11-08T15:12:15.070Z"
+  },
+  {
+    "id": "history-measurement-classification",
+    "candidateId": "history-measurement-classification",
+    "title": "Do not treat unmeasured or inconclusive history as measured evidence",
+    "type": "agent-utility-fix",
+    "path": "scripts/growth/decision-engine.mjs",
+    "status": "validated-awaiting-github-delivery",
+    "evidenceObserved": true,
+    "evidenceScore": 100,
+    "impact": 70,
+    "effort": 10,
+    "freshness": 100,
+    "implemented": true,
+    "implementedAt": "2026-11-15",
+    "measurementObserved": false,
+    "technicalValidationObserved": true,
+    "evidenceSource": "docs/growth/runs/2026-11-15/decision-comparison.json",
+    "outcome": "Deterministic classifier corrected; website growth unmeasured",
+    "reversal": "Review then revert the exact outcome-label matcher and regression fixtures; no automatic rollback"
+  },
+  {
+    "id": "guru-hero-banner-swap-2026-11-10",
+    "candidateId": "guru-hero-banner-swap-2026-11-10",
+    "implemented": true,
+    "implementedAt": "2026-11-10",
+    "status": "deployed-observed-awaiting-growth-measurement",
+    "deliveryRepository": "stressguru-ai/Stressguru.ai",
+    "deliverySha": "574c28850387056de08d532da47caadb698df75a",
+    "deploymentObservedAt": "2026-11-15",
+    "publicBehaviorVerified": true,
+    "measurementObserved": false,
+    "observationArtifact": "docs/growth/runs/2026-11-15/hero-page-mappings.json",
+    "outcome": "Approved mappings observed in served bundle; exact deployment date and growth unmeasured"
   }
 ]

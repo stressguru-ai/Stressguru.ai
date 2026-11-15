@@ -1,0 +1,21 @@
+{
+  "observedAt": "2026-11-15T15:12:02.438423+00:00",
+  "method": "Read the two exact page components from the served bundle via source-location anchors; prior broad matches hit guide records with the same Guru names",
+  "rows": [
+    {
+      "guru": "Anxiety Guru",
+      "sourceLocation": "client/src/pages/gurus/AnxietyGuru.tsx:6",
+      "heroImage": "/images/xzxYBEiYFEVfANIo.jpg",
+      "avatarImage": "/images/RjEvlDvMOtWTRzEq.png",
+      "approvedMappingPresent": true
+    },
+    {
+      "guru": "Relationship Guru",
+      "sourceLocation": "client/src/pages/gurus/RelationshipGuru.tsx:6",
+      "heroImage": "/images/cbBkKzHOhCgwDsEl.jpg",
+      "avatarImage": "/images/RiYvCLRiSOOKHHcr.png",
+      "approvedMappingPresent": true
+    }
+  ],
+  "status": "observed"
+}

@@ -1,0 +1,114 @@
+{
+  "expandedTotals": {
+    "checked": 240,
+    "http200": 240,
+    "failures": 0
+  },
+  "sourceRouteCount": 228,
+  "sourceHttp200": 228,
+  "publicPublishedBlogCount": 55,
+  "missingSourceBlogs": 12,
+  "highIssueRoutes": [
+    {
+      "url": "https://stressguru.ai/blogs/decision-fatigue-at-work-a-10-minute-reset-for-too-many-choices-muflyb67",
+      "status": 200,
+      "canonical": "https://stressguru.ai/",
+      "issues": [
+        "canonical-mismatch"
+      ]
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-get-out-of-freeze-mode-when-overwhelmed-mvqrghw0",
+      "status": 200,
+      "canonical": "https://stressguru.ai/",
+      "issues": [
+        "canonical-mismatch"
+      ]
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-being-irritable-after-work-mvjmjobv",
+      "status": 200,
+      "canonical": "https://stressguru.ai/",
+      "issues": [
+        "canonical-mismatch"
+      ]
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-crying-at-work-a-private-5-minute-reset-muply6iz",
+      "status": 200,
+      "canonical": "https://stressguru.ai/",
+      "issues": [
+        "canonical-mismatch"
+      ]
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-doomscrolling-at-night-a-10-minute-reset-that-protects-your-sleep-mucr4mie",
+      "status": 200,
+      "canonical": "https://stressguru.ai/",
+      "issues": [
+        "canonical-mismatch"
+      ]
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-email-anxiety-before-it-steals-your-evening-mv6rced4",
+      "status": 200,
+      "canonical": "https://stressguru.ai/",
+      "issues": [
+        "canonical-mismatch"
+      ]
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-feeling-behind-all-the-time-mv9m5bhm",
+      "status": 200,
+      "canonical": "https://stressguru.ai/",
+      "issues": [
+        "canonical-mismatch"
+      ]
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-feeling-overstimulated-mvgria2j",
+      "status": 200,
+      "canonical": "https://stressguru.ai/",
+      "issues": [
+        "canonical-mismatch"
+      ]
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-people-pleasing-at-work-mvtmcgwd",
+      "status": 200,
+      "canonical": "https://stressguru.ai/",
+      "issues": [
+        "canonical-mismatch"
+      ]
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-replaying-a-conversation-in-your-head-muzlzvhm",
+      "status": 200,
+      "canonical": "https://stressguru.ai/",
+      "issues": [
+        "canonical-mismatch"
+      ]
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-stop-the-sunday-scaries-before-monday-muwr6xvn",
+      "status": 200,
+      "canonical": "https://stressguru.ai/",
+      "issues": [
+        "canonical-mismatch"
+      ]
+    },
+    {
+      "url": "https://stressguru.ai/blogs/how-to-take-a-mental-health-day-without-feeling-guilty-mumr2yik",
+      "status": 200,
+      "canonical": "https://stressguru.ai/",
+      "issues": [
+        "canonical-mismatch"
+      ]
+    }
+  ],
+  "unavailableResponses": [],
+  "issueCounts": {
+    "noscript-snapshot": 240,
+    "canonical-mismatch": 12
+  }
+}

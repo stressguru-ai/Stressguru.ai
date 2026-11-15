@@ -1,0 +1,16 @@
+{
+  "observedAt": "2026-11-15T15:11:40.884625+00:00",
+  "method": "Read property expressions in cached served bundle; expressions not treated as resolved URLs unless explicit strings",
+  "rows": [
+    {
+      "guru": "Anxiety Guru",
+      "heroImageExpression": null,
+      "avatarImageExpression": null
+    },
+    {
+      "guru": "Relationship Guru",
+      "heroImageExpression": null,
+      "avatarImageExpression": null
+    }
+  ]
+}

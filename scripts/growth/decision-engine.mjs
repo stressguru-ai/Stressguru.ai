@@ -261,7 +261,7 @@ function historyForCandidate(history, id, candidate, policy) {
   let inconclusiveAfterSevenDays = false;
   for (const record of related) {
     const implemented = record.implemented === true || /implemented|shipped|live/i.test(String(record.status || ""));
-    const measurementObserved = record.measurementObserved === true || record.observedMeasurement === true || /measured|positive|negative|conclusive/i.test(String(record.outcome || ""));
+    const measurementObserved = record.measurementObserved === true || record.observedMeasurement === true || /^(?:measured|positive|negative|conclusive)$/i.test(String(record.outcome || "").trim());
     if (implemented && !measurementObserved) pendingMeasurement = true;
     const completedAt = validDate(record.implementedAt) || validDate(record.completedAt) || validDate(record.date);
     const isInconclusive = /inconclusive|no.?change|uncertain/i.test(String(record.outcome || record.status || ""));

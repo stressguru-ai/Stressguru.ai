@@ -1,0 +1,23 @@
+{
+  "observedAt": "2026-11-15T15:07:38.704758+00:00",
+  "method": "Parse the asset referenced by the currently fetched Guru page HTML; no browser DOM or deployment SHA inferred",
+  "approvedGitHubCommit": "574c28850387056de08d532da47caadb698df75a",
+  "asset": "/assets/index-mnh7ctq4.js",
+  "priorAttempt": "The uncompressed asset request timed out after 25 seconds; no deployment conclusion was drawn",
+  "status": "unverified-shape",
+  "assetSha256": "7af89ed874df144437207f39310a07a6ac18c028735198ea23f1c1e103f87878",
+  "rows": [
+    {
+      "guru": "Anxiety Guru",
+      "heroImage": null,
+      "avatarImage": null,
+      "approvedMappingPresent": false
+    },
+    {
+      "guru": "Relationship Guru",
+      "heroImage": null,
+      "avatarImage": null,
+      "approvedMappingPresent": false
+    }
+  ]
+}

@@ -286,7 +286,9 @@
     "effort": 45,
     "freshness": 100,
     "evidenceSource": "docs/growth/runs/2026-11-08/public-new-blogs.json",
-    "description": "All 12 additional public articles return homepage initial title/canonical. Existing publication fallback keeps pages available after JS, but no current article snapshot exists in the generated package. Review preserving published source content in snapshots or a scoped public renderer; no rewrite or DB edit authorized here."
+    "description": "All 12 additional public articles return homepage initial title/canonical. Existing publication fallback keeps pages available after JS, but no current article snapshot exists in the generated package. Review preserving published source content in snapshots or a scoped public renderer; no rewrite or DB edit authorized here.",
+    "lastObservedAt": "2026-11-15",
+    "latestObservationArtifact": "docs/growth/runs/2026-11-15/audit-summary.json"
   },
   {
     "id": "new-blog-remote-image-regression",
@@ -301,6 +303,28 @@
     "effort": 35,
     "freshness": 100,
     "evidenceSource": "docs/growth/runs/2026-11-08/representative-live.json",
-    "description": "The public API lists 12 remote blog hero URLs. Existing avatars remain local and correct. An approved asset-localization/data update is needed; this run neither rewrites DB image fields nor alters assets."
+    "description": "The public API lists 12 remote blog hero URLs. Existing avatars remain local and correct. An approved asset-localization/data update is needed; this run neither rewrites DB image fields nor alters assets.",
+    "lastObservedAt": "2026-11-15",
+    "latestObservationArtifact": "docs/growth/runs/2026-11-15/representative-live.json"
+  },
+  {
+    "id": "history-measurement-classification",
+    "candidateId": "history-measurement-classification",
+    "title": "Do not treat unmeasured or inconclusive history as measured evidence",
+    "type": "agent-utility-fix",
+    "path": "scripts/growth/decision-engine.mjs",
+    "status": "validated-awaiting-github-delivery",
+    "evidenceObserved": true,
+    "evidenceScore": 100,
+    "impact": 70,
+    "effort": 10,
+    "freshness": 100,
+    "implemented": true,
+    "implementedAt": "2026-11-15",
+    "measurementObserved": false,
+    "technicalValidationObserved": true,
+    "evidenceSource": "docs/growth/runs/2026-11-15/decision-comparison.json",
+    "outcome": "Deterministic classifier corrected; website growth unmeasured",
+    "reversal": "Review then revert the exact outcome-label matcher and regression fixtures; no automatic rollback"
   }
 ]
