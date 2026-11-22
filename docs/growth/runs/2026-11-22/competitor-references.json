@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-22",
+  "observations": [
+    {
+      "artifact": "docs/growth/research/2026-11-22/01-headspace.md"
+    },
+    {
+      "artifact": "docs/growth/research/2026-11-22/02-calm.md"
+    },
+    {
+      "artifact": "docs/growth/research/2026-11-22/03-ash.md"
+    },
+    {
+      "artifact": "docs/growth/research/2026-11-22/04-wysa.md"
+    },
+    {
+      "artifact": "docs/growth/research/2026-11-22/05-youper.md"
+    },
+    {
+      "artifact": "docs/growth/research/2026-11-22/06-woebot.md"
+    }
+  ],
+  "noDemandOrPerformanceInferred": true
+}

@@ -1,0 +1,20 @@
+{
+  "observedAt": "2026-11-22T15:03:27.332185+00:00",
+  "method": "Read image assignments from exact page-component source-location anchors in the live HTML-referenced JavaScript; no deployment date or rendered-browser result inferred",
+  "asset": "/assets/index-mnh7ctq4.js",
+  "rows": [
+    {
+      "guru": "Anxiety Guru",
+      "heroImage": "/images/xzxYBEiYFEVfANIo.jpg",
+      "avatarImage": "/images/RjEvlDvMOtWTRzEq.png",
+      "approvedMappingPresent": true
+    },
+    {
+      "guru": "Relationship Guru",
+      "heroImage": "/images/cbBkKzHOhCgwDsEl.jpg",
+      "avatarImage": "/images/RiYvCLRiSOOKHHcr.png",
+      "approvedMappingPresent": true
+    }
+  ],
+  "status": "observed"
+}

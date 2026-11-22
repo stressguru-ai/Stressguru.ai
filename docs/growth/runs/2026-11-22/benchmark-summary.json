@@ -1,0 +1,15 @@
+{
+  "observedValidResultCount": 0,
+  "testCount": 0,
+  "results": [],
+  "mentionCount": 0,
+  "citationCount": 0,
+  "mentions": [],
+  "citations": [],
+  "rejected": [],
+  "language": "Counts reflect only observed, dated, valid engine results. Mentions and citations are reported separately and do not establish causation or rankings.",
+  "plannedPrompts": 25,
+  "observationStatus": "untested",
+  "mentionRate": null,
+  "citationRate": null
+}
