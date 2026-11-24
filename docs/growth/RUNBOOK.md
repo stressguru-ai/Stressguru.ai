@@ -6,7 +6,7 @@ Run inside the existing Manus task/project every Sunday at 10:00 AM America/New_
 
 Read `docs/growth/policy.json`, `docs/growth/approvals.json`, the latest run record, backlog, experiments, keyword evidence, and cluster inventory at the beginning of each run. Preserve those records through validated GitHub delivery. If the sandbox is restored, fetch the latest shipping GitHub source and records before choosing work. The original Manus origin is separate; do not reset it or claim its checkpoint proves GitHub synchronization.
 
-The user approved the initial plan and all four conflict resolutions on October 24, 2026. Ten challenge mentions are a nonblocking long-form editorial warning, not a quota. The exact homepage hero is locked. Previously authorized low-risk changes may ship to `zigroninc/StressGuru.ai` main after validation. Existing training-crawler permissions stay allowed. These policy choices may not be changed by the agent itself.
+The user approved the initial plan and all four conflict resolutions on October 24, 2026. Ten challenge mentions are a nonblocking long-form editorial warning, not a quota. The exact homepage hero is locked. The user selected `stressguru-ai/Stressguru.ai`, branch `main`, on October 26, 2026; that destination supersedes historical `zigroninc/StressGuru.ai` references, including the historical shipping-repository field in the protected policy. Existing training-crawler permissions stay allowed. Safety policy choices may not be changed by the agent itself.
 
 ## Start from trustworthy inputs
 
@@ -58,7 +58,15 @@ Run `pnpm check`, `pnpm test`, `pnpm audit:content`, and `pnpm build`. Run `node
 
 Use the session's enabled GitHub connection and the existing shipping repository. Fetch main, preserve remote/concurrent changes and extra images, apply only intended files, revalidate, and push without force. Do not replace origin or reinitialize the project. Record the actual shipping SHA, branch, tested commands, affected URLs, rationale, expected outcome, and reversal method. A successful push does not deploy AWS; deployment remains under the user's control.
 
-If GitHub access fails, preserve completed work and report the exact blocker. Do not say the work is shipped or GitHub is synced. A Manus checkpoint is not a substitute. Sensitive drafts and external SQL are not committed as public content.
+### Mandatory GitHub completion gate: user approved November 24, 2026
+
+After every successfully validated growth run, commit only its authorized changes and audit/tracking records, push them to `stressguru-ai/Stressguru.ai` on `main`, and verify the intended commit is present on the actual remote branch. GitHub delivery is compulsory because the separate deployment agent deploys from GitHub to AWS. This is standing authorization for the validated, approved growth-run scope; do not ask again for routine in-scope commits or pushes. It does not approve sensitive changes, unrelated pending work, infrastructure changes or AWS deployment.
+
+The delivery step applies to audit-only runs too: ship their new records, not invented application changes. Preserve previously prepared unpushed commits and reconcile concurrent remote work before normal delivery. If nothing new needs committing and the intended source is already present on remote main, verify and report that fact; do not manufacture an empty commit.
+
+A locally passing run or a Manus checkpoint alone is not a successfully completed delivery. Until the intended commit is verified on GitHub, record `delivery-blocked` or an equivalent explicit incomplete-delivery state and make that blocker prominent in the report. Record the intended local SHA, current remote SHA when readable, exact failed authentication/push step, and required remedy. An enabled connector or anonymous fetch is not proof of write authentication.
+
+If GitHub access or a push fails, preserve completed work and report the exact blocker; continue authorized audits but do not silently omit delivery or claim the run is fully successful. Use supported reauthentication with the user for an invalid token. Do not bypass authorization, expose credentials, force-push, replace the repository, weaken approval gates or overwrite concurrent work. Once access is restored, re-fetch main, recheck the preserved intended changes, push normally and verify the remote SHA. A Manus checkpoint is not a substitute. Sensitive drafts and external SQL are not committed as public content.
 
 ## Learn and report
 

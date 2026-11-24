@@ -5,12 +5,12 @@
   "requestedFirstDate": "2026-10-25",
   "sameTaskContext": true,
   "status": "enabled",
-  "checkedAt": "2026-10-24T20:40:22Z",
+  "checkedAt": "2026-11-24T20:21:06Z",
   "mechanism": "user-approved native automation timer",
   "approval": "User explicitly approved the Sunday timer in this same session on 2026-10-24 at 13:39:29 Pacific.",
   "triggerUid": "G9AWXcPAjX6aU6hfLigTrQ",
   "entryUid": "FChNnvSBYxpwhTbKebQ28a",
-  "revision": "1",
+  "revision": "2",
   "resourceUri": "manus-resource://manus-triggers/trigger/G9AWXcPAjX6aU6hfLigTrQ",
   "target": {
     "mode": "current_session",
@@ -41,9 +41,14 @@
   "githubRequiredForAudit": false,
   "previousWebsiteScheduleAttempt": {
     "status": "rejected",
-    "serviceError": "failed_precondition: project not deployed yet — please deploy in the webdev panel and retry",
+    "serviceError": "failed_precondition: project not deployed yet \u2014 please deploy in the webdev panel and retry",
     "scheduleCreated": false
   },
   "operatingInstructions": "docs/growth/RUNBOOK.md",
-  "lastExecutionObservedAt": "2026-11-22T15:00:00Z"
+  "lastExecutionObservedAt": "2026-11-22T15:00:00Z",
+  "lastInstructionUpdateAt": "2026-11-24T20:20:45.937Z",
+  "instructionUpdateApproval": "User explicitly required compulsory GitHub delivery after every successful growth-agent run on November 24, 2026.",
+  "githubRequiredForSuccessfulRun": true,
+  "shippingRepository": "stressguru-ai/Stressguru.ai",
+  "shippingBranch": "main"
 }
