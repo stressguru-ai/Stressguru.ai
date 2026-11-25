@@ -1,7 +1,7 @@
 {
   "runId": "2026-11-22",
-  "updatedAt": "2026-11-22T15:06:21.933Z",
-  "stage": "completed-audit-github-write-blocked",
+  "updatedAt": "2026-11-25T16:52:18Z",
+  "stage": "completed-github-delivered",
   "repositoryScope": "Derived from checked-in sitemap, route source, generated guide/blog JSON, and local image files. This is not live AWS, deployment, crawl, analytics, or database evidence.",
   "counts": {
     "publicRoutes": 228,
@@ -44,17 +44,16 @@
   "github": {
     "repository": "stressguru-ai/Stressguru.ai",
     "branch": "main",
-    "status": "blocked-write-authentication",
-    "remoteSha": "574c28850387056de08d532da47caadb698df75a",
-    "sha": null,
-    "pushed": false,
-    "pushAttemptedThisRun": false,
-    "preparedPriorRunHead": "b836f2cd1fd4ea136e6bfab0f4d13ff6987b0d62",
-    "authorizationTestExit": 4,
-    "reason": "Enabled connector did not provide an authenticated gh configuration or runtime GitHub token; public reads do not authorize writes"
+    "status": "delivered-verified",
+    "sha": "15131a61c188e075670b90a7af095ed48b78dae3",
+    "pushed": true,
+    "verifiedAt": "2026-11-25T16:52:18Z",
+    "deliveredAfterOriginalRun": true,
+    "payloadCommitsDelivered": 5,
+    "deploymentPerformed": false
   },
   "schedule": "enabled",
-  "nextStage": "Manus agent researches and implements approved priorities, runs release validation, delivers through verified GitHub access, records actual outcomes. No dashboard or automatic content quota.",
+  "nextStage": "Await separate AWS deployment verification and actual growth measurements; preserve approval requirements for article and image gaps.",
   "applicationChanges": [],
   "reasonNoCodeChange": "Source review found no justified new authorized correction; prior implemented work remains pending measurement, and article/image changes require review",
   "validation": {
@@ -85,5 +84,17 @@
   "databaseAccessed": false,
   "infrastructureChanged": false,
   "automationModified": false,
-  "rootTodoPendingWorkPreserved": true
+  "rootTodoPendingWorkPreserved": true,
+  "githubBlockerAtOriginalRun": {
+    "repository": "stressguru-ai/Stressguru.ai",
+    "branch": "main",
+    "status": "blocked-write-authentication",
+    "remoteSha": "574c28850387056de08d532da47caadb698df75a",
+    "sha": null,
+    "pushed": false,
+    "pushAttemptedThisRun": false,
+    "preparedPriorRunHead": "b836f2cd1fd4ea136e6bfab0f4d13ff6987b0d62",
+    "authorizationTestExit": 4,
+    "reason": "Enabled connector did not provide an authenticated gh configuration or runtime GitHub token; public reads do not authorize writes"
+  }
 }
